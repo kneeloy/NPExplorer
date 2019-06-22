@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDC1865322BBEBC2004A1DDF"
-               BuildableName = "NPExplorer.app"
-               BlueprintName = "NPExplorer"
+               BlueprintIdentifier = "EDC1867F22BE72C7004A1DDF"
+               BuildableName = "NPExplorer_GR.app"
+               BlueprintName = "NPExplorer_GR"
                ReferencedContainer = "container:NPExplorer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,23 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDC1866722BBEBC4004A1DDF"
-               BuildableName = "NPExplorerTests.xctest"
-               BlueprintName = "NPExplorerTests"
-               ReferencedContainer = "container:NPExplorer.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDC1865322BBEBC2004A1DDF"
-            BuildableName = "NPExplorer.app"
-            BlueprintName = "NPExplorer"
+            BlueprintIdentifier = "EDC1867F22BE72C7004A1DDF"
+            BuildableName = "NPExplorer_GR.app"
+            BlueprintName = "NPExplorer_GR"
             ReferencedContainer = "container:NPExplorer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDC1865322BBEBC2004A1DDF"
-            BuildableName = "NPExplorer.app"
-            BlueprintName = "NPExplorer"
+            BlueprintIdentifier = "EDC1867F22BE72C7004A1DDF"
+            BuildableName = "NPExplorer_GR.app"
+            BlueprintName = "NPExplorer_GR"
             ReferencedContainer = "container:NPExplorer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -84,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDC1865322BBEBC2004A1DDF"
-            BuildableName = "NPExplorer.app"
-            BlueprintName = "NPExplorer"
+            BlueprintIdentifier = "EDC1867F22BE72C7004A1DDF"
+            BuildableName = "NPExplorer_GR.app"
+            BlueprintName = "NPExplorer_GR"
             ReferencedContainer = "container:NPExplorer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
