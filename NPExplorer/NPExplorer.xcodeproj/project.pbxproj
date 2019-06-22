@@ -17,6 +17,26 @@
 		EDC1868522BE72C7004A1DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */; };
 		EDC1868622BE72C7004A1DDF /* NPExplorer_IR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1867D22BE718A004A1DDF /* NPExplorer_IR.storyboard */; };
 		EDC1868E22BE7590004A1DDF /* NPExplorer_GR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1868C22BE74BD004A1DDF /* NPExplorer_GR.storyboard */; };
+		EDC1869022BE76D9004A1DDF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1868F22BE76D9004A1DDF /* NetworkService.swift */; };
+		EDC1869122BE76D9004A1DDF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1868F22BE76D9004A1DDF /* NetworkService.swift */; };
+		EDC1869322BE76F0004A1DDF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869222BE76F0004A1DDF /* NetworkError.swift */; };
+		EDC1869422BE76F0004A1DDF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869222BE76F0004A1DDF /* NetworkError.swift */; };
+		EDC1869C22BE7AF4004A1DDF /* NP_IRAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869B22BE7AF4004A1DDF /* NP_IRAPIClient.swift */; };
+		EDC1869E22BE7B2C004A1DDF /* LoginEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869D22BE7B2C004A1DDF /* LoginEndpoint.swift */; };
+		EDC186A022BE7B48004A1DDF /* UserRegistrationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint.swift */; };
+		EDC186A222BE7B62004A1DDF /* CountryDetailsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint.swift */; };
+		EDC186A922BE7BA5004A1DDF /* CountryDetailsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint.swift */; };
+		EDC186AA22BE7BA5004A1DDF /* LoginEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A422BE7BA5004A1DDF /* LoginEndpoint.swift */; };
+		EDC186AB22BE7BA5004A1DDF /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A522BE7BA5004A1DDF /* NetworkEnvironment.swift */; };
+		EDC186AC22BE7BA5004A1DDF /* NP_GRAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A622BE7BA5004A1DDF /* NP_GRAPIClient.swift */; };
+		EDC186AD22BE7BA5004A1DDF /* UserRegistrationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint.swift */; };
+		EDC186AE22BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A822BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift */; };
+		EDC186AF22BE7E96004A1DDF /* BaseNetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A822BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift */; };
+		EDC186B122BE7EE5004A1DDF /* BaseGRNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186B022BE7EE5004A1DDF /* BaseGRNetworkClient.swift */; };
+		EDC186B222BE7F7A004A1DDF /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A522BE7BA5004A1DDF /* NetworkEnvironment.swift */; };
+		EDC186B422BE7FB6004A1DDF /* BaseIRNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186B322BE7FB6004A1DDF /* BaseIRNetworkClient.swift */; };
+		EDC186B722BE80FC004A1DDF /* NetworkResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186B622BE80FC004A1DDF /* NetworkResource.swift */; };
+		EDC186B822BE8103004A1DDF /* NetworkResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186B622BE80FC004A1DDF /* NetworkResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +62,21 @@
 		EDC1868A22BE72C7004A1DDF /* NPExplorer_GR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPExplorer_GR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC1868B22BE72C7004A1DDF /* NPExplorer_GR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "NPExplorer_GR-Info.plist"; path = "/Users/niloy.chakraborty/Personal/Work/Repo/NPExplorer/NPExplorer/NPExplorer_GR-Info.plist"; sourceTree = "<absolute>"; };
 		EDC1868C22BE74BD004A1DDF /* NPExplorer_GR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NPExplorer_GR.storyboard; sourceTree = "<group>"; };
+		EDC1868F22BE76D9004A1DDF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EDC1869222BE76F0004A1DDF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		EDC1869B22BE7AF4004A1DDF /* NP_IRAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NP_IRAPIClient.swift; sourceTree = "<group>"; };
+		EDC1869D22BE7B2C004A1DDF /* LoginEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEndpoint.swift; sourceTree = "<group>"; };
+		EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationEndpoint.swift; sourceTree = "<group>"; };
+		EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsEndpoint.swift; sourceTree = "<group>"; };
+		EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsEndpoint.swift; sourceTree = "<group>"; };
+		EDC186A422BE7BA5004A1DDF /* LoginEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginEndpoint.swift; sourceTree = "<group>"; };
+		EDC186A522BE7BA5004A1DDF /* NetworkEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
+		EDC186A622BE7BA5004A1DDF /* NP_GRAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NP_GRAPIClient.swift; sourceTree = "<group>"; };
+		EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationEndpoint.swift; sourceTree = "<group>"; };
+		EDC186A822BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkClientProtocol.swift; sourceTree = "<group>"; };
+		EDC186B022BE7EE5004A1DDF /* BaseGRNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGRNetworkClient.swift; sourceTree = "<group>"; };
+		EDC186B322BE7FB6004A1DDF /* BaseIRNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIRNetworkClient.swift; sourceTree = "<group>"; };
+		EDC186B622BE80FC004A1DDF /* NetworkResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +169,8 @@
 		EDC1867922BE7097004A1DDF /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				EDC1868F22BE76D9004A1DDF /* NetworkService.swift */,
+				EDC1869222BE76F0004A1DDF /* NetworkError.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -141,6 +178,11 @@
 		EDC1867A22BE709F004A1DDF /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				EDC186A822BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift */,
+				EDC186A522BE7BA5004A1DDF /* NetworkEnvironment.swift */,
+				EDC186B622BE80FC004A1DDF /* NetworkResource.swift */,
+				EDC1869622BE7A36004A1DDF /* GR */,
+				EDC1869522BE7A2F004A1DDF /* IR */,
 			);
 			path = APIClient;
 			sourceTree = "<group>";
@@ -157,6 +199,46 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		EDC1869522BE7A2F004A1DDF /* IR */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186B322BE7FB6004A1DDF /* BaseIRNetworkClient.swift */,
+				EDC1869B22BE7AF4004A1DDF /* NP_IRAPIClient.swift */,
+				EDC1869D22BE7B2C004A1DDF /* LoginEndpoint.swift */,
+				EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint.swift */,
+				EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint.swift */,
+				EDC186B522BE80C5004A1DDF /* Resource */,
+			);
+			path = IR;
+			sourceTree = "<group>";
+		};
+		EDC1869622BE7A36004A1DDF /* GR */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186B022BE7EE5004A1DDF /* BaseGRNetworkClient.swift */,
+				EDC186A622BE7BA5004A1DDF /* NP_GRAPIClient.swift */,
+				EDC186A422BE7BA5004A1DDF /* LoginEndpoint.swift */,
+				EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint.swift */,
+				EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint.swift */,
+				EDC186B922BE813E004A1DDF /* Resource */,
+			);
+			path = GR;
+			sourceTree = "<group>";
+		};
+		EDC186B522BE80C5004A1DDF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EDC186B922BE813E004A1DDF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +371,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC186AF22BE7E96004A1DDF /* BaseNetworkClientProtocol.swift in Sources */,
+				EDC186A222BE7B62004A1DDF /* CountryDetailsEndpoint.swift in Sources */,
+				EDC186B722BE80FC004A1DDF /* NetworkResource.swift in Sources */,
+				EDC1869C22BE7AF4004A1DDF /* NP_IRAPIClient.swift in Sources */,
+				EDC1869322BE76F0004A1DDF /* NetworkError.swift in Sources */,
+				EDC1869022BE76D9004A1DDF /* NetworkService.swift in Sources */,
+				EDC186B422BE7FB6004A1DDF /* BaseIRNetworkClient.swift in Sources */,
+				EDC186A022BE7B48004A1DDF /* UserRegistrationEndpoint.swift in Sources */,
+				EDC1869E22BE7B2C004A1DDF /* LoginEndpoint.swift in Sources */,
+				EDC186B222BE7F7A004A1DDF /* NetworkEnvironment.swift in Sources */,
 				EDC1865822BBEBC2004A1DDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +397,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC186AE22BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift in Sources */,
+				EDC1869422BE76F0004A1DDF /* NetworkError.swift in Sources */,
+				EDC186B822BE8103004A1DDF /* NetworkResource.swift in Sources */,
+				EDC1869122BE76D9004A1DDF /* NetworkService.swift in Sources */,
+				EDC186A922BE7BA5004A1DDF /* CountryDetailsEndpoint.swift in Sources */,
 				EDC1868122BE72C7004A1DDF /* AppDelegate.swift in Sources */,
+				EDC186AD22BE7BA5004A1DDF /* UserRegistrationEndpoint.swift in Sources */,
+				EDC186B122BE7EE5004A1DDF /* BaseGRNetworkClient.swift in Sources */,
+				EDC186AB22BE7BA5004A1DDF /* NetworkEnvironment.swift in Sources */,
+				EDC186AC22BE7BA5004A1DDF /* NP_GRAPIClient.swift in Sources */,
+				EDC186AA22BE7BA5004A1DDF /* LoginEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
