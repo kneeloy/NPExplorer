@@ -22,14 +22,14 @@
 		EDC1869322BE76F0004A1DDF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869222BE76F0004A1DDF /* NetworkError.swift */; };
 		EDC1869422BE76F0004A1DDF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869222BE76F0004A1DDF /* NetworkError.swift */; };
 		EDC1869C22BE7AF4004A1DDF /* NP_IRAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869B22BE7AF4004A1DDF /* NP_IRAPIClient.swift */; };
-		EDC1869E22BE7B2C004A1DDF /* LoginEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869D22BE7B2C004A1DDF /* LoginEndpoint.swift */; };
-		EDC186A022BE7B48004A1DDF /* UserRegistrationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint.swift */; };
-		EDC186A222BE7B62004A1DDF /* CountryDetailsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint.swift */; };
-		EDC186A922BE7BA5004A1DDF /* CountryDetailsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint.swift */; };
-		EDC186AA22BE7BA5004A1DDF /* LoginEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A422BE7BA5004A1DDF /* LoginEndpoint.swift */; };
+		EDC1869E22BE7B2C004A1DDF /* LoginEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869D22BE7B2C004A1DDF /* LoginEndpoint_IR.swift */; };
+		EDC186A022BE7B48004A1DDF /* UserRegistrationEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint_IR.swift */; };
+		EDC186A222BE7B62004A1DDF /* CountryDetailsEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint_IR.swift */; };
+		EDC186A922BE7BA5004A1DDF /* CountryDetailsEndpoint_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint_GR.swift */; };
+		EDC186AA22BE7BA5004A1DDF /* LoginEndpoint_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A422BE7BA5004A1DDF /* LoginEndpoint_GR.swift */; };
 		EDC186AB22BE7BA5004A1DDF /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A522BE7BA5004A1DDF /* NetworkEnvironment.swift */; };
 		EDC186AC22BE7BA5004A1DDF /* NP_GRAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A622BE7BA5004A1DDF /* NP_GRAPIClient.swift */; };
-		EDC186AD22BE7BA5004A1DDF /* UserRegistrationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint.swift */; };
+		EDC186AD22BE7BA5004A1DDF /* UserRegistrationEndpoint_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint_GR.swift */; };
 		EDC186AE22BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A822BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift */; };
 		EDC186AF22BE7E96004A1DDF /* BaseNetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A822BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift */; };
 		EDC186B122BE7EE5004A1DDF /* BaseGRNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186B022BE7EE5004A1DDF /* BaseGRNetworkClient.swift */; };
@@ -43,6 +43,8 @@
 		EDC186C422BE8390004A1DDF /* UserRegistrationResource_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186C122BE8390004A1DDF /* UserRegistrationResource_IR.swift */; };
 		EDC186C522BE8390004A1DDF /* CountryDetailsResource_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186C222BE8390004A1DDF /* CountryDetailsResource_IR.swift */; };
 		EDC186C622BE8390004A1DDF /* LoginResource_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186C322BE8390004A1DDF /* LoginResource_IR.swift */; };
+		EDC186CD22BE8B7B004A1DDF /* CountryDetailBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186CC22BE8B7B004A1DDF /* CountryDetailBaseModel.swift */; };
+		EDC186CE22BE8B7B004A1DDF /* CountryDetailBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186CC22BE8B7B004A1DDF /* CountryDetailBaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,14 +73,14 @@
 		EDC1868F22BE76D9004A1DDF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		EDC1869222BE76F0004A1DDF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		EDC1869B22BE7AF4004A1DDF /* NP_IRAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NP_IRAPIClient.swift; sourceTree = "<group>"; };
-		EDC1869D22BE7B2C004A1DDF /* LoginEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEndpoint.swift; sourceTree = "<group>"; };
-		EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationEndpoint.swift; sourceTree = "<group>"; };
-		EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsEndpoint.swift; sourceTree = "<group>"; };
-		EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsEndpoint.swift; sourceTree = "<group>"; };
-		EDC186A422BE7BA5004A1DDF /* LoginEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginEndpoint.swift; sourceTree = "<group>"; };
+		EDC1869D22BE7B2C004A1DDF /* LoginEndpoint_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEndpoint_IR.swift; sourceTree = "<group>"; };
+		EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationEndpoint_IR.swift; sourceTree = "<group>"; };
+		EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsEndpoint_IR.swift; sourceTree = "<group>"; };
+		EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint_GR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsEndpoint_GR.swift; sourceTree = "<group>"; };
+		EDC186A422BE7BA5004A1DDF /* LoginEndpoint_GR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginEndpoint_GR.swift; sourceTree = "<group>"; };
 		EDC186A522BE7BA5004A1DDF /* NetworkEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
 		EDC186A622BE7BA5004A1DDF /* NP_GRAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NP_GRAPIClient.swift; sourceTree = "<group>"; };
-		EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationEndpoint.swift; sourceTree = "<group>"; };
+		EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint_GR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationEndpoint_GR.swift; sourceTree = "<group>"; };
 		EDC186A822BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkClientProtocol.swift; sourceTree = "<group>"; };
 		EDC186B022BE7EE5004A1DDF /* BaseGRNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGRNetworkClient.swift; sourceTree = "<group>"; };
 		EDC186B322BE7FB6004A1DDF /* BaseIRNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIRNetworkClient.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 		EDC186C122BE8390004A1DDF /* UserRegistrationResource_IR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationResource_IR.swift; sourceTree = "<group>"; };
 		EDC186C222BE8390004A1DDF /* CountryDetailsResource_IR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsResource_IR.swift; sourceTree = "<group>"; };
 		EDC186C322BE8390004A1DDF /* LoginResource_IR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResource_IR.swift; sourceTree = "<group>"; };
+		EDC186CC22BE8B7B004A1DDF /* CountryDetailBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailBaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,7 @@
 		EDC1865622BBEBC2004A1DDF /* NPExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				EDC186C722BE8B34004A1DDF /* Modules */,
 				EDC1865722BBEBC2004A1DDF /* AppDelegate.swift */,
 				EDC1867C22BE713F004A1DDF /* Utils */,
 				EDC1867B22BE70AC004A1DDF /* DataManager */,
@@ -218,9 +222,9 @@
 			children = (
 				EDC186B322BE7FB6004A1DDF /* BaseIRNetworkClient.swift */,
 				EDC1869B22BE7AF4004A1DDF /* NP_IRAPIClient.swift */,
-				EDC1869D22BE7B2C004A1DDF /* LoginEndpoint.swift */,
-				EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint.swift */,
-				EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint.swift */,
+				EDC1869D22BE7B2C004A1DDF /* LoginEndpoint_IR.swift */,
+				EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint_IR.swift */,
+				EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint_IR.swift */,
 				EDC186B522BE80C5004A1DDF /* Resource */,
 			);
 			path = IR;
@@ -231,9 +235,9 @@
 			children = (
 				EDC186B022BE7EE5004A1DDF /* BaseGRNetworkClient.swift */,
 				EDC186A622BE7BA5004A1DDF /* NP_GRAPIClient.swift */,
-				EDC186A422BE7BA5004A1DDF /* LoginEndpoint.swift */,
-				EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint.swift */,
-				EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint.swift */,
+				EDC186A422BE7BA5004A1DDF /* LoginEndpoint_GR.swift */,
+				EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint_GR.swift */,
+				EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint_GR.swift */,
 				EDC186B922BE813E004A1DDF /* Resource */,
 			);
 			path = GR;
@@ -257,6 +261,46 @@
 				EDC186BF22BE8309004A1DDF /* CountryDetailsResource_GR.swift */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		EDC186C722BE8B34004A1DDF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186C822BE8B3D004A1DDF /* CountryDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EDC186C822BE8B3D004A1DDF /* CountryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186CB22BE8B5D004A1DDF /* View */,
+				EDC186CA22BE8B56004A1DDF /* ViewModel */,
+				EDC186C922BE8B4F004A1DDF /* Model */,
+			);
+			path = CountryDetail;
+			sourceTree = "<group>";
+		};
+		EDC186C922BE8B4F004A1DDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186CC22BE8B7B004A1DDF /* CountryDetailBaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDC186CA22BE8B56004A1DDF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDC186CB22BE8B5D004A1DDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,16 +435,17 @@
 			files = (
 				EDC186C622BE8390004A1DDF /* LoginResource_IR.swift in Sources */,
 				EDC186AF22BE7E96004A1DDF /* BaseNetworkClientProtocol.swift in Sources */,
-				EDC186A222BE7B62004A1DDF /* CountryDetailsEndpoint.swift in Sources */,
+				EDC186A222BE7B62004A1DDF /* CountryDetailsEndpoint_IR.swift in Sources */,
 				EDC186B722BE80FC004A1DDF /* NetworkResource.swift in Sources */,
 				EDC1869C22BE7AF4004A1DDF /* NP_IRAPIClient.swift in Sources */,
 				EDC186C422BE8390004A1DDF /* UserRegistrationResource_IR.swift in Sources */,
 				EDC1869322BE76F0004A1DDF /* NetworkError.swift in Sources */,
 				EDC1869022BE76D9004A1DDF /* NetworkService.swift in Sources */,
 				EDC186B422BE7FB6004A1DDF /* BaseIRNetworkClient.swift in Sources */,
-				EDC186A022BE7B48004A1DDF /* UserRegistrationEndpoint.swift in Sources */,
-				EDC1869E22BE7B2C004A1DDF /* LoginEndpoint.swift in Sources */,
+				EDC186A022BE7B48004A1DDF /* UserRegistrationEndpoint_IR.swift in Sources */,
+				EDC1869E22BE7B2C004A1DDF /* LoginEndpoint_IR.swift in Sources */,
 				EDC186C522BE8390004A1DDF /* CountryDetailsResource_IR.swift in Sources */,
+				EDC186CD22BE8B7B004A1DDF /* CountryDetailBaseModel.swift in Sources */,
 				EDC186B222BE7F7A004A1DDF /* NetworkEnvironment.swift in Sources */,
 				EDC1865822BBEBC2004A1DDF /* AppDelegate.swift in Sources */,
 			);
@@ -423,14 +468,15 @@
 				EDC186B822BE8103004A1DDF /* NetworkResource.swift in Sources */,
 				EDC1869122BE76D9004A1DDF /* NetworkService.swift in Sources */,
 				EDC186BE22BE82E9004A1DDF /* UserRegistrationResource_GR.swift in Sources */,
-				EDC186A922BE7BA5004A1DDF /* CountryDetailsEndpoint.swift in Sources */,
+				EDC186A922BE7BA5004A1DDF /* CountryDetailsEndpoint_GR.swift in Sources */,
 				EDC1868122BE72C7004A1DDF /* AppDelegate.swift in Sources */,
-				EDC186AD22BE7BA5004A1DDF /* UserRegistrationEndpoint.swift in Sources */,
+				EDC186AD22BE7BA5004A1DDF /* UserRegistrationEndpoint_GR.swift in Sources */,
 				EDC186BC22BE82CA004A1DDF /* LoginResource_GR.swift in Sources */,
 				EDC186B122BE7EE5004A1DDF /* BaseGRNetworkClient.swift in Sources */,
 				EDC186AB22BE7BA5004A1DDF /* NetworkEnvironment.swift in Sources */,
 				EDC186AC22BE7BA5004A1DDF /* NP_GRAPIClient.swift in Sources */,
-				EDC186AA22BE7BA5004A1DDF /* LoginEndpoint.swift in Sources */,
+				EDC186CE22BE8B7B004A1DDF /* CountryDetailBaseModel.swift in Sources */,
+				EDC186AA22BE7BA5004A1DDF /* LoginEndpoint_GR.swift in Sources */,
 				EDC186C022BE8309004A1DDF /* CountryDetailsResource_GR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

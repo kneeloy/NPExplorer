@@ -11,13 +11,16 @@ import Foundation
 struct NetworkEnvironment {
     var defaultLanguage: String
     var apikey: String
-    init(defaultLang: String, apiKey: String) {
-        defaultLanguage = defaultLang
-        apikey = apiKey
+    var defaultCountry: String
+    init(defaultLang: String, apiKey: String, defaultCountry: String) {
+        self.defaultLanguage = defaultLang
+        self.apikey = apiKey
+        self.defaultCountry = defaultCountry
     }
 }
 
 struct DefaultNetworkEnvironment {
     var defaultLanguage: String = "en-US"
     var apikey: String = "a874a785f5b47354475d14574a969a7a"
+    var defaultCountry: String = "IR"
 }

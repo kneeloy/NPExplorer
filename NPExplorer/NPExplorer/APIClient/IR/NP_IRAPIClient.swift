@@ -16,7 +16,7 @@ public class NP_IRAPIClient: NPAPIClientProtocol {
         
         let defaultConfig = DefaultNetworkEnvironment()
         environment = env ?? NetworkEnvironment(defaultLang: defaultConfig.defaultLanguage,
-                                                apiKey: defaultConfig.apikey)
+                                                apiKey: defaultConfig.apikey, defaultCountry: defaultConfig.defaultCountry)
     }
     
     func getService() -> NetworkService {
