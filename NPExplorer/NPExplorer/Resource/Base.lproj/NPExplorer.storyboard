@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QjA-IP-dj0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginViewController-->
+        <scene sceneID="qol-8Z-QTi">
+            <objects>
+                <viewController storyboardIdentifier="Login_Controller" id="QjA-IP-dj0" userLabel="LoginViewController" customClass="LoginViewController" customModule="NPExplorer_GR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="deD-h9-L2p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Novartis Pharmacuticle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vh1-sG-d2b">
+                                <rect key="frame" x="99" y="50" width="177.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fsz-xH-jR3">
+                                <rect key="frame" x="139" y="264" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdM-rW-hWL">
+                                <rect key="frame" x="137.5" y="348.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="e8Z-Vb-5Uh"/>
+                                    <constraint firstAttribute="width" constant="100" id="kbd-ly-h0U"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIR-Jv-fyK">
+                                <rect key="frame" x="137.5" y="401.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Eua-6a-HbC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ujQ-li-u3T"/>
+                                </constraints>
+                                <state key="normal" title="Register"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gje-Ti-RdG">
+                                <rect key="frame" x="139" y="191" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.045712830504234025" green="0.68507228859468194" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wIR-Jv-fyK" firstAttribute="centerX" secondItem="MKp-EY-nOi" secondAttribute="centerX" id="H6b-KL-uaL"/>
+                            <constraint firstItem="vh1-sG-d2b" firstAttribute="centerX" secondItem="MKp-EY-nOi" secondAttribute="centerX" id="NZd-I8-VNa"/>
+                            <constraint firstItem="UdM-rW-hWL" firstAttribute="centerX" secondItem="MKp-EY-nOi" secondAttribute="centerX" id="Vip-zV-8hs"/>
+                            <constraint firstItem="gje-Ti-RdG" firstAttribute="centerX" secondItem="MKp-EY-nOi" secondAttribute="centerX" id="X8e-4B-aRB"/>
+                            <constraint firstItem="Fsz-xH-jR3" firstAttribute="top" secondItem="gje-Ti-RdG" secondAttribute="bottom" constant="43" id="aDd-eH-gQD"/>
+                            <constraint firstItem="wIR-Jv-fyK" firstAttribute="top" secondItem="UdM-rW-hWL" secondAttribute="bottom" constant="23" id="eCM-8Y-49e"/>
+                            <constraint firstItem="vh1-sG-d2b" firstAttribute="top" secondItem="MKp-EY-nOi" secondAttribute="top" constant="30" id="f12-RW-SuF"/>
+                            <constraint firstItem="gje-Ti-RdG" firstAttribute="top" secondItem="vh1-sG-d2b" secondAttribute="bottom" constant="120" id="gHw-ez-yLV"/>
+                            <constraint firstItem="Fsz-xH-jR3" firstAttribute="centerX" secondItem="MKp-EY-nOi" secondAttribute="centerX" id="qBS-NM-HAo"/>
+                            <constraint firstItem="UdM-rW-hWL" firstAttribute="top" secondItem="gje-Ti-RdG" secondAttribute="bottom" constant="128" id="xaO-WQ-5CX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MKp-EY-nOi"/>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="UdM-rW-hWL" id="YQ0-95-FGr"/>
+                        <outlet property="pageLogoLabel" destination="vh1-sG-d2b" id="CDG-rL-Q1t"/>
+                        <outlet property="passwordTextField" destination="Fsz-xH-jR3" id="tEI-ih-nAy"/>
+                        <outlet property="registerButton" destination="wIR-Jv-fyK" id="ld8-pH-owa"/>
+                        <outlet property="usernameTextField" destination="gje-Ti-RdG" id="xqZ-E1-IqA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H02-Aa-8Gr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-833" y="-303"/>
+        </scene>
+        <!--Registration View ControllerGR-->
+        <scene sceneID="ZhZ-jB-gcn">
+            <objects>
+                <viewController storyboardIdentifier="UserRegistration_GR" id="EXR-bY-MXO" customClass="RegistrationViewController_GR" customModule="NPExplorer_GR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PEB-9w-2OL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GY-Pu-E0n">
+                                <rect key="frame" x="164" y="246" width="46" height="30"/>
+                                <state key="normal" title="Register"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="chc-Zj-xcb">
+                                <rect key="frame" x="139" y="194" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.045712830500000003" green="0.68507228860000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="chc-Zj-xcb" firstAttribute="top" secondItem="yxf-D1-ZgN" secondAttribute="top" constant="149" id="QUr-WJ-NFV"/>
+                            <constraint firstItem="4GY-Pu-E0n" firstAttribute="centerX" secondItem="yxf-D1-ZgN" secondAttribute="centerX" id="S96-hO-NTg"/>
+                            <constraint firstItem="chc-Zj-xcb" firstAttribute="centerX" secondItem="yxf-D1-ZgN" secondAttribute="centerX" id="sPl-OX-R3U"/>
+                            <constraint firstItem="4GY-Pu-E0n" firstAttribute="top" secondItem="chc-Zj-xcb" secondAttribute="bottom" constant="22" id="xWn-6M-Zy0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yxf-D1-ZgN"/>
+                    </view>
+                    <connections>
+                        <outlet property="passCodeTextField" destination="chc-Zj-xcb" id="7n3-3c-Bbc"/>
+                        <outlet property="registerButton" destination="4GY-Pu-E0n" id="19g-g3-lej"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t9z-Wu-Atk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159" y="-304"/>
+        </scene>
+        <!--Registration View ControllerIR-->
+        <scene sceneID="Dv9-7A-cO9">
+            <objects>
+                <viewController storyboardIdentifier="UserRegistration_IR" id="tSa-Nq-JL2" customClass="RegistrationViewController_IR" customModule="NPExplorer_GR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OTx-1o-lWz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lbv-Qg-cTT">
+                                <rect key="frame" x="122" y="117" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h76-SV-blm">
+                                <rect key="frame" x="146" y="180" width="83.5" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chH-gO-QoX">
+                                <rect key="frame" x="159" y="280" width="57" height="30"/>
+                                <state key="normal" title="Register"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.045712830500000003" green="0.68507228860000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="chH-gO-QoX" firstAttribute="centerX" secondItem="sP8-Zv-LWW" secondAttribute="centerX" id="8kZ-0v-2Cs"/>
+                            <constraint firstItem="Lbv-Qg-cTT" firstAttribute="centerX" secondItem="sP8-Zv-LWW" secondAttribute="centerX" id="TPT-Ku-oxQ"/>
+                            <constraint firstItem="Lbv-Qg-cTT" firstAttribute="top" secondItem="sP8-Zv-LWW" secondAttribute="top" constant="97" id="VSc-4a-X5c"/>
+                            <constraint firstItem="h76-SV-blm" firstAttribute="top" secondItem="Lbv-Qg-cTT" secondAttribute="bottom" constant="33" id="gji-5k-nbU"/>
+                            <constraint firstItem="h76-SV-blm" firstAttribute="centerX" secondItem="sP8-Zv-LWW" secondAttribute="centerX" id="i1Y-Oc-sNN"/>
+                            <constraint firstItem="chH-gO-QoX" firstAttribute="top" secondItem="h76-SV-blm" secondAttribute="bottom" constant="70" id="lIA-ce-Fkg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sP8-Zv-LWW"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="h76-SV-blm" id="hRE-iK-Nih"/>
+                        <outlet property="registerButton" destination="chH-gO-QoX" id="07N-uf-szs"/>
+                        <outlet property="usernameTextField" destination="Lbv-Qg-cTT" id="nJp-Cx-KUH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hz2-Oc-Hdd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="-309"/>
+        </scene>
+    </scenes>
+</document>
