@@ -1,26 +1,24 @@
 //
-//  CountryDetailsResource.swift
-//  NPExplorer_GR
+//  CountryDetailAttributesResource_IR.swift
+//  NPExplorer
 //
-//  Created by niloy.chakraborty on 22/06/2019.
+//  Created by niloy.chakraborty on 25/06/2019.
 //  Copyright © 2019 niloy.chakraborty. All rights reserved.
 //
 
 import Foundation
-public class CountryDetailsResource_GR {
+public class CountryDetailsAttributesResource_IR {
     static let baseURL = URL(string: "https://api.npexp.com")!
     
-    static func getCountryDetails(url baseURL: URL = baseURL, environment: NetworkEnvironment, filterAttributes : [String]) -> NetworkResource<CountryDetailModelContainer>? {
+    static func getCountryDetailAttributes(url baseURL: URL = baseURL, environment: NetworkEnvironment) -> NetworkResource<CountryDetailAttributeModelContainer>? {
         
         // Setup path
         guard var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true) else {
             return nil
         }
-        components.path +=  "/v1/GR/countryDetails"
+        components.path +=  "/v1/IR/countryDetailsAttributes"
         
         //ToDo pass authorization token in header
-        components.queryItems = Array()
-        components.queryItems?.append(URLQueryItem(name: "attributes", value: filterAttributes.joined(separator:",")))
         
         guard let url = components.url else {
             return nil

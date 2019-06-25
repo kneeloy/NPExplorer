@@ -10,7 +10,7 @@ import Foundation
 public class CountryDetailsResource_IR {
     static let baseURL = URL(string: "https://api.npexp.com")!
     
-    static func getCountryDetails(url baseURL: URL = baseURL, environment: NetworkEnvironment, forFilterParm filter: String) -> NetworkResource<CountryDetailBaseModel>? {
+    static func getCountryDetails(url baseURL: URL = baseURL, environment: NetworkEnvironment, filterAttributes : [String]) -> NetworkResource<CountryDetailModelContainer>? {
         
         // Setup path
         guard var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true) else {
@@ -18,10 +18,9 @@ public class CountryDetailsResource_IR {
         }
         components.path +=  "/v1/IR/countryDetails"
         
+        //ToDo pass authorization token in header
         components.queryItems = Array()
-        components.queryItems?.append(URLQueryItem(name: "api_key", value: environment.apikey))
-        components.queryItems?.append(URLQueryItem(name: "country_code", value: environment.defaultLanguage))
-        components.queryItems?.append(URLQueryItem(name: "filter", value: filter))
+        components.queryItems?.append(URLQueryItem(name: "attributes", value: filterAttributes.joined(separator:",")))
         
         guard let url = components.url else {
             return nil
