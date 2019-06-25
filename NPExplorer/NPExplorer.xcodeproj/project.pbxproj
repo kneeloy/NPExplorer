@@ -124,6 +124,8 @@
 		EDC187BD22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187BB22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift */; };
 		EDC187BF22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187BE22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift */; };
 		EDC187C022C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187BE22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift */; };
+		EDC187C222C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */; };
+		EDC187C322C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +207,7 @@
 		EDC187B822C196FB004A1DDF /* CountryDetailAttributesResource_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailAttributesResource_GR.swift; sourceTree = "<group>"; };
 		EDC187BB22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailAttributesResource_IR.swift; sourceTree = "<group>"; };
 		EDC187BE22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailAttributesEndpoint_IR.swift; sourceTree = "<group>"; };
+		EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,6 +432,7 @@
 		EDC186CB22BE8B5D004A1DDF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -670,6 +674,7 @@
 				EDC187BC22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift in Sources */,
 				EDC1873422BF0B1D004A1DDF /* UserRegistrationResource_GR.swift in Sources */,
 				EDC1870A22BEF8AC004A1DDF /* LoginRouter_IR.swift in Sources */,
+				EDC187C222C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */,
 				EDC1871822BEFBDF004A1DDF /* LoginViewModel.swift in Sources */,
 				EDC186DA22BE9737004A1DDF /* AppDelegateRouter_GR.swift in Sources */,
 				EDC1873622BF0B23004A1DDF /* CountryDetailsResource_GR.swift in Sources */,
@@ -739,6 +744,7 @@
 				EDC187BD22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift in Sources */,
 				EDC1870B22BEF8AC004A1DDF /* LoginRouter_IR.swift in Sources */,
 				EDC1871922BEFBDF004A1DDF /* LoginViewModel.swift in Sources */,
+				EDC187C322C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */,
 				EDC186D922BE937B004A1DDF /* AppDelegateRouter_GR.swift in Sources */,
 				EDC1872C22BF038C004A1DDF /* UserRegistrationEndpoint_IR.swift in Sources */,
 				EDC186AE22BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift in Sources */,

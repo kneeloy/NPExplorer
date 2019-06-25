@@ -9,19 +9,23 @@
 import Foundation
 struct CountryDetailAttributeModel: Codable {
     var attributeName: String
+    //ToDo vaue should not be a part of this model, there should be a separate API to support just the attribute name/value pair depending on the requested attribute
+    var attributeValue: String
     var landscapeModeAvailability: Bool
     var portraitModeAvailability: Bool
     
     enum CodingKeys: String, CodingKey {
-        case attributeName = "name"
-        case landscapeModeAvailability = "inLandscape"
-        case portraitModeAvailability = "inPortrait"
+        case attributeName = "attributeName"
+        case attributeValue = "attributeValue"
+        case landscapeModeAvailability = "availableInLandscape"
+        case portraitModeAvailability = "availableInPortrait"
     }
     
     public init(from decoder: Decoder) throws {
         
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.attributeName = try container.decode(String.self, forKey: .attributeName)
+        self.attributeValue = try container.decode(String.self, forKey: .attributeValue)
         self.landscapeModeAvailability = try container.decode(Bool.self, forKey: .landscapeModeAvailability)
         self.portraitModeAvailability = try container.decode(Bool.self, forKey: .portraitModeAvailability)
     }
@@ -30,13 +34,15 @@ struct CountryDetailAttributeModel: Codable {
         
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(self.attributeName, forKey: .attributeName)
+        try container.encode(self.attributeValue, forKey: .attributeValue)
         try container.encode(self.landscapeModeAvailability, forKey: .landscapeModeAvailability)
         try container.encode(self.portraitModeAvailability, forKey: .portraitModeAvailability)
     }
     
-    public init(attributeName: String, inLandscape: Bool, inPortrait: Bool) {
+    public init(attributeName: String, attributeValue: String, inLandscape: Bool, inPortrait: Bool) {
         
         self.attributeName = attributeName
+        self.attributeValue = attributeValue
         self.landscapeModeAvailability = inLandscape
         self.portraitModeAvailability = inPortrait
     }
