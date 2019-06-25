@@ -7,9 +7,9 @@
 //
 
 import Foundation
-class BaseGRNetworkClient: BaseNetworkClientProtocol {
+class BaseGRNetworkClient: BaseNetworkClientProtocol_GR {
     
-    let client: NPAPIClientProtocol
+    let client: NP_GRAPIClient
     
     init(environment: NetworkEnvironment? = nil) {
         

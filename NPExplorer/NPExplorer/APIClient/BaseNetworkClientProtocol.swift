@@ -7,11 +7,12 @@
 //
 
 import Foundation
-protocol NPAPIClientProtocol{
-    var environment: NetworkEnvironment { get }
+
+protocol BaseNetworkClientProtocol_IR{
+    var client: NP_IRAPIClient { get }
 }
 
-protocol BaseNetworkClientProtocol{
-    var client: NPAPIClientProtocol { get }
+protocol BaseNetworkClientProtocol_GR{
+    var client: NP_GRAPIClient { get }
 }
 

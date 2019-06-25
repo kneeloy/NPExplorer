@@ -7,7 +7,7 @@
 //
 
 import Foundation
-public class NP_GRAPIClient: NPAPIClientProtocol {
+public class NP_GRAPIClient {
     
     var environment: NetworkEnvironment
     private var service: NetworkService  = NetworkService()

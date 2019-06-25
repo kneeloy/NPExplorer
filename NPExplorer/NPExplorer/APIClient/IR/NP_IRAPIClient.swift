@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class NP_IRAPIClient: NPAPIClientProtocol {
+public class NP_IRAPIClient {
     
     var environment: NetworkEnvironment
     private var service: NetworkService  = NetworkService()

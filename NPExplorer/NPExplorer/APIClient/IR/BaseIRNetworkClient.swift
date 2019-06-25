@@ -7,9 +7,9 @@
 //
 
 import Foundation
-class BaseIRNetworkClient: BaseNetworkClientProtocol {
+class BaseIRNetworkClient: BaseNetworkClientProtocol_IR {
     
-    let client: NPAPIClientProtocol
+    let client: NP_IRAPIClient
     
     init(environment: NetworkEnvironment? = nil) {
         

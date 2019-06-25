@@ -17,6 +17,18 @@ struct NetworkEnvironment {
         self.apikey = apiKey
         self.defaultCountry = defaultCountry
     }
+    
+    func netWorkEnvironmentWithApiKey(apiKey: String) -> NetworkEnvironment {
+        return NetworkEnvironment(defaultLang: defaultLanguage, apiKey: apiKey, defaultCountry: defaultCountry)
+    }
+    
+    func netWorkEnvironmentWithLang(languageCode: String) -> NetworkEnvironment {
+        return NetworkEnvironment(defaultLang: languageCode, apiKey: apikey, defaultCountry: defaultCountry)
+    }
+    
+    func netWorkEnvironmentWithCountry(countryCode: String) -> NetworkEnvironment {
+        return NetworkEnvironment(defaultLang: defaultLanguage, apiKey: apikey, defaultCountry: countryCode)
+    }
 }
 
 struct DefaultNetworkEnvironment {
