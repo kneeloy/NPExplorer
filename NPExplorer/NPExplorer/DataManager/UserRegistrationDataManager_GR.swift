@@ -9,25 +9,16 @@
 import Foundation
 
 protocol UserRegistrationDataManagerProtocol_GR {
-    //var configUpdater: BaseNetworkClientProtocol? { get set }
     var userRegistrationUpdater: UserRegistrationUpdaterProtocol_GR? { get set }
     
     func registerUser(userRegistrationForm: UserRegistrationFormModel_GR, success: @escaping ((UserRegistrationReplyModelProtocol, URLResponse)->Void),
                       failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
 }
 
-
 public class UserRegistrationDataManager_GR: UserRegistrationDataManagerProtocol_GR {
-    //var configUpdater: BaseNetworkClientProtocol?
     var userRegistrationUpdater: UserRegistrationUpdaterProtocol_GR?
     
-//    init(withConfigUpdater: BaseNetworkClientProtocol = BaseGRNetworkClient(),
-//         userRegistrationUpdater: UserRegistrationUpdaterProtocol_GR) {
-//        self.configUpdater = withConfigUpdater
-//        self.userRegistrationUpdater = userRegistrationUpdater
-//    }
     init(userRegistrationUpdater: UserRegistrationUpdaterProtocol_GR) {
-        //self.configUpdater = withConfigUpdater
         self.userRegistrationUpdater = userRegistrationUpdater
     }
     
