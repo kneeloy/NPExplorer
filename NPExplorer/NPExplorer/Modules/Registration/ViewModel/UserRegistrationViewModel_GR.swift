@@ -20,7 +20,7 @@ public class UserRegistrationViewModel_GR: UserRegistrationViewModelProtocol_GR 
         self.userRegistrationContext = userRegistrationContext
     }
     
-    func registerUser(passcode: String, onSuccess: @escaping ((UserRegistrationSuccessModelProtocol, URLResponse) -> Void), OnFailure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
+    func registerUser(passcode: String, onSuccess: @escaping ((UserRegistrationReplyModelProtocol, URLResponse) -> Void), OnFailure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
         
         let registrationForm = UserRegistrationFormModel_GR(passCode: passcode)
         dataManager.registerUser(userRegistrationForm: registrationForm, success: { (token,urlResponse)  in

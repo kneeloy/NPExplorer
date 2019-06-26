@@ -9,18 +9,18 @@
 import Foundation
 protocol UserRegistrationUpdaterProtocol_IR {
     
-    func registerUser(userRegistrationForm: UserRegistrationFormModel_IR, success: @escaping ((UserRegistrationSuccessModelProtocol, URLResponse)->Void),
+    func registerUser(userRegistrationForm: UserRegistrationFormModel_IR, success: @escaping ((UserRegistrationReplyModelProtocol, URLResponse)->Void),
                           failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
 }
 
 protocol UserRegistrationUpdaterProtocol_GR {
     
-    func registerUser(userRegistrationForm: UserRegistrationFormModel_GR, success: @escaping ((UserRegistrationSuccessModelProtocol, URLResponse)->Void),
+    func registerUser(userRegistrationForm: UserRegistrationFormModel_GR, success: @escaping ((UserRegistrationReplyModelProtocol, URLResponse)->Void),
                       failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
 }
 
 class UserRegistrationUpdater_IR: BaseIRNetworkClient, UserRegistrationUpdaterProtocol_IR {
-    func registerUser(userRegistrationForm: UserRegistrationFormModel_IR, success: @escaping ((UserRegistrationSuccessModelProtocol, URLResponse)->Void),
+    func registerUser(userRegistrationForm: UserRegistrationFormModel_IR, success: @escaping ((UserRegistrationReplyModelProtocol, URLResponse)->Void),
                           failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void)) {
         client.registerUser(userRegistrationForm: userRegistrationForm, success: success, failure: failure)
         
@@ -28,7 +28,7 @@ class UserRegistrationUpdater_IR: BaseIRNetworkClient, UserRegistrationUpdaterPr
 }
 
 class UserRegistrationUpdater_GR: BaseGRNetworkClient, UserRegistrationUpdaterProtocol_GR {
-    func registerUser(userRegistrationForm: UserRegistrationFormModel_GR, success: @escaping ((UserRegistrationSuccessModelProtocol, URLResponse)->Void),
+    func registerUser(userRegistrationForm: UserRegistrationFormModel_GR, success: @escaping ((UserRegistrationReplyModelProtocol, URLResponse)->Void),
                           failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void)) {
         client.registerUser(userRegistrationForm: userRegistrationForm, success: success, failure: failure)
     }

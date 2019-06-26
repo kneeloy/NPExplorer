@@ -10,7 +10,7 @@ import Foundation
 protocol LoginViewModelProtocol {
     
     var dataManager: LoginDataManagerProtocol { get }
-    func authenticateUser(userName: String, password: String?, onSuccess: @escaping ((UserAuthenticationSuccessModelProtocol, URLResponse)->Void), OnFailure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
+    func authenticateUser(userName: String, password: String?, onSuccess: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse)->Void), OnFailure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
     func navigateToCountryDetailPage() -> Void
     func navigateToUserRegistrationPage() -> Void
     func shouldDisplayPasswordField() -> Bool
@@ -35,7 +35,7 @@ public class LoginViewModel: LoginViewModelProtocol {
         self.loginContext = loginContext
     }
     
-    func authenticateUser(userName: String, password: String?, onSuccess: @escaping ((UserAuthenticationSuccessModelProtocol, URLResponse) -> Void), OnFailure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
+    func authenticateUser(userName: String, password: String?, onSuccess: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse) -> Void), OnFailure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
         
         let loginForm = UserAuthenticationFormModel(userName: userName, password: password)
         dataManager.authenticateUser(userAuthForm: loginForm, success: { (token,urlResponse)  in

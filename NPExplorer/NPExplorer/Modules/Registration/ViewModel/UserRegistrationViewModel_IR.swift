@@ -21,7 +21,7 @@ public class UserRegistrationViewModel_IR: UserRegistrationViewModelProtocol_IR 
         self.userRegistrationContext = userRegistrationContext
     }
     
-    func registerUser(userName: String, password: String, onSuccess: @escaping ((UserRegistrationSuccessModelProtocol, URLResponse) -> Void), OnFailure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
+    func registerUser(userName: String, password: String, onSuccess: @escaping ((UserRegistrationReplyModelProtocol, URLResponse) -> Void), OnFailure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
         
         let registrationForm = UserRegistrationFormModel_IR(userName: userName, password: password)
         dataManager.registerUser(userRegistrationForm: registrationForm, success: { (token,urlResponse)  in

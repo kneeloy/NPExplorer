@@ -11,7 +11,7 @@ import Foundation
 public class UserRegistrationResource_IR {
     static let baseURL = URL(string: "https://api.npexp.com")! //ToDo schema based base url
     
-    static func registerUser(url baseURL: URL = baseURL, environment: NetworkEnvironment, body: UserRegistrationFormModel_IR) -> NetworkResource<UserRegistrationSuccessModel>? {
+    static func registerUser(url baseURL: URL = baseURL, environment: NetworkEnvironment, body: UserRegistrationFormModel_IR) -> NetworkResource<UserRegistrationReplyModel>? {
         
         // Setup path
         guard var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true) else {

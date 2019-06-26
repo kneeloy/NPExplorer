@@ -19,7 +19,7 @@ public class NetworkService {
     
     private let session: URLSessionRepresenting
     private var task: URLSessionDataTask?
-    public var url: URL?
+    public var url: URL? //For ImageFetcherJob
     
     public init(withURL url: URL? = nil, _ session: URLSessionRepresenting = URLSession.shared) {
         
@@ -37,15 +37,19 @@ public class NetworkService {
                                       errorHandler: ((_ response: URLResponse?, _ error: NetworkServiceError)->Void)?) {
         
         let request = withResource.urlRequest
+        print(request)
         task = session.dataTask(with: request) {[weak self] (data, response, error) in
             guard let self = self else { return }
             let response = response as? HTTPURLResponse
+            
+            print(response)
             
             if let responseError = error {
                 
                 errorHandler?(response, NetworkServiceError.httpResponseError(error: responseError))
             } else if let responseData = data {
                 
+                print(response)
                 guard let code = response?.statusCode, code >= 200 && code < 300 else {
                     
                     errorHandler?(response, NetworkServiceError.invalidResponse(response: response, data: NSData(data: responseData)))

@@ -12,7 +12,7 @@ protocol UserRegistrationDataManagerProtocol_GR {
     //var configUpdater: BaseNetworkClientProtocol? { get set }
     var userRegistrationUpdater: UserRegistrationUpdaterProtocol_GR? { get set }
     
-    func registerUser(userRegistrationForm: UserRegistrationFormModel_GR, success: @escaping ((UserRegistrationSuccessModelProtocol, URLResponse)->Void),
+    func registerUser(userRegistrationForm: UserRegistrationFormModel_GR, success: @escaping ((UserRegistrationReplyModelProtocol, URLResponse)->Void),
                       failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
 }
 
@@ -31,7 +31,7 @@ public class UserRegistrationDataManager_GR: UserRegistrationDataManagerProtocol
         self.userRegistrationUpdater = userRegistrationUpdater
     }
     
-    func registerUser(userRegistrationForm: UserRegistrationFormModel_GR, success: @escaping ((UserRegistrationSuccessModelProtocol, URLResponse) -> Void), failure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
+    func registerUser(userRegistrationForm: UserRegistrationFormModel_GR, success: @escaping ((UserRegistrationReplyModelProtocol, URLResponse) -> Void), failure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
         
         userRegistrationUpdater?.registerUser(userRegistrationForm: userRegistrationForm, success: { (userID,urlResponse)  in
             success(userID, urlResponse)

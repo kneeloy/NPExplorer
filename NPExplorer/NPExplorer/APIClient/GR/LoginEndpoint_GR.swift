@@ -9,7 +9,7 @@
 import Foundation
 
 extension NP_GRAPIClient {
-    func authenticateuserUser(userAuthForm: UserAuthenticationFormModel, success: @escaping ((UserAuthenticationSuccessModelProtocol, URLResponse)->Void), failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void)) {
+    func authenticateuserUser(userAuthForm: UserAuthenticationFormModel, success: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse)->Void), failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void)) {
         guard let userAuthenticationResource = UserAuthenticationResource_GR.authenticateUser(environment: environment, body: userAuthForm) else {
             //ToDo: Need to generate and throw some custom error
             return

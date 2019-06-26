@@ -12,7 +12,7 @@ struct UserRegistrationFormModel_GR: Codable {
     var passCode: String
     
     enum CodingKeys: String, CodingKey {
-        case passCode = "passCode"
+        case passCode = "preRegisterdCode"
     }
     
     public init(from decoder: Decoder) throws {
