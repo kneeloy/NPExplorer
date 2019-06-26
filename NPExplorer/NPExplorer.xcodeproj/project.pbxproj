@@ -162,8 +162,6 @@
 		EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC1866122BBEBC4004A1DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDC1866322BBEBC4004A1DDF /* NPExplorer_IR-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NPExplorer_IR-info.plist"; sourceTree = "<group>"; };
-		EDC1866C22BBEBC4004A1DDF /* NPExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPExplorerTests.swift; sourceTree = "<group>"; };
-		EDC1866E22BBEBC4004A1DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDC1868A22BE72C7004A1DDF /* NPExplorer_GR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPExplorer_GR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC1868B22BE72C7004A1DDF /* NPExplorer_GR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "NPExplorer_GR-Info.plist"; path = "/Users/niloy.chakraborty/Personal/Work/Repo/NPExplorer/NPExplorer/NPExplorer_GR-Info.plist"; sourceTree = "<absolute>"; };
 		EDC1868F22BE76D9004A1DDF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -292,7 +290,6 @@
 			isa = PBXGroup;
 			children = (
 				EDC1865622BBEBC2004A1DDF /* NPExplorer */,
-				EDC1866B22BBEBC4004A1DDF /* NPExplorerTests */,
 				EDC187FA22C39ACB004A1DDF /* NPExplorer_GRTests */,
 				EDC1880822C3A215004A1DDF /* NPExplorer_IRTests */,
 				EDC1865522BBEBC2004A1DDF /* Products */,
@@ -330,15 +327,6 @@
 				EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */,
 			);
 			path = NPExplorer;
-			sourceTree = "<group>";
-		};
-		EDC1866B22BBEBC4004A1DDF /* NPExplorerTests */ = {
-			isa = PBXGroup;
-			children = (
-				EDC1866C22BBEBC4004A1DDF /* NPExplorerTests.swift */,
-				EDC1866E22BBEBC4004A1DDF /* Info.plist */,
-			);
-			path = NPExplorerTests;
 			sourceTree = "<group>";
 		};
 		EDC1867722BE7072004A1DDF /* Resource */ = {
