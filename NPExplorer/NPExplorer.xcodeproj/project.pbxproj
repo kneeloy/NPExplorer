@@ -134,6 +134,7 @@
 		EDC1881A22C3D471004A1DDF /* MockUserRegistrationReplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1881922C3D471004A1DDF /* MockUserRegistrationReplyModel.swift */; };
 		EDC1884222C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884122C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift */; };
 		EDC1884422C42668004A1DDF /* MockUserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884322C42668004A1DDF /* MockUserRegistrationViewModel.swift */; };
+		EDC1884822C435C3004A1DDF /* MockUserregistrationreplyModel_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884722C435C3004A1DDF /* MockUserregistrationreplyModel_GR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +237,7 @@
 		EDC1881922C3D471004A1DDF /* MockUserRegistrationReplyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRegistrationReplyModel.swift; sourceTree = "<group>"; };
 		EDC1884122C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRegistrationDataManager_IR.swift; sourceTree = "<group>"; };
 		EDC1884322C42668004A1DDF /* MockUserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRegistrationViewModel.swift; sourceTree = "<group>"; };
+		EDC1884722C435C3004A1DDF /* MockUserregistrationreplyModel_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserregistrationreplyModel_GR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -597,6 +599,7 @@
 			children = (
 				EDC187FB22C39ACB004A1DDF /* NPExplorer_GRTests.swift */,
 				EDC187FD22C39ACB004A1DDF /* Info.plist */,
+				EDC1884722C435C3004A1DDF /* MockUserregistrationreplyModel_GR.swift */,
 			);
 			path = NPExplorer_GRTests;
 			sourceTree = "<group>";
@@ -987,6 +990,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDC187FC22C39ACB004A1DDF /* NPExplorer_GRTests.swift in Sources */,
+				EDC1884822C435C3004A1DDF /* MockUserregistrationreplyModel_GR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
