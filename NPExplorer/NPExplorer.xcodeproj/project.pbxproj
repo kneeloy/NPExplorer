@@ -3,39 +3,235 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5D911E150B0F7627AFE5A25 /* Pods_NPExplorer_IR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853565E533BCB623C0B852A1 /* Pods_NPExplorer_IR.framework */; };
+		D86F8EB39238B3DBDB7D812F /* Pods_NPExplorer_GR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA9A130086427F612165853 /* Pods_NPExplorer_GR.framework */; };
 		EDC1865822BBEBC2004A1DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1865722BBEBC2004A1DDF /* AppDelegate.swift */; };
-		EDC1865A22BBEBC2004A1DDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1865922BBEBC2004A1DDF /* ViewController.swift */; };
-		EDC1865D22BBEBC2004A1DDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1865B22BBEBC2004A1DDF /* Main.storyboard */; };
 		EDC1865F22BBEBC4004A1DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */; };
 		EDC1866222BBEBC4004A1DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1866022BBEBC4004A1DDF /* LaunchScreen.storyboard */; };
-		EDC1866D22BBEBC4004A1DDF /* NPExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1866C22BBEBC4004A1DDF /* NPExplorerTests.swift */; };
+		EDC1868122BE72C7004A1DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1865722BBEBC2004A1DDF /* AppDelegate.swift */; };
+		EDC1868422BE72C7004A1DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1866022BBEBC4004A1DDF /* LaunchScreen.storyboard */; };
+		EDC1868522BE72C7004A1DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */; };
+		EDC1869022BE76D9004A1DDF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1868F22BE76D9004A1DDF /* NetworkService.swift */; };
+		EDC1869122BE76D9004A1DDF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1868F22BE76D9004A1DDF /* NetworkService.swift */; };
+		EDC1869322BE76F0004A1DDF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869222BE76F0004A1DDF /* NetworkError.swift */; };
+		EDC1869422BE76F0004A1DDF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869222BE76F0004A1DDF /* NetworkError.swift */; };
+		EDC1869C22BE7AF4004A1DDF /* NP_IRAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869B22BE7AF4004A1DDF /* NP_IRAPIClient.swift */; };
+		EDC1869E22BE7B2C004A1DDF /* LoginEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869D22BE7B2C004A1DDF /* LoginEndpoint_IR.swift */; };
+		EDC186A022BE7B48004A1DDF /* UserRegistrationEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint_IR.swift */; };
+		EDC186A222BE7B62004A1DDF /* CountryDetailsEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint_IR.swift */; };
+		EDC186A922BE7BA5004A1DDF /* CountryDetailsEndpoint_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint_GR.swift */; };
+		EDC186AA22BE7BA5004A1DDF /* LoginEndpoint_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A422BE7BA5004A1DDF /* LoginEndpoint_GR.swift */; };
+		EDC186AB22BE7BA5004A1DDF /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A522BE7BA5004A1DDF /* NetworkEnvironment.swift */; };
+		EDC186AC22BE7BA5004A1DDF /* NP_GRAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A622BE7BA5004A1DDF /* NP_GRAPIClient.swift */; };
+		EDC186AD22BE7BA5004A1DDF /* UserRegistrationEndpoint_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint_GR.swift */; };
+		EDC186AE22BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A822BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift */; };
+		EDC186AF22BE7E96004A1DDF /* BaseNetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A822BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift */; };
+		EDC186B122BE7EE5004A1DDF /* BaseGRNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186B022BE7EE5004A1DDF /* BaseGRNetworkClient.swift */; };
+		EDC186B222BE7F7A004A1DDF /* NetworkEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A522BE7BA5004A1DDF /* NetworkEnvironment.swift */; };
+		EDC186B422BE7FB6004A1DDF /* BaseIRNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186B322BE7FB6004A1DDF /* BaseIRNetworkClient.swift */; };
+		EDC186B722BE80FC004A1DDF /* NetworkResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186B622BE80FC004A1DDF /* NetworkResource.swift */; };
+		EDC186B822BE8103004A1DDF /* NetworkResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186B622BE80FC004A1DDF /* NetworkResource.swift */; };
+		EDC186BC22BE82CA004A1DDF /* UserAuthenticationResource_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186BA22BE82C3004A1DDF /* UserAuthenticationResource_GR.swift */; };
+		EDC186BE22BE82E9004A1DDF /* UserRegistrationResource_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186BD22BE82E9004A1DDF /* UserRegistrationResource_GR.swift */; };
+		EDC186C022BE8309004A1DDF /* CountryDetailsResource_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186BF22BE8309004A1DDF /* CountryDetailsResource_GR.swift */; };
+		EDC186C422BE8390004A1DDF /* UserRegistrationResource_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186C122BE8390004A1DDF /* UserRegistrationResource_IR.swift */; };
+		EDC186C522BE8390004A1DDF /* CountryDetailsResource_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186C222BE8390004A1DDF /* CountryDetailsResource_IR.swift */; };
+		EDC186CD22BE8B7B004A1DDF /* CountryDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186CC22BE8B7B004A1DDF /* CountryDetailModel.swift */; };
+		EDC186CE22BE8B7B004A1DDF /* CountryDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186CC22BE8B7B004A1DDF /* CountryDetailModel.swift */; };
+		EDC186D222BE90D0004A1DDF /* AppDelegateRouter_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186D122BE90D0004A1DDF /* AppDelegateRouter_IR.swift */; };
+		EDC186D622BE92BB004A1DDF /* RouterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186D522BE92BB004A1DDF /* RouterBuilder.swift */; };
+		EDC186D722BE92BB004A1DDF /* RouterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186D522BE92BB004A1DDF /* RouterBuilder.swift */; };
+		EDC186D922BE937B004A1DDF /* AppDelegateRouter_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186D822BE937B004A1DDF /* AppDelegateRouter_GR.swift */; };
+		EDC186DA22BE9737004A1DDF /* AppDelegateRouter_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186D822BE937B004A1DDF /* AppDelegateRouter_GR.swift */; };
+		EDC186DB22BE973C004A1DDF /* AppDelegateRouter_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186D122BE90D0004A1DDF /* AppDelegateRouter_IR.swift */; };
+		EDC1870222BEF440004A1DDF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1870122BEF440004A1DDF /* Constants.swift */; };
+		EDC1870522BEF577004A1DDF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1870122BEF440004A1DDF /* Constants.swift */; };
+		EDC1870A22BEF8AC004A1DDF /* LoginRouter_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1870922BEF8AC004A1DDF /* LoginRouter_IR.swift */; };
+		EDC1870B22BEF8AC004A1DDF /* LoginRouter_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1870922BEF8AC004A1DDF /* LoginRouter_IR.swift */; };
+		EDC1871822BEFBDF004A1DDF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1871722BEFBDF004A1DDF /* LoginViewModel.swift */; };
+		EDC1871922BEFBDF004A1DDF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1871722BEFBDF004A1DDF /* LoginViewModel.swift */; };
+		EDC1872222BF01D3004A1DDF /* LoginUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1872122BF01D3004A1DDF /* LoginUpdater.swift */; };
+		EDC1872322BF01D3004A1DDF /* LoginUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1872122BF01D3004A1DDF /* LoginUpdater.swift */; };
+		EDC1872422BF036D004A1DDF /* BaseGRNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186B022BE7EE5004A1DDF /* BaseGRNetworkClient.swift */; };
+		EDC1872522BF0370004A1DDF /* NP_GRAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A622BE7BA5004A1DDF /* NP_GRAPIClient.swift */; };
+		EDC1872622BF0373004A1DDF /* LoginEndpoint_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A422BE7BA5004A1DDF /* LoginEndpoint_GR.swift */; };
+		EDC1872722BF0376004A1DDF /* UserRegistrationEndpoint_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint_GR.swift */; };
+		EDC1872822BF0379004A1DDF /* CountryDetailsEndpoint_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint_GR.swift */; };
+		EDC1872922BF0380004A1DDF /* BaseIRNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186B322BE7FB6004A1DDF /* BaseIRNetworkClient.swift */; };
+		EDC1872A22BF0384004A1DDF /* NP_IRAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869B22BE7AF4004A1DDF /* NP_IRAPIClient.swift */; };
+		EDC1872B22BF0388004A1DDF /* LoginEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869D22BE7B2C004A1DDF /* LoginEndpoint_IR.swift */; };
+		EDC1872C22BF038C004A1DDF /* UserRegistrationEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint_IR.swift */; };
+		EDC1872D22BF038F004A1DDF /* CountryDetailsEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint_IR.swift */; };
+		EDC1872F22BF06F8004A1DDF /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1872E22BF06F8004A1DDF /* LoginDataManager.swift */; };
+		EDC1873022BF06F8004A1DDF /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1872E22BF06F8004A1DDF /* LoginDataManager.swift */; };
+		EDC1873122BF0AE3004A1DDF /* CountryDetailsResource_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186C222BE8390004A1DDF /* CountryDetailsResource_IR.swift */; };
+		EDC1873322BF0AEA004A1DDF /* UserRegistrationResource_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186C122BE8390004A1DDF /* UserRegistrationResource_IR.swift */; };
+		EDC1873422BF0B1D004A1DDF /* UserRegistrationResource_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186BD22BE82E9004A1DDF /* UserRegistrationResource_GR.swift */; };
+		EDC1873522BF0B20004A1DDF /* UserAuthenticationResource_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186BA22BE82C3004A1DDF /* UserAuthenticationResource_GR.swift */; };
+		EDC1873622BF0B23004A1DDF /* CountryDetailsResource_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC186BF22BE8309004A1DDF /* CountryDetailsResource_GR.swift */; };
+		EDC1873822BF0FA0004A1DDF /* LoginRouter_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1873722BF0FA0004A1DDF /* LoginRouter_GR.swift */; };
+		EDC1873922BF0FA0004A1DDF /* LoginRouter_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1873722BF0FA0004A1DDF /* LoginRouter_GR.swift */; };
+		EDC1873F22C0022C004A1DDF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1873E22C0022C004A1DDF /* LoginViewController.swift */; };
+		EDC1874022C0022C004A1DDF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1873E22C0022C004A1DDF /* LoginViewController.swift */; };
+		EDC1874522C00C67004A1DDF /* RegistrationViewController_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1874422C00C67004A1DDF /* RegistrationViewController_IR.swift */; };
+		EDC1874622C00C67004A1DDF /* RegistrationViewController_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1874422C00C67004A1DDF /* RegistrationViewController_IR.swift */; };
+		EDC1874822C00C89004A1DDF /* RegistrationViewController_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1874722C00C89004A1DDF /* RegistrationViewController_GR.swift */; };
+		EDC1874922C00C89004A1DDF /* RegistrationViewController_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1874722C00C89004A1DDF /* RegistrationViewController_GR.swift */; };
+		EDC1874B22C02B23004A1DDF /* UserRegistrationUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1874A22C02B23004A1DDF /* UserRegistrationUpdater.swift */; };
+		EDC1874C22C02B23004A1DDF /* UserRegistrationUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1874A22C02B23004A1DDF /* UserRegistrationUpdater.swift */; };
+		EDC1875122C02CB2004A1DDF /* UserRegistrationDataManager_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875022C02CB2004A1DDF /* UserRegistrationDataManager_IR.swift */; };
+		EDC1875222C02CB2004A1DDF /* UserRegistrationDataManager_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875022C02CB2004A1DDF /* UserRegistrationDataManager_IR.swift */; };
+		EDC1875422C02E72004A1DDF /* UserRegistrationDataManager_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875322C02E72004A1DDF /* UserRegistrationDataManager_GR.swift */; };
+		EDC1875522C02E72004A1DDF /* UserRegistrationDataManager_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875322C02E72004A1DDF /* UserRegistrationDataManager_GR.swift */; };
+		EDC1875722C03007004A1DDF /* UserRegistrationViewModel_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875622C03007004A1DDF /* UserRegistrationViewModel_IR.swift */; };
+		EDC1875822C03007004A1DDF /* UserRegistrationViewModel_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875622C03007004A1DDF /* UserRegistrationViewModel_IR.swift */; };
+		EDC1875A22C0301A004A1DDF /* UserRegistrationViewModel_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875922C0301A004A1DDF /* UserRegistrationViewModel_GR.swift */; };
+		EDC1875B22C0301A004A1DDF /* UserRegistrationViewModel_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875922C0301A004A1DDF /* UserRegistrationViewModel_GR.swift */; };
+		EDC1875D22C032A4004A1DDF /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875C22C032A4004A1DDF /* UserRegistrationViewModel.swift */; };
+		EDC1875E22C032A4004A1DDF /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875C22C032A4004A1DDF /* UserRegistrationViewModel.swift */; };
+		EDC1876222C0D517004A1DDF /* UserRegistrationSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1876122C0D517004A1DDF /* UserRegistrationSuccessModel.swift */; };
+		EDC1876322C0D517004A1DDF /* UserRegistrationSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1876122C0D517004A1DDF /* UserRegistrationSuccessModel.swift */; };
+		EDC1876522C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1876422C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift */; };
+		EDC1876622C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1876422C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift */; };
+		EDC1876B22C0F285004A1DDF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDC1876E22C0F285004A1DDF /* Localizable.strings */; };
+		EDC1876C22C0F285004A1DDF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDC1876E22C0F285004A1DDF /* Localizable.strings */; };
+		EDC1877022C0F34D004A1DDF /* NPExplorer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1877322C0F34D004A1DDF /* NPExplorer.storyboard */; };
+		EDC1877122C0F34D004A1DDF /* NPExplorer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1877322C0F34D004A1DDF /* NPExplorer.storyboard */; };
+		EDC1877922C0F4F1004A1DDF /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1877822C0F4F1004A1DDF /* String+Localization.swift */; };
+		EDC1877A22C0F4F1004A1DDF /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1877822C0F4F1004A1DDF /* String+Localization.swift */; };
+		EDC187A122C107E2004A1DDF /* UserRegistrationForm_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187A022C107E2004A1DDF /* UserRegistrationForm_IR.swift */; };
+		EDC187A222C107E2004A1DDF /* UserRegistrationForm_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187A022C107E2004A1DDF /* UserRegistrationForm_IR.swift */; };
+		EDC187A422C107FB004A1DDF /* UserRegistrationForm_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187A322C107FB004A1DDF /* UserRegistrationForm_GR.swift */; };
+		EDC187A522C107FB004A1DDF /* UserRegistrationForm_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187A322C107FB004A1DDF /* UserRegistrationForm_GR.swift */; };
+		EDC187A722C10EEF004A1DDF /* UserAuthenticationFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187A622C10EEF004A1DDF /* UserAuthenticationFormModel.swift */; };
+		EDC187A822C10EEF004A1DDF /* UserAuthenticationFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187A622C10EEF004A1DDF /* UserAuthenticationFormModel.swift */; };
+		EDC187AA22C184F4004A1DDF /* CountryDetailUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187A922C184F4004A1DDF /* CountryDetailUpdater.swift */; };
+		EDC187AB22C184F4004A1DDF /* CountryDetailUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187A922C184F4004A1DDF /* CountryDetailUpdater.swift */; };
+		EDC187AD22C1881D004A1DDF /* CountryDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187AC22C1881D004A1DDF /* CountryDetailDataManager.swift */; };
+		EDC187AE22C1881D004A1DDF /* CountryDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187AC22C1881D004A1DDF /* CountryDetailDataManager.swift */; };
+		EDC187B022C189FA004A1DDF /* CountryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187AF22C189FA004A1DDF /* CountryDetailViewModel.swift */; };
+		EDC187B122C189FA004A1DDF /* CountryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187AF22C189FA004A1DDF /* CountryDetailViewModel.swift */; };
+		EDC187B322C18E43004A1DDF /* CountryDetailAttributeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187B222C18E43004A1DDF /* CountryDetailAttributeModel.swift */; };
+		EDC187B422C18E43004A1DDF /* CountryDetailAttributeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187B222C18E43004A1DDF /* CountryDetailAttributeModel.swift */; };
+		EDC187B622C196D8004A1DDF /* CountryDetailAttributesEndpoint_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187B522C196D8004A1DDF /* CountryDetailAttributesEndpoint_GR.swift */; };
+		EDC187B722C196D8004A1DDF /* CountryDetailAttributesEndpoint_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187B522C196D8004A1DDF /* CountryDetailAttributesEndpoint_GR.swift */; };
+		EDC187B922C196FB004A1DDF /* CountryDetailAttributesResource_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187B822C196FB004A1DDF /* CountryDetailAttributesResource_GR.swift */; };
+		EDC187BA22C196FB004A1DDF /* CountryDetailAttributesResource_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187B822C196FB004A1DDF /* CountryDetailAttributesResource_GR.swift */; };
+		EDC187BC22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187BB22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift */; };
+		EDC187BD22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187BB22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift */; };
+		EDC187BF22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187BE22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift */; };
+		EDC187C022C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187BE22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift */; };
+		EDC187C222C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */; };
+		EDC187C322C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */; };
+		EDC187F322C377D5004A1DDF /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDC187F222C377D5004A1DDF /* Okta.plist */; };
+		EDC187F422C377D5004A1DDF /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDC187F222C377D5004A1DDF /* Okta.plist */; };
+		EDC187FC22C39ACB004A1DDF /* NPExplorer_GRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187FB22C39ACB004A1DDF /* NPExplorer_GRTests.swift */; };
+		EDC1880A22C3A215004A1DDF /* NPExplorer_IRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1880922C3A215004A1DDF /* NPExplorer_IRTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EDC1866922BBEBC4004A1DDF /* PBXContainerItemProxy */ = {
+		EDC187FE22C39ACB004A1DDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC1864C22BBEBC2004A1DDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC1867F22BE72C7004A1DDF;
+			remoteInfo = NPExplorer_GR;
+		};
+		EDC1880C22C3A215004A1DDF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EDC1864C22BBEBC2004A1DDF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EDC1865322BBEBC2004A1DDF;
-			remoteInfo = NPExplorer;
+			remoteInfo = NPExplorer_IR;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EDC1865422BBEBC2004A1DDF /* NPExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5653BA9DC0F3571F1F682279 /* Pods-NPExplorer_IR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPExplorer_IR.release.xcconfig"; path = "Target Support Files/Pods-NPExplorer_IR/Pods-NPExplorer_IR.release.xcconfig"; sourceTree = "<group>"; };
+		5AA9A130086427F612165853 /* Pods_NPExplorer_GR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPExplorer_GR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		853565E533BCB623C0B852A1 /* Pods_NPExplorer_IR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPExplorer_IR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3312BF03CEC886C5DB1DBBF /* Pods-NPExplorer_GR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPExplorer_GR.debug.xcconfig"; path = "Target Support Files/Pods-NPExplorer_GR/Pods-NPExplorer_GR.debug.xcconfig"; sourceTree = "<group>"; };
+		CE8008E56898E6807A37EF4B /* Pods-NPExplorer_IR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPExplorer_IR.debug.xcconfig"; path = "Target Support Files/Pods-NPExplorer_IR/Pods-NPExplorer_IR.debug.xcconfig"; sourceTree = "<group>"; };
+		E7A876147A390C15903462B4 /* Pods-NPExplorer_GR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPExplorer_GR.release.xcconfig"; path = "Target Support Files/Pods-NPExplorer_GR/Pods-NPExplorer_GR.release.xcconfig"; sourceTree = "<group>"; };
+		EDC1865422BBEBC2004A1DDF /* NPExplorer_IR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPExplorer_IR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC1865722BBEBC2004A1DDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDC1865922BBEBC2004A1DDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EDC1865C22BBEBC2004A1DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC1866122BBEBC4004A1DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EDC1866322BBEBC4004A1DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDC1866822BBEBC4004A1DDF /* NPExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC1866322BBEBC4004A1DDF /* NPExplorer_IR-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NPExplorer_IR-info.plist"; sourceTree = "<group>"; };
 		EDC1866C22BBEBC4004A1DDF /* NPExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPExplorerTests.swift; sourceTree = "<group>"; };
 		EDC1866E22BBEBC4004A1DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC1868A22BE72C7004A1DDF /* NPExplorer_GR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPExplorer_GR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC1868B22BE72C7004A1DDF /* NPExplorer_GR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "NPExplorer_GR-Info.plist"; path = "/Users/niloy.chakraborty/Personal/Work/Repo/NPExplorer/NPExplorer/NPExplorer_GR-Info.plist"; sourceTree = "<absolute>"; };
+		EDC1868F22BE76D9004A1DDF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		EDC1869222BE76F0004A1DDF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		EDC1869B22BE7AF4004A1DDF /* NP_IRAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NP_IRAPIClient.swift; sourceTree = "<group>"; };
+		EDC1869D22BE7B2C004A1DDF /* LoginEndpoint_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEndpoint_IR.swift; sourceTree = "<group>"; };
+		EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationEndpoint_IR.swift; sourceTree = "<group>"; };
+		EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsEndpoint_IR.swift; sourceTree = "<group>"; };
+		EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint_GR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsEndpoint_GR.swift; sourceTree = "<group>"; };
+		EDC186A422BE7BA5004A1DDF /* LoginEndpoint_GR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginEndpoint_GR.swift; sourceTree = "<group>"; };
+		EDC186A522BE7BA5004A1DDF /* NetworkEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEnvironment.swift; sourceTree = "<group>"; };
+		EDC186A622BE7BA5004A1DDF /* NP_GRAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NP_GRAPIClient.swift; sourceTree = "<group>"; };
+		EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint_GR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationEndpoint_GR.swift; sourceTree = "<group>"; };
+		EDC186A822BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkClientProtocol.swift; sourceTree = "<group>"; };
+		EDC186B022BE7EE5004A1DDF /* BaseGRNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGRNetworkClient.swift; sourceTree = "<group>"; };
+		EDC186B322BE7FB6004A1DDF /* BaseIRNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIRNetworkClient.swift; sourceTree = "<group>"; };
+		EDC186B622BE80FC004A1DDF /* NetworkResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResource.swift; sourceTree = "<group>"; };
+		EDC186BA22BE82C3004A1DDF /* UserAuthenticationResource_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationResource_GR.swift; sourceTree = "<group>"; };
+		EDC186BD22BE82E9004A1DDF /* UserRegistrationResource_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationResource_GR.swift; sourceTree = "<group>"; };
+		EDC186BF22BE8309004A1DDF /* CountryDetailsResource_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsResource_GR.swift; sourceTree = "<group>"; };
+		EDC186C122BE8390004A1DDF /* UserRegistrationResource_IR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationResource_IR.swift; sourceTree = "<group>"; };
+		EDC186C222BE8390004A1DDF /* CountryDetailsResource_IR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryDetailsResource_IR.swift; sourceTree = "<group>"; };
+		EDC186CC22BE8B7B004A1DDF /* CountryDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailModel.swift; sourceTree = "<group>"; };
+		EDC186D122BE90D0004A1DDF /* AppDelegateRouter_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRouter_IR.swift; sourceTree = "<group>"; };
+		EDC186D522BE92BB004A1DDF /* RouterBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterBuilder.swift; sourceTree = "<group>"; };
+		EDC186D822BE937B004A1DDF /* AppDelegateRouter_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRouter_GR.swift; sourceTree = "<group>"; };
+		EDC1870122BEF440004A1DDF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EDC1870922BEF8AC004A1DDF /* LoginRouter_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter_IR.swift; sourceTree = "<group>"; };
+		EDC1871722BEFBDF004A1DDF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EDC1872122BF01D3004A1DDF /* LoginUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUpdater.swift; sourceTree = "<group>"; };
+		EDC1872E22BF06F8004A1DDF /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
+		EDC1873722BF0FA0004A1DDF /* LoginRouter_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter_GR.swift; sourceTree = "<group>"; };
+		EDC1873E22C0022C004A1DDF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EDC1874422C00C67004A1DDF /* RegistrationViewController_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController_IR.swift; sourceTree = "<group>"; };
+		EDC1874722C00C89004A1DDF /* RegistrationViewController_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController_GR.swift; sourceTree = "<group>"; };
+		EDC1874A22C02B23004A1DDF /* UserRegistrationUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationUpdater.swift; sourceTree = "<group>"; };
+		EDC1875022C02CB2004A1DDF /* UserRegistrationDataManager_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationDataManager_IR.swift; sourceTree = "<group>"; };
+		EDC1875322C02E72004A1DDF /* UserRegistrationDataManager_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationDataManager_GR.swift; sourceTree = "<group>"; };
+		EDC1875622C03007004A1DDF /* UserRegistrationViewModel_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel_IR.swift; sourceTree = "<group>"; };
+		EDC1875922C0301A004A1DDF /* UserRegistrationViewModel_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel_GR.swift; sourceTree = "<group>"; };
+		EDC1875C22C032A4004A1DDF /* UserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel.swift; sourceTree = "<group>"; };
+		EDC1876122C0D517004A1DDF /* UserRegistrationSuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationSuccessModel.swift; sourceTree = "<group>"; };
+		EDC1876422C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationSuccessModel.swift; sourceTree = "<group>"; };
+		EDC1876722C0F06C004A1DDF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		EDC1876D22C0F285004A1DDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EDC1876F22C0F290004A1DDF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EDC1877222C0F34D004A1DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NPExplorer.storyboard; sourceTree = "<group>"; };
+		EDC1877722C0F36A004A1DDF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/NPExplorer.strings; sourceTree = "<group>"; };
+		EDC1877822C0F4F1004A1DDF /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		EDC187A022C107E2004A1DDF /* UserRegistrationForm_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationForm_IR.swift; sourceTree = "<group>"; };
+		EDC187A322C107FB004A1DDF /* UserRegistrationForm_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationForm_GR.swift; sourceTree = "<group>"; };
+		EDC187A622C10EEF004A1DDF /* UserAuthenticationFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationFormModel.swift; sourceTree = "<group>"; };
+		EDC187A922C184F4004A1DDF /* CountryDetailUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailUpdater.swift; sourceTree = "<group>"; };
+		EDC187AC22C1881D004A1DDF /* CountryDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailDataManager.swift; sourceTree = "<group>"; };
+		EDC187AF22C189FA004A1DDF /* CountryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewModel.swift; sourceTree = "<group>"; };
+		EDC187B222C18E43004A1DDF /* CountryDetailAttributeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailAttributeModel.swift; sourceTree = "<group>"; };
+		EDC187B522C196D8004A1DDF /* CountryDetailAttributesEndpoint_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailAttributesEndpoint_GR.swift; sourceTree = "<group>"; };
+		EDC187B822C196FB004A1DDF /* CountryDetailAttributesResource_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailAttributesResource_GR.swift; sourceTree = "<group>"; };
+		EDC187BB22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailAttributesResource_IR.swift; sourceTree = "<group>"; };
+		EDC187BE22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailAttributesEndpoint_IR.swift; sourceTree = "<group>"; };
+		EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
+		EDC187F222C377D5004A1DDF /* Okta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Okta.plist; sourceTree = "<group>"; };
+		EDC187F922C39ACB004A1DDF /* NPExplorer_GRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPExplorer_GRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC187FB22C39ACB004A1DDF /* NPExplorer_GRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPExplorer_GRTests.swift; sourceTree = "<group>"; };
+		EDC187FD22C39ACB004A1DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC1880722C3A215004A1DDF /* NPExplorer_IRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPExplorer_IRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC1880922C3A215004A1DDF /* NPExplorer_IRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPExplorer_IRTests.swift; sourceTree = "<group>"; };
+		EDC1880B22C3A215004A1DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +239,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D911E150B0F7627AFE5A25 /* Pods_NPExplorer_IR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC1866522BBEBC4004A1DDF /* Frameworks */ = {
+		EDC1868222BE72C7004A1DDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86F8EB39238B3DBDB7D812F /* Pods_NPExplorer_GR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC187F622C39ACB004A1DDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC1880422C3A215004A1DDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,20 +268,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		254E078C32E5572EB5177738 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AA9A130086427F612165853 /* Pods_NPExplorer_GR.framework */,
+				853565E533BCB623C0B852A1 /* Pods_NPExplorer_IR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DD4F6B1DD0D4C026795598A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3312BF03CEC886C5DB1DBBF /* Pods-NPExplorer_GR.debug.xcconfig */,
+				E7A876147A390C15903462B4 /* Pods-NPExplorer_GR.release.xcconfig */,
+				CE8008E56898E6807A37EF4B /* Pods-NPExplorer_IR.debug.xcconfig */,
+				5653BA9DC0F3571F1F682279 /* Pods-NPExplorer_IR.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EDC1864B22BBEBC2004A1DDF = {
 			isa = PBXGroup;
 			children = (
 				EDC1865622BBEBC2004A1DDF /* NPExplorer */,
 				EDC1866B22BBEBC4004A1DDF /* NPExplorerTests */,
+				EDC187FA22C39ACB004A1DDF /* NPExplorer_GRTests */,
+				EDC1880822C3A215004A1DDF /* NPExplorer_IRTests */,
 				EDC1865522BBEBC2004A1DDF /* Products */,
+				4DD4F6B1DD0D4C026795598A /* Pods */,
+				254E078C32E5572EB5177738 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		EDC1865522BBEBC2004A1DDF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EDC1865422BBEBC2004A1DDF /* NPExplorer.app */,
-				EDC1866822BBEBC4004A1DDF /* NPExplorerTests.xctest */,
+				EDC1865422BBEBC2004A1DDF /* NPExplorer_IR.app */,
+				EDC1868A22BE72C7004A1DDF /* NPExplorer_GR.app */,
+				EDC187F922C39ACB004A1DDF /* NPExplorer_GRTests.xctest */,
+				EDC1880722C3A215004A1DDF /* NPExplorer_IRTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,11 +316,18 @@
 			isa = PBXGroup;
 			children = (
 				EDC1865722BBEBC2004A1DDF /* AppDelegate.swift */,
-				EDC1865922BBEBC2004A1DDF /* ViewController.swift */,
-				EDC1865B22BBEBC2004A1DDF /* Main.storyboard */,
+				EDC186C722BE8B34004A1DDF /* Modules */,
+				EDC1872022BF018B004A1DDF /* Updater */,
+				EDC1867C22BE713F004A1DDF /* Utils */,
+				EDC1867B22BE70AC004A1DDF /* DataManager */,
+				EDC1867A22BE709F004A1DDF /* APIClient */,
+				EDC1867922BE7097004A1DDF /* NetworkLayer */,
+				EDC1867822BE707A004A1DDF /* Router */,
+				EDC1867722BE7072004A1DDF /* Resource */,
+				EDC1866322BBEBC4004A1DDF /* NPExplorer_IR-info.plist */,
+				EDC1868B22BE72C7004A1DDF /* NPExplorer_GR-Info.plist */,
+				EDC187F222C377D5004A1DDF /* Okta.plist */,
 				EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */,
-				EDC1866022BBEBC4004A1DDF /* LaunchScreen.storyboard */,
-				EDC1866322BBEBC4004A1DDF /* Info.plist */,
 			);
 			path = NPExplorer;
 			sourceTree = "<group>";
@@ -96,42 +341,356 @@
 			path = NPExplorerTests;
 			sourceTree = "<group>";
 		};
+		EDC1867722BE7072004A1DDF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1877322C0F34D004A1DDF /* NPExplorer.storyboard */,
+				EDC1866022BBEBC4004A1DDF /* LaunchScreen.storyboard */,
+				EDC1876E22C0F285004A1DDF /* Localizable.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EDC1867822BE707A004A1DDF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186D522BE92BB004A1DDF /* RouterBuilder.swift */,
+				EDC1870822BEF861004A1DDF /* GR */,
+				EDC1870722BEF833004A1DDF /* IR */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EDC1867922BE7097004A1DDF /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1868F22BE76D9004A1DDF /* NetworkService.swift */,
+				EDC1869222BE76F0004A1DDF /* NetworkError.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		EDC1867A22BE709F004A1DDF /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186A822BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift */,
+				EDC186A522BE7BA5004A1DDF /* NetworkEnvironment.swift */,
+				EDC186B622BE80FC004A1DDF /* NetworkResource.swift */,
+				EDC1869622BE7A36004A1DDF /* GR */,
+				EDC1869522BE7A2F004A1DDF /* IR */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		EDC1867B22BE70AC004A1DDF /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1872E22BF06F8004A1DDF /* LoginDataManager.swift */,
+				EDC1875022C02CB2004A1DDF /* UserRegistrationDataManager_IR.swift */,
+				EDC1875322C02E72004A1DDF /* UserRegistrationDataManager_GR.swift */,
+				EDC187AC22C1881D004A1DDF /* CountryDetailDataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		EDC1867C22BE713F004A1DDF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1870122BEF440004A1DDF /* Constants.swift */,
+				EDC1877822C0F4F1004A1DDF /* String+Localization.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EDC1869522BE7A2F004A1DDF /* IR */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186B322BE7FB6004A1DDF /* BaseIRNetworkClient.swift */,
+				EDC1869B22BE7AF4004A1DDF /* NP_IRAPIClient.swift */,
+				EDC1869D22BE7B2C004A1DDF /* LoginEndpoint_IR.swift */,
+				EDC1869F22BE7B48004A1DDF /* UserRegistrationEndpoint_IR.swift */,
+				EDC186A122BE7B62004A1DDF /* CountryDetailsEndpoint_IR.swift */,
+				EDC187BE22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift */,
+				EDC186B522BE80C5004A1DDF /* Resource */,
+			);
+			path = IR;
+			sourceTree = "<group>";
+		};
+		EDC1869622BE7A36004A1DDF /* GR */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186B022BE7EE5004A1DDF /* BaseGRNetworkClient.swift */,
+				EDC186A622BE7BA5004A1DDF /* NP_GRAPIClient.swift */,
+				EDC186A422BE7BA5004A1DDF /* LoginEndpoint_GR.swift */,
+				EDC186A722BE7BA5004A1DDF /* UserRegistrationEndpoint_GR.swift */,
+				EDC186A322BE7BA5004A1DDF /* CountryDetailsEndpoint_GR.swift */,
+				EDC187B522C196D8004A1DDF /* CountryDetailAttributesEndpoint_GR.swift */,
+				EDC186B922BE813E004A1DDF /* Resource */,
+			);
+			path = GR;
+			sourceTree = "<group>";
+		};
+		EDC186B522BE80C5004A1DDF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186C222BE8390004A1DDF /* CountryDetailsResource_IR.swift */,
+				EDC186C122BE8390004A1DDF /* UserRegistrationResource_IR.swift */,
+				EDC187BB22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EDC186B922BE813E004A1DDF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186BA22BE82C3004A1DDF /* UserAuthenticationResource_GR.swift */,
+				EDC186BD22BE82E9004A1DDF /* UserRegistrationResource_GR.swift */,
+				EDC186BF22BE8309004A1DDF /* CountryDetailsResource_GR.swift */,
+				EDC187B822C196FB004A1DDF /* CountryDetailAttributesResource_GR.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EDC186C722BE8B34004A1DDF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186D022BE9085004A1DDF /* Registration */,
+				EDC186CF22BE907E004A1DDF /* Login */,
+				EDC186C822BE8B3D004A1DDF /* CountryDetail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EDC186C822BE8B3D004A1DDF /* CountryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186CB22BE8B5D004A1DDF /* View */,
+				EDC186CA22BE8B56004A1DDF /* ViewModel */,
+				EDC186C922BE8B4F004A1DDF /* Model */,
+			);
+			path = CountryDetail;
+			sourceTree = "<group>";
+		};
+		EDC186C922BE8B4F004A1DDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186CC22BE8B7B004A1DDF /* CountryDetailModel.swift */,
+				EDC187B222C18E43004A1DDF /* CountryDetailAttributeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDC186CA22BE8B56004A1DDF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDC187AF22C189FA004A1DDF /* CountryDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDC186CB22BE8B5D004A1DDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDC186CF22BE907E004A1DDF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1871622BEFA7A004A1DDF /* View */,
+				EDC1871522BEFA75004A1DDF /* Model */,
+				EDC1871422BEFA6B004A1DDF /* ViewModel */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EDC186D022BE9085004A1DDF /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1874322C00C44004A1DDF /* ViewModel */,
+				EDC1874222C00C3E004A1DDF /* Model */,
+				EDC1874122C00C35004A1DDF /* View */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		EDC1870722BEF833004A1DDF /* IR */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186D122BE90D0004A1DDF /* AppDelegateRouter_IR.swift */,
+				EDC1870922BEF8AC004A1DDF /* LoginRouter_IR.swift */,
+			);
+			path = IR;
+			sourceTree = "<group>";
+		};
+		EDC1870822BEF861004A1DDF /* GR */ = {
+			isa = PBXGroup;
+			children = (
+				EDC186D822BE937B004A1DDF /* AppDelegateRouter_GR.swift */,
+				EDC1873722BF0FA0004A1DDF /* LoginRouter_GR.swift */,
+			);
+			path = GR;
+			sourceTree = "<group>";
+		};
+		EDC1871422BEFA6B004A1DDF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1871722BEFBDF004A1DDF /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDC1871522BEFA75004A1DDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1876422C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift */,
+				EDC187A622C10EEF004A1DDF /* UserAuthenticationFormModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDC1871622BEFA7A004A1DDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1873E22C0022C004A1DDF /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDC1872022BF018B004A1DDF /* Updater */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1872122BF01D3004A1DDF /* LoginUpdater.swift */,
+				EDC1874A22C02B23004A1DDF /* UserRegistrationUpdater.swift */,
+				EDC187A922C184F4004A1DDF /* CountryDetailUpdater.swift */,
+			);
+			path = Updater;
+			sourceTree = "<group>";
+		};
+		EDC1874122C00C35004A1DDF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1874422C00C67004A1DDF /* RegistrationViewController_IR.swift */,
+				EDC1874722C00C89004A1DDF /* RegistrationViewController_GR.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EDC1874222C00C3E004A1DDF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1876122C0D517004A1DDF /* UserRegistrationSuccessModel.swift */,
+				EDC187A022C107E2004A1DDF /* UserRegistrationForm_IR.swift */,
+				EDC187A322C107FB004A1DDF /* UserRegistrationForm_GR.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDC1874322C00C44004A1DDF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1875622C03007004A1DDF /* UserRegistrationViewModel_IR.swift */,
+				EDC1875922C0301A004A1DDF /* UserRegistrationViewModel_GR.swift */,
+				EDC1875C22C032A4004A1DDF /* UserRegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EDC187FA22C39ACB004A1DDF /* NPExplorer_GRTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC187FB22C39ACB004A1DDF /* NPExplorer_GRTests.swift */,
+				EDC187FD22C39ACB004A1DDF /* Info.plist */,
+			);
+			path = NPExplorer_GRTests;
+			sourceTree = "<group>";
+		};
+		EDC1880822C3A215004A1DDF /* NPExplorer_IRTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1880922C3A215004A1DDF /* NPExplorer_IRTests.swift */,
+				EDC1880B22C3A215004A1DDF /* Info.plist */,
+			);
+			path = NPExplorer_IRTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EDC1865322BBEBC2004A1DDF /* NPExplorer */ = {
+		EDC1865322BBEBC2004A1DDF /* NPExplorer_IR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDC1867122BBEBC4004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer" */;
+			buildConfigurationList = EDC1867122BBEBC4004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_IR" */;
 			buildPhases = (
+				59ABCC17BA645EA4EC2A5562 /* [CP] Check Pods Manifest.lock */,
 				EDC1865022BBEBC2004A1DDF /* Sources */,
 				EDC1865122BBEBC2004A1DDF /* Frameworks */,
 				EDC1865222BBEBC2004A1DDF /* Resources */,
+				2C3189BCC491E4FBC534DF62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NPExplorer;
+			name = NPExplorer_IR;
 			productName = NPExplorer;
-			productReference = EDC1865422BBEBC2004A1DDF /* NPExplorer.app */;
+			productReference = EDC1865422BBEBC2004A1DDF /* NPExplorer_IR.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EDC1866722BBEBC4004A1DDF /* NPExplorerTests */ = {
+		EDC1867F22BE72C7004A1DDF /* NPExplorer_GR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDC1867422BBEBC4004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorerTests" */;
+			buildConfigurationList = EDC1868722BE72C7004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_GR" */;
 			buildPhases = (
-				EDC1866422BBEBC4004A1DDF /* Sources */,
-				EDC1866522BBEBC4004A1DDF /* Frameworks */,
-				EDC1866622BBEBC4004A1DDF /* Resources */,
+				6A6620F5DAC4BA7EA46B5692 /* [CP] Check Pods Manifest.lock */,
+				EDC1868022BE72C7004A1DDF /* Sources */,
+				EDC1868222BE72C7004A1DDF /* Frameworks */,
+				EDC1868322BE72C7004A1DDF /* Resources */,
+				8EAD21B7BE5FECD5C77AB3E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EDC1866A22BBEBC4004A1DDF /* PBXTargetDependency */,
 			);
-			name = NPExplorerTests;
-			productName = NPExplorerTests;
-			productReference = EDC1866822BBEBC4004A1DDF /* NPExplorerTests.xctest */;
+			name = NPExplorer_GR;
+			productName = NPExplorer;
+			productReference = EDC1868A22BE72C7004A1DDF /* NPExplorer_GR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDC187F822C39ACB004A1DDF /* NPExplorer_GRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC1880222C39ACB004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_GRTests" */;
+			buildPhases = (
+				EDC187F522C39ACB004A1DDF /* Sources */,
+				EDC187F622C39ACB004A1DDF /* Frameworks */,
+				EDC187F722C39ACB004A1DDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC187FF22C39ACB004A1DDF /* PBXTargetDependency */,
+			);
+			name = NPExplorer_GRTests;
+			productName = NPExplorer_GRTests;
+			productReference = EDC187F922C39ACB004A1DDF /* NPExplorer_GRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDC1880622C3A215004A1DDF /* NPExplorer_IRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC1880E22C3A215004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_IRTests" */;
+			buildPhases = (
+				EDC1880322C3A215004A1DDF /* Sources */,
+				EDC1880422C3A215004A1DDF /* Frameworks */,
+				EDC1880522C3A215004A1DDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC1880D22C3A215004A1DDF /* PBXTargetDependency */,
+			);
+			name = NPExplorer_IRTests;
+			productName = NPExplorer_IRTests;
+			productReference = EDC1880722C3A215004A1DDF /* NPExplorer_IRTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -147,7 +706,11 @@
 					EDC1865322BBEBC2004A1DDF = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					EDC1866722BBEBC4004A1DDF = {
+					EDC187F822C39ACB004A1DDF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EDC1867F22BE72C7004A1DDF;
+					};
+					EDC1880622C3A215004A1DDF = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = EDC1865322BBEBC2004A1DDF;
 					};
@@ -160,14 +723,17 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = EDC1864B22BBEBC2004A1DDF;
 			productRefGroup = EDC1865522BBEBC2004A1DDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EDC1865322BBEBC2004A1DDF /* NPExplorer */,
-				EDC1866722BBEBC4004A1DDF /* NPExplorerTests */,
+				EDC1865322BBEBC2004A1DDF /* NPExplorer_IR */,
+				EDC1867F22BE72C7004A1DDF /* NPExplorer_GR */,
+				EDC187F822C39ACB004A1DDF /* NPExplorer_GRTests */,
+				EDC1880622C3A215004A1DDF /* NPExplorer_IRTests */,
 			);
 		};
 /* End PBXProject section */
@@ -177,13 +743,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC187F322C377D5004A1DDF /* Okta.plist in Resources */,
 				EDC1866222BBEBC4004A1DDF /* LaunchScreen.storyboard in Resources */,
+				EDC1876B22C0F285004A1DDF /* Localizable.strings in Resources */,
+				EDC1877022C0F34D004A1DDF /* NPExplorer.storyboard in Resources */,
 				EDC1865F22BBEBC4004A1DDF /* Assets.xcassets in Resources */,
-				EDC1865D22BBEBC2004A1DDF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC1866622BBEBC4004A1DDF /* Resources */ = {
+		EDC1868322BE72C7004A1DDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC187F422C377D5004A1DDF /* Okta.plist in Resources */,
+				EDC1868422BE72C7004A1DDF /* LaunchScreen.storyboard in Resources */,
+				EDC1876C22C0F285004A1DDF /* Localizable.strings in Resources */,
+				EDC1868522BE72C7004A1DDF /* Assets.xcassets in Resources */,
+				EDC1877122C0F34D004A1DDF /* NPExplorer.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC187F722C39ACB004A1DDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC1880522C3A215004A1DDF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,49 +779,269 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C3189BCC491E4FBC534DF62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_IR/Pods-NPExplorer_IR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_IR/Pods-NPExplorer_IR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_IR/Pods-NPExplorer_IR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59ABCC17BA645EA4EC2A5562 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NPExplorer_IR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A6620F5DAC4BA7EA46B5692 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NPExplorer_GR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EAD21B7BE5FECD5C77AB3E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_GR/Pods-NPExplorer_GR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_GR/Pods-NPExplorer_GR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_GR/Pods-NPExplorer_GR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDC1865022BBEBC2004A1DDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC1865A22BBEBC2004A1DDF /* ViewController.swift in Sources */,
+				EDC187BC22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift in Sources */,
+				EDC1873422BF0B1D004A1DDF /* UserRegistrationResource_GR.swift in Sources */,
+				EDC1870A22BEF8AC004A1DDF /* LoginRouter_IR.swift in Sources */,
+				EDC187C222C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */,
+				EDC1871822BEFBDF004A1DDF /* LoginViewModel.swift in Sources */,
+				EDC186DA22BE9737004A1DDF /* AppDelegateRouter_GR.swift in Sources */,
+				EDC1873622BF0B23004A1DDF /* CountryDetailsResource_GR.swift in Sources */,
+				EDC187AD22C1881D004A1DDF /* CountryDetailDataManager.swift in Sources */,
+				EDC186AF22BE7E96004A1DDF /* BaseNetworkClientProtocol.swift in Sources */,
+				EDC1876522C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift in Sources */,
+				EDC1870222BEF440004A1DDF /* Constants.swift in Sources */,
+				EDC1874522C00C67004A1DDF /* RegistrationViewController_IR.swift in Sources */,
+				EDC186D622BE92BB004A1DDF /* RouterBuilder.swift in Sources */,
+				EDC186A222BE7B62004A1DDF /* CountryDetailsEndpoint_IR.swift in Sources */,
+				EDC1875722C03007004A1DDF /* UserRegistrationViewModel_IR.swift in Sources */,
+				EDC187A122C107E2004A1DDF /* UserRegistrationForm_IR.swift in Sources */,
+				EDC186B722BE80FC004A1DDF /* NetworkResource.swift in Sources */,
+				EDC187A722C10EEF004A1DDF /* UserAuthenticationFormModel.swift in Sources */,
+				EDC1869C22BE7AF4004A1DDF /* NP_IRAPIClient.swift in Sources */,
+				EDC1872822BF0379004A1DDF /* CountryDetailsEndpoint_GR.swift in Sources */,
+				EDC1875A22C0301A004A1DDF /* UserRegistrationViewModel_GR.swift in Sources */,
+				EDC187BF22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift in Sources */,
+				EDC1873522BF0B20004A1DDF /* UserAuthenticationResource_GR.swift in Sources */,
+				EDC1872622BF0373004A1DDF /* LoginEndpoint_GR.swift in Sources */,
+				EDC187B922C196FB004A1DDF /* CountryDetailAttributesResource_GR.swift in Sources */,
+				EDC1874B22C02B23004A1DDF /* UserRegistrationUpdater.swift in Sources */,
+				EDC1875D22C032A4004A1DDF /* UserRegistrationViewModel.swift in Sources */,
+				EDC1877922C0F4F1004A1DDF /* String+Localization.swift in Sources */,
+				EDC1872222BF01D3004A1DDF /* LoginUpdater.swift in Sources */,
+				EDC186C422BE8390004A1DDF /* UserRegistrationResource_IR.swift in Sources */,
+				EDC1869322BE76F0004A1DDF /* NetworkError.swift in Sources */,
+				EDC187B022C189FA004A1DDF /* CountryDetailViewModel.swift in Sources */,
+				EDC1875422C02E72004A1DDF /* UserRegistrationDataManager_GR.swift in Sources */,
+				EDC1872722BF0376004A1DDF /* UserRegistrationEndpoint_GR.swift in Sources */,
+				EDC1872422BF036D004A1DDF /* BaseGRNetworkClient.swift in Sources */,
+				EDC1872522BF0370004A1DDF /* NP_GRAPIClient.swift in Sources */,
+				EDC1873F22C0022C004A1DDF /* LoginViewController.swift in Sources */,
+				EDC1872F22BF06F8004A1DDF /* LoginDataManager.swift in Sources */,
+				EDC1873822BF0FA0004A1DDF /* LoginRouter_GR.swift in Sources */,
+				EDC187AA22C184F4004A1DDF /* CountryDetailUpdater.swift in Sources */,
+				EDC1876222C0D517004A1DDF /* UserRegistrationSuccessModel.swift in Sources */,
+				EDC187A422C107FB004A1DDF /* UserRegistrationForm_GR.swift in Sources */,
+				EDC1874822C00C89004A1DDF /* RegistrationViewController_GR.swift in Sources */,
+				EDC1869022BE76D9004A1DDF /* NetworkService.swift in Sources */,
+				EDC186B422BE7FB6004A1DDF /* BaseIRNetworkClient.swift in Sources */,
+				EDC186A022BE7B48004A1DDF /* UserRegistrationEndpoint_IR.swift in Sources */,
+				EDC1869E22BE7B2C004A1DDF /* LoginEndpoint_IR.swift in Sources */,
+				EDC186C522BE8390004A1DDF /* CountryDetailsResource_IR.swift in Sources */,
+				EDC186CD22BE8B7B004A1DDF /* CountryDetailModel.swift in Sources */,
+				EDC186B222BE7F7A004A1DDF /* NetworkEnvironment.swift in Sources */,
 				EDC1865822BBEBC2004A1DDF /* AppDelegate.swift in Sources */,
+				EDC187B622C196D8004A1DDF /* CountryDetailAttributesEndpoint_GR.swift in Sources */,
+				EDC1875122C02CB2004A1DDF /* UserRegistrationDataManager_IR.swift in Sources */,
+				EDC187B322C18E43004A1DDF /* CountryDetailAttributeModel.swift in Sources */,
+				EDC186D222BE90D0004A1DDF /* AppDelegateRouter_IR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC1866422BBEBC4004A1DDF /* Sources */ = {
+		EDC1868022BE72C7004A1DDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC1866D22BBEBC4004A1DDF /* NPExplorerTests.swift in Sources */,
+				EDC187BD22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift in Sources */,
+				EDC1870B22BEF8AC004A1DDF /* LoginRouter_IR.swift in Sources */,
+				EDC1871922BEFBDF004A1DDF /* LoginViewModel.swift in Sources */,
+				EDC187C322C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */,
+				EDC186D922BE937B004A1DDF /* AppDelegateRouter_GR.swift in Sources */,
+				EDC1872C22BF038C004A1DDF /* UserRegistrationEndpoint_IR.swift in Sources */,
+				EDC186AE22BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift in Sources */,
+				EDC187AE22C1881D004A1DDF /* CountryDetailDataManager.swift in Sources */,
+				EDC1869422BE76F0004A1DDF /* NetworkError.swift in Sources */,
+				EDC1876622C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift in Sources */,
+				EDC186D722BE92BB004A1DDF /* RouterBuilder.swift in Sources */,
+				EDC186B822BE8103004A1DDF /* NetworkResource.swift in Sources */,
+				EDC1874622C00C67004A1DDF /* RegistrationViewController_IR.swift in Sources */,
+				EDC1869122BE76D9004A1DDF /* NetworkService.swift in Sources */,
+				EDC186DB22BE973C004A1DDF /* AppDelegateRouter_IR.swift in Sources */,
+				EDC187A222C107E2004A1DDF /* UserRegistrationForm_IR.swift in Sources */,
+				EDC1875822C03007004A1DDF /* UserRegistrationViewModel_IR.swift in Sources */,
+				EDC187A822C10EEF004A1DDF /* UserAuthenticationFormModel.swift in Sources */,
+				EDC186BE22BE82E9004A1DDF /* UserRegistrationResource_GR.swift in Sources */,
+				EDC1872322BF01D3004A1DDF /* LoginUpdater.swift in Sources */,
+				EDC1875B22C0301A004A1DDF /* UserRegistrationViewModel_GR.swift in Sources */,
+				EDC187C022C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift in Sources */,
+				EDC1872D22BF038F004A1DDF /* CountryDetailsEndpoint_IR.swift in Sources */,
+				EDC186A922BE7BA5004A1DDF /* CountryDetailsEndpoint_GR.swift in Sources */,
+				EDC187BA22C196FB004A1DDF /* CountryDetailAttributesResource_GR.swift in Sources */,
+				EDC1874C22C02B23004A1DDF /* UserRegistrationUpdater.swift in Sources */,
+				EDC1875E22C032A4004A1DDF /* UserRegistrationViewModel.swift in Sources */,
+				EDC1877A22C0F4F1004A1DDF /* String+Localization.swift in Sources */,
+				EDC1868122BE72C7004A1DDF /* AppDelegate.swift in Sources */,
+				EDC1872B22BF0388004A1DDF /* LoginEndpoint_IR.swift in Sources */,
+				EDC1873122BF0AE3004A1DDF /* CountryDetailsResource_IR.swift in Sources */,
+				EDC187B122C189FA004A1DDF /* CountryDetailViewModel.swift in Sources */,
+				EDC1875522C02E72004A1DDF /* UserRegistrationDataManager_GR.swift in Sources */,
+				EDC186AD22BE7BA5004A1DDF /* UserRegistrationEndpoint_GR.swift in Sources */,
+				EDC186BC22BE82CA004A1DDF /* UserAuthenticationResource_GR.swift in Sources */,
+				EDC1873022BF06F8004A1DDF /* LoginDataManager.swift in Sources */,
+				EDC1874022C0022C004A1DDF /* LoginViewController.swift in Sources */,
+				EDC1872922BF0380004A1DDF /* BaseIRNetworkClient.swift in Sources */,
+				EDC1873922BF0FA0004A1DDF /* LoginRouter_GR.swift in Sources */,
+				EDC187AB22C184F4004A1DDF /* CountryDetailUpdater.swift in Sources */,
+				EDC1876322C0D517004A1DDF /* UserRegistrationSuccessModel.swift in Sources */,
+				EDC187A522C107FB004A1DDF /* UserRegistrationForm_GR.swift in Sources */,
+				EDC1874922C00C89004A1DDF /* RegistrationViewController_GR.swift in Sources */,
+				EDC1870522BEF577004A1DDF /* Constants.swift in Sources */,
+				EDC186B122BE7EE5004A1DDF /* BaseGRNetworkClient.swift in Sources */,
+				EDC1873322BF0AEA004A1DDF /* UserRegistrationResource_IR.swift in Sources */,
+				EDC186AB22BE7BA5004A1DDF /* NetworkEnvironment.swift in Sources */,
+				EDC186AC22BE7BA5004A1DDF /* NP_GRAPIClient.swift in Sources */,
+				EDC1872A22BF0384004A1DDF /* NP_IRAPIClient.swift in Sources */,
+				EDC186CE22BE8B7B004A1DDF /* CountryDetailModel.swift in Sources */,
+				EDC186AA22BE7BA5004A1DDF /* LoginEndpoint_GR.swift in Sources */,
+				EDC187B722C196D8004A1DDF /* CountryDetailAttributesEndpoint_GR.swift in Sources */,
+				EDC1875222C02CB2004A1DDF /* UserRegistrationDataManager_IR.swift in Sources */,
+				EDC187B422C18E43004A1DDF /* CountryDetailAttributeModel.swift in Sources */,
+				EDC186C022BE8309004A1DDF /* CountryDetailsResource_GR.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC187F522C39ACB004A1DDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC187FC22C39ACB004A1DDF /* NPExplorer_GRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC1880322C3A215004A1DDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC1880A22C3A215004A1DDF /* NPExplorer_IRTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EDC1866A22BBEBC4004A1DDF /* PBXTargetDependency */ = {
+		EDC187FF22C39ACB004A1DDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EDC1865322BBEBC2004A1DDF /* NPExplorer */;
-			targetProxy = EDC1866922BBEBC4004A1DDF /* PBXContainerItemProxy */;
+			target = EDC1867F22BE72C7004A1DDF /* NPExplorer_GR */;
+			targetProxy = EDC187FE22C39ACB004A1DDF /* PBXContainerItemProxy */;
+		};
+		EDC1880D22C3A215004A1DDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC1865322BBEBC2004A1DDF /* NPExplorer_IR */;
+			targetProxy = EDC1880C22C3A215004A1DDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EDC1865B22BBEBC2004A1DDF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDC1865C22BBEBC2004A1DDF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EDC1866022BBEBC4004A1DDF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EDC1866122BBEBC4004A1DDF /* Base */,
+				EDC1876722C0F06C004A1DDF /* de */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC1876E22C0F285004A1DDF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC1876D22C0F285004A1DDF /* en */,
+				EDC1876F22C0F290004A1DDF /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		EDC1877322C0F34D004A1DDF /* NPExplorer.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC1877222C0F34D004A1DDF /* Base */,
+				EDC1877722C0F36A004A1DDF /* de */,
+			);
+			name = NPExplorer.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -244,6 +1051,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -305,6 +1113,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -358,17 +1167,19 @@
 		};
 		EDC1867222BBEBC4004A1DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8008E56898E6807A37EF4B /* Pods-NPExplorer_IR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HU6X5S35C;
-				INFOPLIST_FILE = NPExplorer/Info.plist;
+				INFOPLIST_FILE = "NPExplorer/NPExplorer_IR-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-DMARKET_IR";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Niloy.NPExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -379,17 +1190,19 @@
 		};
 		EDC1867322BBEBC4004A1DDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5653BA9DC0F3571F1F682279 /* Pods-NPExplorer_IR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3HU6X5S35C;
-				INFOPLIST_FILE = NPExplorer/Info.plist;
+				INFOPLIST_FILE = "NPExplorer/NPExplorer_IR-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-DMARKET_IR";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Niloy.NPExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -398,43 +1211,125 @@
 			};
 			name = Release;
 		};
-		EDC1867522BBEBC4004A1DDF /* Debug */ = {
+		EDC1868822BE72C7004A1DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3312BF03CEC886C5DB1DBBF /* Pods-NPExplorer_GR.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NPExplorerTests/Info.plist;
+				DEVELOPMENT_TEAM = 3HU6X5S35C;
+				INFOPLIST_FILE = "$(SRCROOT)/NPExplorer_GR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.niloy.NPExplorerTests;
+				OTHER_SWIFT_FLAGS = "-DMARKET_GR";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Niloy.NPExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer.app/NPExplorer";
 			};
 			name = Debug;
 		};
-		EDC1867622BBEBC4004A1DDF /* Release */ = {
+		EDC1868922BE72C7004A1DDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A876147A390C15903462B4 /* Pods-NPExplorer_GR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HU6X5S35C;
+				INFOPLIST_FILE = "$(SRCROOT)/NPExplorer_GR-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "-DMARKET_GR";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Niloy.NPExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDC1880022C39ACB004A1DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NPExplorerTests/Info.plist;
+				INFOPLIST_FILE = NPExplorer_GRTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.niloy.NPExplorerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niloy.NPExplorer-GRTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer.app/NPExplorer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer_GR.app/NPExplorer_GR";
+			};
+			name = Debug;
+		};
+		EDC1880122C39ACB004A1DDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NPExplorer_GRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niloy.NPExplorer-GRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer_GR.app/NPExplorer_GR";
+			};
+			name = Release;
+		};
+		EDC1880F22C3A215004A1DDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NPExplorer_IRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niloy.NPExplorer-IRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer_IR.app/NPExplorer_IR";
+			};
+			name = Debug;
+		};
+		EDC1881022C3A215004A1DDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NPExplorer_IRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niloy.NPExplorer-IRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer_IR.app/NPExplorer_IR";
 			};
 			name = Release;
 		};
@@ -450,7 +1345,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDC1867122BBEBC4004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer" */ = {
+		EDC1867122BBEBC4004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_IR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EDC1867222BBEBC4004A1DDF /* Debug */,
@@ -459,11 +1354,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDC1867422BBEBC4004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorerTests" */ = {
+		EDC1868722BE72C7004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_GR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDC1867522BBEBC4004A1DDF /* Debug */,
-				EDC1867622BBEBC4004A1DDF /* Release */,
+				EDC1868822BE72C7004A1DDF /* Debug */,
+				EDC1868922BE72C7004A1DDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC1880222C39ACB004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_GRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC1880022C39ACB004A1DDF /* Debug */,
+				EDC1880122C39ACB004A1DDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC1880E22C3A215004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_IRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC1880F22C3A215004A1DDF /* Debug */,
+				EDC1881022C3A215004A1DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

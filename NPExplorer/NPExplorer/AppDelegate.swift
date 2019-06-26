@@ -7,16 +7,34 @@
 //
 
 import UIKit
+import OktaAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var appRouter: AppDelegateRouterProtocol?
+    private let navigationController: UINavigationController = {
+        let navigationController = UINavigationController()
+        navigationController.navigationBar.isTranslucent = false
+        return navigationController
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow()
+        window?.rootViewController = navigationController
+        let router = AppDelegateRouterBuilder.getAppDelegateRouter(navigationController: navigationController)
+        router.start()
+        window?.makeKeyAndVisible()
+        appRouter = router
+
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        return OktaAuth.resume(url, options: options)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

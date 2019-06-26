@@ -1,0 +1,6 @@
+framework module Pods_NPExplorer_IR {
+  umbrella header "Pods-NPExplorer_IR-umbrella.h"
+
+  export *
+  module * { export * }
+}

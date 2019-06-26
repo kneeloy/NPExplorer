@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'NPExplorer_GR' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Pods for NPExplorer_GR
+  pod 'OktaAuth'
+end
+
+target 'NPExplorer_IR' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for NPExplorer_IR
+  pod 'OktaAuth', '0.3.0'
+end
