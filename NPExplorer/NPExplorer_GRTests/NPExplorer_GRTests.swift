@@ -1,15 +1,14 @@
 //
-//  NPExplorerTests.swift
-//  NPExplorerTests
+//  NPExplorer_GRTests.swift
+//  NPExplorer_GRTests
 //
-//  Created by niloy.chakraborty on 20/06/2019.
+//  Created by niloy.chakraborty on 26/06/2019.
 //  Copyright © 2019 niloy.chakraborty. All rights reserved.
 //
 
 import XCTest
-@testable import NPExplorer_GR
 
-class NPExplorerTests: XCTestCase {
+class NPExplorer_GRTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

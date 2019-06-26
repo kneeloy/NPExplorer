@@ -12,7 +12,6 @@
 		EDC1865822BBEBC2004A1DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1865722BBEBC2004A1DDF /* AppDelegate.swift */; };
 		EDC1865F22BBEBC4004A1DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */; };
 		EDC1866222BBEBC4004A1DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1866022BBEBC4004A1DDF /* LaunchScreen.storyboard */; };
-		EDC1866D22BBEBC4004A1DDF /* NPExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1866C22BBEBC4004A1DDF /* NPExplorerTests.swift */; };
 		EDC1868122BE72C7004A1DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1865722BBEBC2004A1DDF /* AppDelegate.swift */; };
 		EDC1868422BE72C7004A1DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1866022BBEBC4004A1DDF /* LaunchScreen.storyboard */; };
 		EDC1868522BE72C7004A1DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */; };
@@ -130,15 +129,16 @@
 		EDC187C322C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */; };
 		EDC187F322C377D5004A1DDF /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDC187F222C377D5004A1DDF /* Okta.plist */; };
 		EDC187F422C377D5004A1DDF /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDC187F222C377D5004A1DDF /* Okta.plist */; };
+		EDC187FC22C39ACB004A1DDF /* NPExplorer_GRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187FB22C39ACB004A1DDF /* NPExplorer_GRTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EDC1866922BBEBC4004A1DDF /* PBXContainerItemProxy */ = {
+		EDC187FE22C39ACB004A1DDF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EDC1864C22BBEBC2004A1DDF /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EDC1865322BBEBC2004A1DDF;
-			remoteInfo = NPExplorer;
+			remoteGlobalIDString = EDC1867F22BE72C7004A1DDF;
+			remoteInfo = NPExplorer_GR;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -154,7 +154,6 @@
 		EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC1866122BBEBC4004A1DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDC1866322BBEBC4004A1DDF /* NPExplorer_IR-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NPExplorer_IR-info.plist"; sourceTree = "<group>"; };
-		EDC1866822BBEBC4004A1DDF /* NPExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC1866C22BBEBC4004A1DDF /* NPExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPExplorerTests.swift; sourceTree = "<group>"; };
 		EDC1866E22BBEBC4004A1DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDC1868A22BE72C7004A1DDF /* NPExplorer_GR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPExplorer_GR.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +218,9 @@
 		EDC187BE22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailAttributesEndpoint_IR.swift; sourceTree = "<group>"; };
 		EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
 		EDC187F222C377D5004A1DDF /* Okta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Okta.plist; sourceTree = "<group>"; };
+		EDC187F922C39ACB004A1DDF /* NPExplorer_GRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPExplorer_GRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC187FB22C39ACB004A1DDF /* NPExplorer_GRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPExplorer_GRTests.swift; sourceTree = "<group>"; };
+		EDC187FD22C39ACB004A1DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,18 +232,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC1866522BBEBC4004A1DDF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EDC1868222BE72C7004A1DDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D86F8EB39238B3DBDB7D812F /* Pods_NPExplorer_GR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC187F622C39ACB004A1DDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +275,7 @@
 			children = (
 				EDC1865622BBEBC2004A1DDF /* NPExplorer */,
 				EDC1866B22BBEBC4004A1DDF /* NPExplorerTests */,
+				EDC187FA22C39ACB004A1DDF /* NPExplorer_GRTests */,
 				EDC1865522BBEBC2004A1DDF /* Products */,
 				4DD4F6B1DD0D4C026795598A /* Pods */,
 				254E078C32E5572EB5177738 /* Frameworks */,
@@ -283,8 +286,8 @@
 			isa = PBXGroup;
 			children = (
 				EDC1865422BBEBC2004A1DDF /* NPExplorer_IR.app */,
-				EDC1866822BBEBC4004A1DDF /* NPExplorerTests.xctest */,
 				EDC1868A22BE72C7004A1DDF /* NPExplorer_GR.app */,
+				EDC187F922C39ACB004A1DDF /* NPExplorer_GRTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -575,6 +578,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		EDC187FA22C39ACB004A1DDF /* NPExplorer_GRTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC187FB22C39ACB004A1DDF /* NPExplorer_GRTests.swift */,
+				EDC187FD22C39ACB004A1DDF /* Info.plist */,
+			);
+			path = NPExplorer_GRTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -597,24 +609,6 @@
 			productReference = EDC1865422BBEBC2004A1DDF /* NPExplorer_IR.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EDC1866722BBEBC4004A1DDF /* NPExplorerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EDC1867422BBEBC4004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorerTests" */;
-			buildPhases = (
-				EDC1866422BBEBC4004A1DDF /* Sources */,
-				EDC1866522BBEBC4004A1DDF /* Frameworks */,
-				EDC1866622BBEBC4004A1DDF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EDC1866A22BBEBC4004A1DDF /* PBXTargetDependency */,
-			);
-			name = NPExplorerTests;
-			productName = NPExplorerTests;
-			productReference = EDC1866822BBEBC4004A1DDF /* NPExplorerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		EDC1867F22BE72C7004A1DDF /* NPExplorer_GR */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDC1868722BE72C7004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_GR" */;
@@ -634,6 +628,24 @@
 			productReference = EDC1868A22BE72C7004A1DDF /* NPExplorer_GR.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EDC187F822C39ACB004A1DDF /* NPExplorer_GRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC1880222C39ACB004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_GRTests" */;
+			buildPhases = (
+				EDC187F522C39ACB004A1DDF /* Sources */,
+				EDC187F622C39ACB004A1DDF /* Frameworks */,
+				EDC187F722C39ACB004A1DDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC187FF22C39ACB004A1DDF /* PBXTargetDependency */,
+			);
+			name = NPExplorer_GRTests;
+			productName = NPExplorer_GRTests;
+			productReference = EDC187F922C39ACB004A1DDF /* NPExplorer_GRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -647,9 +659,9 @@
 					EDC1865322BBEBC2004A1DDF = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					EDC1866722BBEBC4004A1DDF = {
+					EDC187F822C39ACB004A1DDF = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = EDC1865322BBEBC2004A1DDF;
+						TestTargetID = EDC1867F22BE72C7004A1DDF;
 					};
 				};
 			};
@@ -669,7 +681,7 @@
 			targets = (
 				EDC1865322BBEBC2004A1DDF /* NPExplorer_IR */,
 				EDC1867F22BE72C7004A1DDF /* NPExplorer_GR */,
-				EDC1866722BBEBC4004A1DDF /* NPExplorerTests */,
+				EDC187F822C39ACB004A1DDF /* NPExplorer_GRTests */,
 			);
 		};
 /* End PBXProject section */
@@ -687,13 +699,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC1866622BBEBC4004A1DDF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EDC1868322BE72C7004A1DDF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -703,6 +708,13 @@
 				EDC1876C22C0F285004A1DDF /* Localizable.strings in Resources */,
 				EDC1868522BE72C7004A1DDF /* Assets.xcassets in Resources */,
 				EDC1877122C0F34D004A1DDF /* NPExplorer.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC187F722C39ACB004A1DDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,14 +864,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC1866422BBEBC4004A1DDF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EDC1866D22BBEBC4004A1DDF /* NPExplorerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EDC1868022BE72C7004A1DDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -922,13 +926,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDC187F522C39ACB004A1DDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC187FC22C39ACB004A1DDF /* NPExplorer_GRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EDC1866A22BBEBC4004A1DDF /* PBXTargetDependency */ = {
+		EDC187FF22C39ACB004A1DDF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EDC1865322BBEBC2004A1DDF /* NPExplorer_IR */;
-			targetProxy = EDC1866922BBEBC4004A1DDF /* PBXContainerItemProxy */;
+			target = EDC1867F22BE72C7004A1DDF /* NPExplorer_GR */;
+			targetProxy = EDC187FE22C39ACB004A1DDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1127,46 +1139,6 @@
 			};
 			name = Release;
 		};
-		EDC1867522BBEBC4004A1DDF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NPExplorerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.niloy.NPExplorerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer.app/NPExplorer";
-			};
-			name = Debug;
-		};
-		EDC1867622BBEBC4004A1DDF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NPExplorerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.niloy.NPExplorerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer.app/NPExplorer";
-			};
-			name = Release;
-		};
 		EDC1868822BE72C7004A1DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A3312BF03CEC886C5DB1DBBF /* Pods-NPExplorer_GR.debug.xcconfig */;
@@ -1213,6 +1185,44 @@
 			};
 			name = Release;
 		};
+		EDC1880022C39ACB004A1DDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NPExplorer_GRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niloy.NPExplorer-GRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer_GR.app/NPExplorer_GR";
+			};
+			name = Debug;
+		};
+		EDC1880122C39ACB004A1DDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NPExplorer_GRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niloy.NPExplorer-GRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer_GR.app/NPExplorer_GR";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1234,20 +1244,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDC1867422BBEBC4004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EDC1867522BBEBC4004A1DDF /* Debug */,
-				EDC1867622BBEBC4004A1DDF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		EDC1868722BE72C7004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_GR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EDC1868822BE72C7004A1DDF /* Debug */,
 				EDC1868922BE72C7004A1DDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC1880222C39ACB004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_GRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC1880022C39ACB004A1DDF /* Debug */,
+				EDC1880122C39ACB004A1DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
