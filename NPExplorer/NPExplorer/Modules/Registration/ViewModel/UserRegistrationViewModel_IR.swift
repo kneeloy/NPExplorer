@@ -13,9 +13,9 @@ import Foundation
 public class UserRegistrationViewModel_IR: UserRegistrationViewModelProtocol_IR {
     var dataManager: UserRegistrationDataManagerProtocol_IR
     let router: UserRegistrationRouterProtocol?
-    let userRegistrationContext: UserRegistrationContext
+    let userRegistrationContext: UserRegistrationContext?
     
-    init(withDataManager: UserRegistrationDataManagerProtocol_IR, withRouter: UserRegistrationRouterProtocol?, userRegistrationContext: UserRegistrationContext) {
+    init(withDataManager: UserRegistrationDataManagerProtocol_IR, withRouter: UserRegistrationRouterProtocol?, userRegistrationContext: UserRegistrationContext?) {
         self.dataManager = withDataManager
         self.router = withRouter
         self.userRegistrationContext = userRegistrationContext
