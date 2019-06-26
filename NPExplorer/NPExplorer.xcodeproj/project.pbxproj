@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5D911E150B0F7627AFE5A25 /* Pods_NPExplorer_IR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853565E533BCB623C0B852A1 /* Pods_NPExplorer_IR.framework */; };
+		D86F8EB39238B3DBDB7D812F /* Pods_NPExplorer_GR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA9A130086427F612165853 /* Pods_NPExplorer_GR.framework */; };
 		EDC1865822BBEBC2004A1DDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1865722BBEBC2004A1DDF /* AppDelegate.swift */; };
 		EDC1865F22BBEBC4004A1DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */; };
 		EDC1866222BBEBC4004A1DDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1866022BBEBC4004A1DDF /* LaunchScreen.storyboard */; };
@@ -126,6 +128,8 @@
 		EDC187C022C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187BE22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift */; };
 		EDC187C222C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */; };
 		EDC187C322C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */; };
+		EDC187F322C377D5004A1DDF /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDC187F222C377D5004A1DDF /* Okta.plist */; };
+		EDC187F422C377D5004A1DDF /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDC187F222C377D5004A1DDF /* Okta.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +143,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5653BA9DC0F3571F1F682279 /* Pods-NPExplorer_IR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPExplorer_IR.release.xcconfig"; path = "Target Support Files/Pods-NPExplorer_IR/Pods-NPExplorer_IR.release.xcconfig"; sourceTree = "<group>"; };
+		5AA9A130086427F612165853 /* Pods_NPExplorer_GR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPExplorer_GR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		853565E533BCB623C0B852A1 /* Pods_NPExplorer_IR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NPExplorer_IR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3312BF03CEC886C5DB1DBBF /* Pods-NPExplorer_GR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPExplorer_GR.debug.xcconfig"; path = "Target Support Files/Pods-NPExplorer_GR/Pods-NPExplorer_GR.debug.xcconfig"; sourceTree = "<group>"; };
+		CE8008E56898E6807A37EF4B /* Pods-NPExplorer_IR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPExplorer_IR.debug.xcconfig"; path = "Target Support Files/Pods-NPExplorer_IR/Pods-NPExplorer_IR.debug.xcconfig"; sourceTree = "<group>"; };
+		E7A876147A390C15903462B4 /* Pods-NPExplorer_GR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NPExplorer_GR.release.xcconfig"; path = "Target Support Files/Pods-NPExplorer_GR/Pods-NPExplorer_GR.release.xcconfig"; sourceTree = "<group>"; };
 		EDC1865422BBEBC2004A1DDF /* NPExplorer_IR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPExplorer_IR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC1865722BBEBC2004A1DDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -208,6 +218,7 @@
 		EDC187BB22C1982D004A1DDF /* CountryDetailAttributesResource_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailAttributesResource_IR.swift; sourceTree = "<group>"; };
 		EDC187BE22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailAttributesEndpoint_IR.swift; sourceTree = "<group>"; };
 		EDC187C122C19E8C004A1DDF /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
+		EDC187F222C377D5004A1DDF /* Okta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Okta.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D911E150B0F7627AFE5A25 /* Pods_NPExplorer_IR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,18 +241,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86F8EB39238B3DBDB7D812F /* Pods_NPExplorer_GR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		254E078C32E5572EB5177738 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AA9A130086427F612165853 /* Pods_NPExplorer_GR.framework */,
+				853565E533BCB623C0B852A1 /* Pods_NPExplorer_IR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DD4F6B1DD0D4C026795598A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3312BF03CEC886C5DB1DBBF /* Pods-NPExplorer_GR.debug.xcconfig */,
+				E7A876147A390C15903462B4 /* Pods-NPExplorer_GR.release.xcconfig */,
+				CE8008E56898E6807A37EF4B /* Pods-NPExplorer_IR.debug.xcconfig */,
+				5653BA9DC0F3571F1F682279 /* Pods-NPExplorer_IR.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EDC1864B22BBEBC2004A1DDF = {
 			isa = PBXGroup;
 			children = (
 				EDC1865622BBEBC2004A1DDF /* NPExplorer */,
 				EDC1866B22BBEBC4004A1DDF /* NPExplorerTests */,
 				EDC1865522BBEBC2004A1DDF /* Products */,
+				4DD4F6B1DD0D4C026795598A /* Pods */,
+				254E078C32E5572EB5177738 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -268,6 +303,7 @@
 				EDC1867722BE7072004A1DDF /* Resource */,
 				EDC1866322BBEBC4004A1DDF /* NPExplorer_IR-info.plist */,
 				EDC1868B22BE72C7004A1DDF /* NPExplorer_GR-Info.plist */,
+				EDC187F222C377D5004A1DDF /* Okta.plist */,
 				EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */,
 			);
 			path = NPExplorer;
@@ -546,9 +582,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDC1867122BBEBC4004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_IR" */;
 			buildPhases = (
+				59ABCC17BA645EA4EC2A5562 /* [CP] Check Pods Manifest.lock */,
 				EDC1865022BBEBC2004A1DDF /* Sources */,
 				EDC1865122BBEBC2004A1DDF /* Frameworks */,
 				EDC1865222BBEBC2004A1DDF /* Resources */,
+				2C3189BCC491E4FBC534DF62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -581,9 +619,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDC1868722BE72C7004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_GR" */;
 			buildPhases = (
+				6A6620F5DAC4BA7EA46B5692 /* [CP] Check Pods Manifest.lock */,
 				EDC1868022BE72C7004A1DDF /* Sources */,
 				EDC1868222BE72C7004A1DDF /* Frameworks */,
 				EDC1868322BE72C7004A1DDF /* Resources */,
+				8EAD21B7BE5FECD5C77AB3E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -639,6 +679,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC187F322C377D5004A1DDF /* Okta.plist in Resources */,
 				EDC1866222BBEBC4004A1DDF /* LaunchScreen.storyboard in Resources */,
 				EDC1876B22C0F285004A1DDF /* Localizable.strings in Resources */,
 				EDC1877022C0F34D004A1DDF /* NPExplorer.storyboard in Resources */,
@@ -657,6 +698,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC187F422C377D5004A1DDF /* Okta.plist in Resources */,
 				EDC1868422BE72C7004A1DDF /* LaunchScreen.storyboard in Resources */,
 				EDC1876C22C0F285004A1DDF /* Localizable.strings in Resources */,
 				EDC1868522BE72C7004A1DDF /* Assets.xcassets in Resources */,
@@ -665,6 +707,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C3189BCC491E4FBC534DF62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_IR/Pods-NPExplorer_IR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_IR/Pods-NPExplorer_IR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_IR/Pods-NPExplorer_IR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59ABCC17BA645EA4EC2A5562 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NPExplorer_IR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A6620F5DAC4BA7EA46B5692 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NPExplorer_GR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EAD21B7BE5FECD5C77AB3E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_GR/Pods-NPExplorer_GR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_GR/Pods-NPExplorer_GR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NPExplorer_GR/Pods-NPExplorer_GR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDC1865022BBEBC2004A1DDF /* Sources */ = {
@@ -960,6 +1083,7 @@
 		};
 		EDC1867222BBEBC4004A1DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8008E56898E6807A37EF4B /* Pods-NPExplorer_IR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -982,6 +1106,7 @@
 		};
 		EDC1867322BBEBC4004A1DDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5653BA9DC0F3571F1F682279 /* Pods-NPExplorer_IR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1044,6 +1169,7 @@
 		};
 		EDC1868822BE72C7004A1DDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3312BF03CEC886C5DB1DBBF /* Pods-NPExplorer_GR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1066,6 +1192,7 @@
 		};
 		EDC1868922BE72C7004A1DDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A876147A390C15903462B4 /* Pods-NPExplorer_GR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

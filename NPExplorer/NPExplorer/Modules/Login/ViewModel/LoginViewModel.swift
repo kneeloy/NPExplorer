@@ -7,10 +7,12 @@
 //
 
 import Foundation
+import UIKit
+
 protocol LoginViewModelProtocol {
     
     var dataManager: LoginDataManagerProtocol { get }
-    func authenticateUser(userName: String, password: String?, onSuccess: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse)->Void), OnFailure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
+    func authenticateUser(userName: String?, password: String?, viewController: UIViewController?, onSuccess: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse?)->Void), OnFailure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
     func navigateToCountryDetailPage() -> Void
     func navigateToUserRegistrationPage() -> Void
     func shouldDisplayPasswordField() -> Bool
@@ -35,11 +37,13 @@ public class LoginViewModel: LoginViewModelProtocol {
         self.loginContext = loginContext
     }
     
-    func authenticateUser(userName: String, password: String?, onSuccess: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse) -> Void), OnFailure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
+    func authenticateUser(userName: String?, password: String?, viewController: UIViewController? = nil, onSuccess: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse?) -> Void), OnFailure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
         
         let loginForm = UserAuthenticationFormModel(userName: userName, password: password)
-        dataManager.authenticateUser(userAuthForm: loginForm, success: { (token,urlResponse)  in
+        dataManager.authenticateUser(userAuthForm: loginForm, viewController: viewController, success: { [weak self] (token,urlResponse)  in
             onSuccess(token, urlResponse)
+            self?.navigateToUserRegistrationPage()
+            
         }, failure: { (urlResponse, error) in
             OnFailure(urlResponse, error)
         })

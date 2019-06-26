@@ -7,11 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
 protocol LoginDataManagerProtocol {
     //var configUpdater: BaseNetworkClientProtocol_IR? { get set }
     var loginUpdater: LoginUpdaterProtocol? { get set }
     
-    func authenticateUser(userAuthForm: UserAuthenticationFormModel, success: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse)->Void),
+    func authenticateUser(userAuthForm: UserAuthenticationFormModel, viewController: UIViewController?, success: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse?)->Void),
                           failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
 }
 
@@ -24,9 +26,9 @@ public class LoginDataManager: LoginDataManagerProtocol {
         self.loginUpdater = loginUpdater
     }
     
-    func authenticateUser(userAuthForm: UserAuthenticationFormModel, success: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse) -> Void), failure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
+    func authenticateUser(userAuthForm: UserAuthenticationFormModel, viewController: UIViewController? = nil, success: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse?) -> Void), failure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
         
-        loginUpdater?.authenticateUser(userAuthForm: userAuthForm, success: { [weak self](token,urlResponse)  in
+        loginUpdater?.authenticateUser(userAuthForm: userAuthForm, viewController: viewController, success: { [weak self](token,urlResponse)  in
             //let env = self?.configUpdater?.client.environment
             
             //ToDo find a way to assign the auth token in env

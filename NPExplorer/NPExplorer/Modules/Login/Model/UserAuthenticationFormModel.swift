@@ -8,7 +8,7 @@
 
 import Foundation
 struct UserAuthenticationFormModel: Codable {
-    var userName: String
+    var userName: String?
     var password: String?
     
     enum CodingKeys: String, CodingKey {
@@ -30,7 +30,7 @@ struct UserAuthenticationFormModel: Codable {
         try container.encode(self.password, forKey: .password)
     }
     
-    public init(userName: String, password: String?) {
+    public init(userName: String?, password: String?) {
         
         self.userName = userName
         self.password = password

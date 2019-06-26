@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import OktaAuth
 
 protocol LoginDisplaying {
     var viewModel: LoginViewModelProtocol? { get set }
@@ -32,7 +33,7 @@ class LoginViewController : UIViewController, LoginDisplaying {
     @objc private func loginButtonPressed() {
         if let userName = usernameTextField.text, let password = passwordTextField.text {
             //ToDo Create a model for registrationForm Data
-            viewModel?.authenticateUser(userName: userName, password: password, onSuccess: {[unowned self] (_,_) in
+            viewModel?.authenticateUser(userName: userName, password: password, viewController: self, onSuccess: {[unowned self] (_,_) in
                 DispatchQueue.main.async {
                     //UI Code
                     self.viewModel?.navigateToCountryDetailPage()
