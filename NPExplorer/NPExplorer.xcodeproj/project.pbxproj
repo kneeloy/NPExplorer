@@ -130,6 +130,7 @@
 		EDC187F322C377D5004A1DDF /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDC187F222C377D5004A1DDF /* Okta.plist */; };
 		EDC187F422C377D5004A1DDF /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDC187F222C377D5004A1DDF /* Okta.plist */; };
 		EDC187FC22C39ACB004A1DDF /* NPExplorer_GRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187FB22C39ACB004A1DDF /* NPExplorer_GRTests.swift */; };
+		EDC1880A22C3A215004A1DDF /* NPExplorer_IRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1880922C3A215004A1DDF /* NPExplorer_IRTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = EDC1867F22BE72C7004A1DDF;
 			remoteInfo = NPExplorer_GR;
+		};
+		EDC1880C22C3A215004A1DDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC1864C22BBEBC2004A1DDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC1865322BBEBC2004A1DDF;
+			remoteInfo = NPExplorer_IR;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -221,6 +229,9 @@
 		EDC187F922C39ACB004A1DDF /* NPExplorer_GRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPExplorer_GRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC187FB22C39ACB004A1DDF /* NPExplorer_GRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPExplorer_GRTests.swift; sourceTree = "<group>"; };
 		EDC187FD22C39ACB004A1DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC1880722C3A215004A1DDF /* NPExplorer_IRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPExplorer_IRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC1880922C3A215004A1DDF /* NPExplorer_IRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPExplorer_IRTests.swift; sourceTree = "<group>"; };
+		EDC1880B22C3A215004A1DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +252,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EDC187F622C39ACB004A1DDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC1880422C3A215004A1DDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,6 +294,7 @@
 				EDC1865622BBEBC2004A1DDF /* NPExplorer */,
 				EDC1866B22BBEBC4004A1DDF /* NPExplorerTests */,
 				EDC187FA22C39ACB004A1DDF /* NPExplorer_GRTests */,
+				EDC1880822C3A215004A1DDF /* NPExplorer_IRTests */,
 				EDC1865522BBEBC2004A1DDF /* Products */,
 				4DD4F6B1DD0D4C026795598A /* Pods */,
 				254E078C32E5572EB5177738 /* Frameworks */,
@@ -288,6 +307,7 @@
 				EDC1865422BBEBC2004A1DDF /* NPExplorer_IR.app */,
 				EDC1868A22BE72C7004A1DDF /* NPExplorer_GR.app */,
 				EDC187F922C39ACB004A1DDF /* NPExplorer_GRTests.xctest */,
+				EDC1880722C3A215004A1DDF /* NPExplorer_IRTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -587,6 +607,15 @@
 			path = NPExplorer_GRTests;
 			sourceTree = "<group>";
 		};
+		EDC1880822C3A215004A1DDF /* NPExplorer_IRTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1880922C3A215004A1DDF /* NPExplorer_IRTests.swift */,
+				EDC1880B22C3A215004A1DDF /* Info.plist */,
+			);
+			path = NPExplorer_IRTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -646,6 +675,24 @@
 			productReference = EDC187F922C39ACB004A1DDF /* NPExplorer_GRTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EDC1880622C3A215004A1DDF /* NPExplorer_IRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC1880E22C3A215004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_IRTests" */;
+			buildPhases = (
+				EDC1880322C3A215004A1DDF /* Sources */,
+				EDC1880422C3A215004A1DDF /* Frameworks */,
+				EDC1880522C3A215004A1DDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC1880D22C3A215004A1DDF /* PBXTargetDependency */,
+			);
+			name = NPExplorer_IRTests;
+			productName = NPExplorer_IRTests;
+			productReference = EDC1880722C3A215004A1DDF /* NPExplorer_IRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -662,6 +709,10 @@
 					EDC187F822C39ACB004A1DDF = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = EDC1867F22BE72C7004A1DDF;
+					};
+					EDC1880622C3A215004A1DDF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EDC1865322BBEBC2004A1DDF;
 					};
 				};
 			};
@@ -682,6 +733,7 @@
 				EDC1865322BBEBC2004A1DDF /* NPExplorer_IR */,
 				EDC1867F22BE72C7004A1DDF /* NPExplorer_GR */,
 				EDC187F822C39ACB004A1DDF /* NPExplorer_GRTests */,
+				EDC1880622C3A215004A1DDF /* NPExplorer_IRTests */,
 			);
 		};
 /* End PBXProject section */
@@ -712,6 +764,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EDC187F722C39ACB004A1DDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC1880522C3A215004A1DDF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -934,6 +993,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EDC1880322C3A215004A1DDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC1880A22C3A215004A1DDF /* NPExplorer_IRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -941,6 +1008,11 @@
 			isa = PBXTargetDependency;
 			target = EDC1867F22BE72C7004A1DDF /* NPExplorer_GR */;
 			targetProxy = EDC187FE22C39ACB004A1DDF /* PBXContainerItemProxy */;
+		};
+		EDC1880D22C3A215004A1DDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC1865322BBEBC2004A1DDF /* NPExplorer_IR */;
+			targetProxy = EDC1880C22C3A215004A1DDF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1223,6 +1295,44 @@
 			};
 			name = Release;
 		};
+		EDC1880F22C3A215004A1DDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NPExplorer_IRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niloy.NPExplorer-IRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer_IR.app/NPExplorer_IR";
+			};
+			name = Debug;
+		};
+		EDC1881022C3A215004A1DDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NPExplorer_IRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niloy.NPExplorer-IRTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NPExplorer_IR.app/NPExplorer_IR";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1258,6 +1368,15 @@
 			buildConfigurations = (
 				EDC1880022C39ACB004A1DDF /* Debug */,
 				EDC1880122C39ACB004A1DDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC1880E22C3A215004A1DDF /* Build configuration list for PBXNativeTarget "NPExplorer_IRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC1880F22C3A215004A1DDF /* Debug */,
+				EDC1881022C3A215004A1DDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

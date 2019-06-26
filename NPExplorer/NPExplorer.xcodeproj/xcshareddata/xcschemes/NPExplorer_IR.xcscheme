@@ -20,6 +20,20 @@
                ReferencedContainer = "container:NPExplorer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EDC1866722BBEBC4004A1DDF"
+               BuildableName = "NPExplorerTests.xctest"
+               BlueprintName = "NPExplorerTests"
+               ReferencedContainer = "container:NPExplorer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -32,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDC1866722BBEBC4004A1DDF"
-               BuildableName = "NPExplorerTests.xctest"
-               BlueprintName = "NPExplorerTests"
+               BlueprintIdentifier = "EDC1880622C3A215004A1DDF"
+               BuildableName = "NPExplorer_IRTests.xctest"
+               BlueprintName = "NPExplorer_IRTests"
                ReferencedContainer = "container:NPExplorer.xcodeproj">
             </BuildableReference>
          </TestableReference>
