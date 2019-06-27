@@ -36,11 +36,10 @@ class LoginViewController : UIViewController, LoginDisplaying {
             viewModel?.authenticateUser(userName: userName, password: password, viewController: self, onSuccess: {[unowned self] (_,_) in
                 DispatchQueue.main.async {
                     //UI Code
-                    self.viewModel?.navigateToCountryDetailPage()
                 }}, OnFailure: {[unowned self] (_, error) in
                     //Display error
                     DispatchQueue.main.async {
-                        //self.displayAlert(withTitle: "Error!!", message: error.localizedDescription)
+                        self.displayAlert(withTitle: "Error!!", message: "Could not log in")
                     }})
         }
     }
@@ -56,5 +55,14 @@ class LoginViewController : UIViewController, LoginDisplaying {
     @objc private func registerButtonPressed() {
     
         viewModel?.navigateToUserRegistrationPage()
+    }
+    
+    //Todo move to a central Util class to avoid code repetation
+    private func displayAlert(withTitle: String, message: String) {
+        let alert = UIAlertController(title: withTitle, message: message, preferredStyle: .alert)
+        
+        //ToDo Localization
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
 }

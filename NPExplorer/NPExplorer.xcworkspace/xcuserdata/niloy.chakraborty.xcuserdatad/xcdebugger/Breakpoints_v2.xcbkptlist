@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NPExplorer/NetworkLayer/NetworkService.swift"
-            timestampString = "583289256.835645"
+            timestampString = "583294071.372224"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NPExplorer/Modules/Login/ViewModel/LoginViewModel.swift"
-            timestampString = "583289256.835915"
+            timestampString = "583294071.37266"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NPExplorer/Modules/Login/ViewModel/LoginViewModel.swift"
-            timestampString = "583289256.836087"
+            timestampString = "583294071.376143"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -54,11 +54,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NPExplorer/Modules/Login/Model/UserAuthenticationSuccessModel.swift"
-            timestampString = "583287620.430331"
+            timestampString = "583291371.430427"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NPExplorer/Router/GR/LoginRouter_GR.swift"
-            timestampString = "583286846.383395"
+            timestampString = "583294071.3763649"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -112,6 +112,117 @@
             startingLineNumber = "33"
             endingLineNumber = "33"
             landmarkName = "registerUser(userRegistrationForm:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NPExplorer/Modules/CountryDetail/View/CountryDetailViewController.swift"
+            timestampString = "583294071.376966"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NPExplorer_GR.CountryDetailViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "NPExplorer_GR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/niloy.chakraborty/Personal/Work/Repo/NPExplorer/NPExplorer/NPExplorer/Modules/CountryDetail/View/CountryDetailViewController.swift"
+                  timestampString = "583291865.288807"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NPExplorer_GR.CountryDetailAttributeModelContainerProtocol, __C.NSURLResponse) -&gt; () in NPExplorer_GR.CountryDetailViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "NPExplorer_GR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/niloy.chakraborty/Personal/Work/Repo/NPExplorer/NPExplorer/NPExplorer/Modules/CountryDetail/View/CountryDetailViewController.swift"
+                  timestampString = "583291865.2924221"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;__C.NSURLResponse&gt;, NPExplorer_GR.NetworkServiceError) -&gt; () in NPExplorer_GR.CountryDetailViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "NPExplorer_GR"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/niloy.chakraborty/Personal/Work/Repo/NPExplorer/NPExplorer/NPExplorer/Modules/CountryDetail/View/CountryDetailViewController.swift"
+                  timestampString = "583291865.2955199"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NPExplorer/Router/GR/LoginRouter_GR.swift"
+            timestampString = "583294071.377211"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "routeToCountryDetailPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NPExplorer/Modules/Login/ViewModel/LoginViewModel.swift"
+            timestampString = "583294071.377287"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "authenticateUser(userName:password:viewController:onSuccess:OnFailure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NPExplorer/Modules/CountryDetail/ViewModel/CountryDetailViewModel.swift"
+            timestampString = "583294071.37994"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "fetchCountryDetailAttributes(attributes:success:failure:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

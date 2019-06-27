@@ -11,9 +11,11 @@ import Foundation
 //
 let storyBoardFileName = "NPExplorer"
 let welcomeLogoText = "WelcomeLogoText"
+let countryDetailScreenStoryBoardIdentifier = "CountryDetail"
  #if MARKET_IR
     let userRegistrationScreenStoryBoardIdentifier = "UserRegistration_IR"
  #elseif MARKET_GR
     let userRegistrationScreenStoryBoardIdentifier = "UserRegistration_GR"
+
  #endif
 

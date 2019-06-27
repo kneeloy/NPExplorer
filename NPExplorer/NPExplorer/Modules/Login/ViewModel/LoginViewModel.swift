@@ -43,7 +43,7 @@ public class LoginViewModel: LoginViewModelProtocol {
         dataManager.authenticateUser(userAuthForm: loginForm, viewController: viewController, success: { [weak self] (token,urlResponse)  in
             onSuccess(token, urlResponse)
             DispatchQueue.main.async{
-                self?.navigateToUserRegistrationPage()
+                self?.navigateToCountryDetailPage()
             }
             
             

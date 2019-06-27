@@ -62,7 +62,7 @@ struct CountryDetailAttributeModelContainer: Codable {
     var attributes: [CountryDetailAttributeModel]
     
     enum CodingKeys: String, CodingKey {
-        case attributes = "attributes"
+        case attributes = "attributesList"
     }
     
     public init(from decoder: Decoder) throws {
