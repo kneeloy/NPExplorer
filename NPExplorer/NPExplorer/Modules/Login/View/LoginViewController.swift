@@ -46,8 +46,9 @@ class LoginViewController : UIViewController, LoginDisplaying {
     func updateUI() {
         guard let viewModel = viewModel else { return }
         pageLogoLabel.text = loginPageText.localized
-        if(!viewModel.shouldDisplayPasswordField()) {
+        if(!viewModel.shouldDisplayuserCredentialField()) {
             passwordTextField.isHidden = true
+            usernameTextField.isHidden = true
         }
     }
     

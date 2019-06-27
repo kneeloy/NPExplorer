@@ -53,7 +53,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.045712830504234025" green="0.68507228859468194" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.69656773681014972" green="1" blue="0.99586025365571929" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="wIR-Jv-fyK" firstAttribute="centerX" secondItem="MKp-EY-nOi" secondAttribute="centerX" id="H6b-KL-uaL"/>
                             <constraint firstItem="vh1-sG-d2b" firstAttribute="centerX" secondItem="MKp-EY-nOi" secondAttribute="centerX" id="NZd-I8-VNa"/>
@@ -99,7 +99,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.045712830500000003" green="0.68507228860000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.6141442802" green="0.97290894709999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="chc-Zj-xcb" firstAttribute="top" secondItem="yxf-D1-ZgN" secondAttribute="top" constant="149" id="QUr-WJ-NFV"/>
                             <constraint firstItem="4GY-Pu-E0n" firstAttribute="centerX" secondItem="yxf-D1-ZgN" secondAttribute="centerX" id="S96-hO-NTg"/>
@@ -142,7 +142,7 @@
                                 <state key="normal" title="Register"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.045712830500000003" green="0.68507228860000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.6141442802" green="0.97290894709999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="chH-gO-QoX" firstAttribute="centerX" secondItem="sP8-Zv-LWW" secondAttribute="centerX" id="8kZ-0v-2Cs"/>
                             <constraint firstItem="Lbv-Qg-cTT" firstAttribute="centerX" secondItem="sP8-Zv-LWW" secondAttribute="centerX" id="TPT-Ku-oxQ"/>
@@ -170,7 +170,7 @@
                     <view key="view" contentMode="scaleToFill" id="Glq-eE-8RB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.045712830500000003" green="0.68507228860000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.6141442802" green="0.97290894709999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="s38-Su-HKN"/>
                     </view>
                 </viewController>

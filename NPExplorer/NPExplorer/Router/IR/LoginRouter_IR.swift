@@ -15,9 +15,9 @@ class LoginRouter_IR: LoginRouterProtocol {
     weak var navigationController: UINavigationController?
     func routeToCountryDetailPage() {
         let storyBoard = UIStoryboard.init(name: storyBoardFileName, bundle: nil)
-        let countryDetailUpdater = CountryDetailUpdater_GR()
+        let countryDetailUpdater = CountryDetailUpdater_IR()
         let countryDetailDataManager = CountryDetailDataManager(countryDetailUpdater: countryDetailUpdater)
-        let countryDetailVM = CountryDetailViewModel(withDataManager: countryDetailDataManager, withRouter: nil, countryDetailContext: CountryDetailContext(countryCode: CountryCode.ireland))
+        let countryDetailVM = CountryDetailViewModel(withDataManager: countryDetailDataManager, withRouter: nil, countryDetailContext: CountryDetailContext(countryCode: CountryCode.ireland, isLandscape: false))
         let countryDetailController = storyBoard.instantiateViewController(withIdentifier: countryDetailScreenStoryBoardIdentifier)
         if var countryDetailVC = countryDetailController as? CountryDetailDisplaying {
             countryDetailVC.viewModel = countryDetailVM

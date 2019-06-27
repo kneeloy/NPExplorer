@@ -15,7 +15,7 @@ protocol LoginViewModelProtocol {
     func authenticateUser(userName: String?, password: String?, viewController: UIViewController?, onSuccess: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse?)->Void), OnFailure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
     func navigateToCountryDetailPage() -> Void
     func navigateToUserRegistrationPage() -> Void
-    func shouldDisplayPasswordField() -> Bool
+    func shouldDisplayuserCredentialField() -> Bool
 }
 
 public enum CountryCode: String {
@@ -52,7 +52,7 @@ public class LoginViewModel: LoginViewModelProtocol {
         })
     }
     
-    func shouldDisplayPasswordField() -> Bool {
+    func shouldDisplayuserCredentialField() -> Bool {
         switch loginContext.countryCode {
         case CountryCode.ireland:
             return false

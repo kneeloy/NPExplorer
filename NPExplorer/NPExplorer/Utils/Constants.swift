@@ -29,5 +29,3 @@ let userRegistrationErrorMessage = "User Already Exist"
 
 //Login
 let userAuthenticationFailureMessage = "Login Error"
-
-

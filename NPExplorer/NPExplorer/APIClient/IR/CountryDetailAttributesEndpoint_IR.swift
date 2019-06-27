@@ -9,7 +9,7 @@
 import Foundation
 extension NP_IRAPIClient {
     func getCountryDetailsAttributes(success: @escaping ((CountryDetailAttributeModelContainerProtocol, URLResponse)->Void), failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void)) {
-        guard let listResource = CountryDetailsAttributesResource_GR.getCountryDetailAttributes(environment: environment) else {
+        guard let listResource = CountryDetailsAttributesResource_IR.getCountryDetailAttributes(environment: environment) else {
             //ToDo: Need to generate and throw some custom error
             return
         }

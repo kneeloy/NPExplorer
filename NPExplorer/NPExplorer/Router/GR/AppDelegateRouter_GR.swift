@@ -17,6 +17,7 @@ class AppDelegateRouter_GR:  AppDelegateRouterProtocol{
     }
     
     func start() {
+        LangConfig.currentLangCode = "de"
         let storyBoard = UIStoryboard.init(name: storyBoardFileName, bundle: nil)
         let npExpController = storyBoard.instantiateInitialViewController()
         let loginRouter = LoginRouter_GR(navigationController: navigationController)
