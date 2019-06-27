@@ -16,7 +16,7 @@ public class CountryDetailsAttributesResource_GR {
         guard var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true) else {
             return nil
         }
-        components.path +=  "/api/attributes/IR"
+        components.path +=  "/api/attributes/GR"
         
         //ToDo pass authorization token in header
         
