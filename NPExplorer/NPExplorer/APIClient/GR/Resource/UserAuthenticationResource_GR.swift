@@ -27,14 +27,7 @@ public class UserAuthenticationResource_GR {
         guard let httpBody = try? JSONEncoder().encode(body) else {
             return nil
         }
-
-        print(body)
-        
-        //ToDo pass authorization token in header
-    
         
         return NetworkResource(url: url, httpMethod: "POST", headers: nil, body: httpBody)
-        
-        //return NetworkResource(url: url, httpMethod: "POST", headers: nil, body: httpBody)
     }
 }

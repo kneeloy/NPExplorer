@@ -50,6 +50,7 @@ struct CountryDetailAttributeModel: Codable {
 
 protocol CountryDetailAttributeModelProtocol {
     var attributeName: String { get set }
+    var attributeValue: String { get set }
     var landscapeModeAvailability: Bool { get set }
     var portraitModeAvailability: Bool { get set }
 }

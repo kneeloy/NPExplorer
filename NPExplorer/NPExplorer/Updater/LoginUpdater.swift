@@ -49,9 +49,6 @@ class LoginUpdater_IR: LoginUpdaterProtocol {
                         userinfo.forEach { print("\($0): \($1)") }
                     }
                 }
-            
-                
-                
         }
     }
 }
@@ -59,7 +56,7 @@ class LoginUpdater_IR: LoginUpdaterProtocol {
 class LoginUpdater_GR: BaseGRNetworkClient, LoginUpdaterProtocol {
     func authenticateUser(userAuthForm: UserAuthenticationFormModel, viewController: UIViewController? = nil, success: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse?)->Void),
                           failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void)) {
-        guard let password = userAuthForm.password else {
+        guard let _ = userAuthForm.userName, let _ = userAuthForm.password else {
             let error = NetworkServiceError.cancelled
             failure(nil, error)
             return

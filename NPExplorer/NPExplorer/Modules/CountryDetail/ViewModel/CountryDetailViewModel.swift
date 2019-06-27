@@ -41,9 +41,14 @@ public class CountryDetailViewModel: CountryDetailViewModelProtocol {
         
     }
     
-    private func fetchCountryDetailAttributes(attributes: [String], success: @escaping ((CountryDetailAttributeModelContainerProtocol, URLResponse)->Void),
+    private func fetchCountryDetailAttributes(attributes: [String],
+                                              success: @escaping ((CountryDetailAttributeModelContainerProtocol, URLResponse)->Void),
                                               failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void)) {
-        
+        dataManager.getCountryDetailAttributes(success: {(attrb,_) in
+            print(attrb)
+            }, failure: { _,_ in
+                print("Fail")
+        })
     }
     
 }

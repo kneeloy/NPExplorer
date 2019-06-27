@@ -25,9 +25,15 @@ class RegistrationViewController_GR : UIViewController, UserRegistrationDisplayi
     
     @objc private func registerButtonSelected() {
         if let passcode = passCodeTextField.text {
-            viewModel?.registerUser(passcode: passcode, onSuccess: {[unowned self] (_,_) in
+            viewModel?.registerUser(passcode: passcode, onSuccess: {[unowned self] (regReply,_) in
                 DispatchQueue.main.async {
                     //UI Code
+                    if regReply.registrationStatus == "OK"
+                    {
+                        self.displayAlert(withTitle: "Success!", message: "user Added")
+                    } else {
+                        self.displayAlert(withTitle: "Success!", message: "user already exist")
+                    }
                 }
                 }, OnFailure: {[unowned self] (_, error) in
                     //Display error
@@ -35,5 +41,13 @@ class RegistrationViewController_GR : UIViewController, UserRegistrationDisplayi
                         //self.displayAlert(withTitle: "Error!!", message: error.localizedDescription)
                     }})
         }
+    }
+    
+    private func displayAlert(withTitle: String, message: String) {
+        let alert = UIAlertController(title: withTitle, message: message, preferredStyle: .alert)
+        
+        //ToDo Localization
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
 }
