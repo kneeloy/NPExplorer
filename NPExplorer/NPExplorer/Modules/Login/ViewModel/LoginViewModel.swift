@@ -42,7 +42,10 @@ public class LoginViewModel: LoginViewModelProtocol {
         let loginForm = UserAuthenticationFormModel(userName: userName, password: password)
         dataManager.authenticateUser(userAuthForm: loginForm, viewController: viewController, success: { [weak self] (token,urlResponse)  in
             onSuccess(token, urlResponse)
-            self?.navigateToUserRegistrationPage()
+            DispatchQueue.main.async{
+                self?.navigateToCountryDetailPage()
+            }
+            
             
         }, failure: { (urlResponse, error) in
             OnFailure(urlResponse, error)

@@ -9,7 +9,8 @@
 import Foundation
 
 public class UserRegistrationResource_IR {
-    static let baseURL = URL(string: "https://api.npexp.com")! //ToDo schema based base url
+    //static let baseURL = URL(string: "https://api.npexp.com")! //ToDo schema based base url
+    static let baseURL = URL(string: "https://npexpapi.azurewebsites.net")!
     
     static func registerUser(url baseURL: URL = baseURL, environment: NetworkEnvironment, body: UserRegistrationFormModel_IR) -> NetworkResource<UserRegistrationReplyModel>? {
         
@@ -17,17 +18,16 @@ public class UserRegistrationResource_IR {
         guard var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true) else {
             return nil
         }
-        components.path +=  "/v1/IR/registerUser"
+        components.path +=  "/api/userregistration/IR"
+        guard let url = components.url else {
+            return nil
+        }
         
         // Setup HTTP body
         guard let httpBody = try? JSONEncoder().encode(body) else {
             return nil
         }
-        
-        guard let url = components.url else {
-            return nil
-        }
-        
-        return NetworkResource(url: url, httpMethod: "POST", headers: nil, body: nil)
+
+        return NetworkResource(url: url, httpMethod: "POST", headers: nil, body: httpBody)
     }
 }

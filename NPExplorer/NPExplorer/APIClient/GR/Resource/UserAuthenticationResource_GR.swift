@@ -17,29 +17,17 @@ public class UserAuthenticationResource_GR {
             return nil
         }
         
-//        components.path +=  "/api/userauthentication/GR"
-//
-//        guard let url = components.url else {
-//            return nil
-//        }
-//
-//        // Setup HTTP body
-//        guard let httpBody = try? JSONEncoder().encode(body) else {
-//            return nil
-//        }
-//
-//        print(body)
-        
         components.path +=  "/api/userauthentication/GR"
-        
-        //ToDo pass authorization token in header
-        
+
         guard let url = components.url else {
             return nil
         }
+
+        // Setup HTTP body
+        guard let httpBody = try? JSONEncoder().encode(body) else {
+            return nil
+        }
         
-        return NetworkResource(url: url, httpMethod: "GET", headers: nil, body: nil)
-        
-        //return NetworkResource(url: url, httpMethod: "POST", headers: nil, body: httpBody)
+        return NetworkResource(url: url, httpMethod: "POST", headers: nil, body: httpBody)
     }
 }

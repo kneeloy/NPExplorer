@@ -13,15 +13,15 @@ class LoginRouter_GR: LoginRouterProtocol {
     weak var navigationController: UINavigationController?
     func routeToCountryDetailPage() {
         
-        //        let storyBoard = UIStoryboard.init(name: storyBoardFileName, bundle: nil)
-        //        let moviedetailDataManager = MovieDetailDataManager()
-        //        let movieDetailVM = MovieDetailViewModel(withDataManager: moviedetailDataManager)
-        //        let movieDetailController = storyBoard.instantiateViewController(withIdentifier: movieDetailScreenStoryBoardIdentifier)
-        //        if var movieDetailVC = movieDetailController as? MovieDetailDisplaying {
-        //            movieDetailVC.viewModel = movieDetailVM
-        //            movieDetailVC.buildContext = MovieDetailBuildContext(movieId: forMovieID)
-        //            navigationController?.pushViewController(movieDetailVC as! UIViewController, animated: true)
-        //        }
+        let storyBoard = UIStoryboard.init(name: storyBoardFileName, bundle: nil)
+        let countryDetailUpdater = CountryDetailUpdater_GR()
+        let countryDetailDataManager = CountryDetailDataManager(countryDetailUpdater: countryDetailUpdater)
+        let countryDetailVM = CountryDetailViewModel(withDataManager: countryDetailDataManager, withRouter: nil, countryDetailContext: CountryDetailContext(countryCode: CountryCode.germany))
+        let countryDetailController = storyBoard.instantiateViewController(withIdentifier: countryDetailScreenStoryBoardIdentifier)
+        if var countryDetailVC = countryDetailController as? CountryDetailDisplaying {
+            countryDetailVC.viewModel = countryDetailVM
+            navigationController?.pushViewController(countryDetailVC as! UIViewController, animated: true)
+        }
     }
     
     func routeToRegisterPage() {

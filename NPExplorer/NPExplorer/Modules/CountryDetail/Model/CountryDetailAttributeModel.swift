@@ -50,6 +50,7 @@ struct CountryDetailAttributeModel: Codable {
 
 protocol CountryDetailAttributeModelProtocol {
     var attributeName: String { get set }
+    var attributeValue: String { get set }
     var landscapeModeAvailability: Bool { get set }
     var portraitModeAvailability: Bool { get set }
 }
@@ -61,7 +62,7 @@ struct CountryDetailAttributeModelContainer: Codable {
     var attributes: [CountryDetailAttributeModel]
     
     enum CodingKeys: String, CodingKey {
-        case attributes = "attributes"
+        case attributes = "attributesList"
     }
     
     public init(from decoder: Decoder) throws {

@@ -25,14 +25,20 @@ class RegistrationViewController_GR : UIViewController, UserRegistrationDisplayi
     
     @objc private func registerButtonSelected() {
         if let passcode = passCodeTextField.text {
-            viewModel?.registerUser(passcode: passcode, onSuccess: {[unowned self] (_,_) in
+            viewModel?.registerUser(passcode: passcode, onSuccess: {[unowned self] (regReply,_) in
                 DispatchQueue.main.async {
                     //UI Code
+                    if regReply.registrationStatus == alertButtonOKText.localized
+                    {
+                        self.displayAlert(withTitle: alertTitleSuccessText.localized, message: userRegistrationSuccessMessage.localized)
+                    } else {
+                        self.displayAlert(withTitle: alertTitleErrorText.localized, message: userRegistrationErrorMessage.localized)
+                    }
                 }
                 }, OnFailure: {[unowned self] (_, error) in
                     //Display error
                     DispatchQueue.main.async {
-                        //self.displayAlert(withTitle: "Error!!", message: error.localizedDescription)
+                        self.displayAlert(withTitle: alertTitleErrorText.localized, message: error.localizedDescription)
                     }})
         }
     }

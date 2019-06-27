@@ -30,7 +30,7 @@ class CountryDetailUpdater_IR: BaseIRNetworkClient, CountryDetailUpdaterProtocol
     }
 }
 
-class CountryDetailUpdater: BaseGRNetworkClient, CountryDetailUpdaterProtocol {
+class CountryDetailUpdater_GR: BaseGRNetworkClient, CountryDetailUpdaterProtocol {
     
     func getCountryDetail(attributes: [String], success: @escaping ((CountryDetailModelContainerProtocol, URLResponse)->Void),
                           failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void)) {

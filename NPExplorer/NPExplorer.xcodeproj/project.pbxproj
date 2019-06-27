@@ -93,8 +93,8 @@
 		EDC1875B22C0301A004A1DDF /* UserRegistrationViewModel_GR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875922C0301A004A1DDF /* UserRegistrationViewModel_GR.swift */; };
 		EDC1875D22C032A4004A1DDF /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875C22C032A4004A1DDF /* UserRegistrationViewModel.swift */; };
 		EDC1875E22C032A4004A1DDF /* UserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1875C22C032A4004A1DDF /* UserRegistrationViewModel.swift */; };
-		EDC1876222C0D517004A1DDF /* UserRegistrationSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1876122C0D517004A1DDF /* UserRegistrationSuccessModel.swift */; };
-		EDC1876322C0D517004A1DDF /* UserRegistrationSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1876122C0D517004A1DDF /* UserRegistrationSuccessModel.swift */; };
+		EDC1876222C0D517004A1DDF /* UserRegistrationReplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1876122C0D517004A1DDF /* UserRegistrationReplyModel.swift */; };
+		EDC1876322C0D517004A1DDF /* UserRegistrationReplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1876122C0D517004A1DDF /* UserRegistrationReplyModel.swift */; };
 		EDC1876522C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1876422C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift */; };
 		EDC1876622C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1876422C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift */; };
 		EDC1876B22C0F285004A1DDF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EDC1876E22C0F285004A1DDF /* Localizable.strings */; };
@@ -131,6 +131,11 @@
 		EDC187F422C377D5004A1DDF /* Okta.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDC187F222C377D5004A1DDF /* Okta.plist */; };
 		EDC187FC22C39ACB004A1DDF /* NPExplorer_GRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC187FB22C39ACB004A1DDF /* NPExplorer_GRTests.swift */; };
 		EDC1880A22C3A215004A1DDF /* NPExplorer_IRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1880922C3A215004A1DDF /* NPExplorer_IRTests.swift */; };
+		EDC1881A22C3D471004A1DDF /* MockUserRegistrationReplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1881922C3D471004A1DDF /* MockUserRegistrationReplyModel.swift */; };
+		EDC1884222C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884122C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift */; };
+		EDC1884422C42668004A1DDF /* MockUserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884322C42668004A1DDF /* MockUserRegistrationViewModel.swift */; };
+		EDC1884A22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */; };
+		EDC1884B22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,8 +167,6 @@
 		EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC1866122BBEBC4004A1DDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDC1866322BBEBC4004A1DDF /* NPExplorer_IR-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NPExplorer_IR-info.plist"; sourceTree = "<group>"; };
-		EDC1866C22BBEBC4004A1DDF /* NPExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPExplorerTests.swift; sourceTree = "<group>"; };
-		EDC1866E22BBEBC4004A1DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDC1868A22BE72C7004A1DDF /* NPExplorer_GR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPExplorer_GR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC1868B22BE72C7004A1DDF /* NPExplorer_GR-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "NPExplorer_GR-Info.plist"; path = "/Users/niloy.chakraborty/Personal/Work/Repo/NPExplorer/NPExplorer/NPExplorer_GR-Info.plist"; sourceTree = "<absolute>"; };
 		EDC1868F22BE76D9004A1DDF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -205,7 +208,7 @@
 		EDC1875622C03007004A1DDF /* UserRegistrationViewModel_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel_IR.swift; sourceTree = "<group>"; };
 		EDC1875922C0301A004A1DDF /* UserRegistrationViewModel_GR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel_GR.swift; sourceTree = "<group>"; };
 		EDC1875C22C032A4004A1DDF /* UserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewModel.swift; sourceTree = "<group>"; };
-		EDC1876122C0D517004A1DDF /* UserRegistrationSuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationSuccessModel.swift; sourceTree = "<group>"; };
+		EDC1876122C0D517004A1DDF /* UserRegistrationReplyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationReplyModel.swift; sourceTree = "<group>"; };
 		EDC1876422C0E5C2004A1DDF /* UserAuthenticationSuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthenticationSuccessModel.swift; sourceTree = "<group>"; };
 		EDC1876722C0F06C004A1DDF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		EDC1876D22C0F285004A1DDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -232,6 +235,10 @@
 		EDC1880722C3A215004A1DDF /* NPExplorer_IRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPExplorer_IRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC1880922C3A215004A1DDF /* NPExplorer_IRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPExplorer_IRTests.swift; sourceTree = "<group>"; };
 		EDC1880B22C3A215004A1DDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC1881922C3D471004A1DDF /* MockUserRegistrationReplyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRegistrationReplyModel.swift; sourceTree = "<group>"; };
+		EDC1884122C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRegistrationDataManager_IR.swift; sourceTree = "<group>"; };
+		EDC1884322C42668004A1DDF /* MockUserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRegistrationViewModel.swift; sourceTree = "<group>"; };
+		EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DisplayAlert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,7 +299,6 @@
 			isa = PBXGroup;
 			children = (
 				EDC1865622BBEBC2004A1DDF /* NPExplorer */,
-				EDC1866B22BBEBC4004A1DDF /* NPExplorerTests */,
 				EDC187FA22C39ACB004A1DDF /* NPExplorer_GRTests */,
 				EDC1880822C3A215004A1DDF /* NPExplorer_IRTests */,
 				EDC1865522BBEBC2004A1DDF /* Products */,
@@ -330,15 +336,6 @@
 				EDC1865E22BBEBC4004A1DDF /* Assets.xcassets */,
 			);
 			path = NPExplorer;
-			sourceTree = "<group>";
-		};
-		EDC1866B22BBEBC4004A1DDF /* NPExplorerTests */ = {
-			isa = PBXGroup;
-			children = (
-				EDC1866C22BBEBC4004A1DDF /* NPExplorerTests.swift */,
-				EDC1866E22BBEBC4004A1DDF /* Info.plist */,
-			);
-			path = NPExplorerTests;
 			sourceTree = "<group>";
 		};
 		EDC1867722BE7072004A1DDF /* Resource */ = {
@@ -398,6 +395,7 @@
 			children = (
 				EDC1870122BEF440004A1DDF /* Constants.swift */,
 				EDC1877822C0F4F1004A1DDF /* String+Localization.swift */,
+				EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -581,7 +579,7 @@
 		EDC1874222C00C3E004A1DDF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EDC1876122C0D517004A1DDF /* UserRegistrationSuccessModel.swift */,
+				EDC1876122C0D517004A1DDF /* UserRegistrationReplyModel.swift */,
 				EDC187A022C107E2004A1DDF /* UserRegistrationForm_IR.swift */,
 				EDC187A322C107FB004A1DDF /* UserRegistrationForm_GR.swift */,
 			);
@@ -612,6 +610,9 @@
 			children = (
 				EDC1880922C3A215004A1DDF /* NPExplorer_IRTests.swift */,
 				EDC1880B22C3A215004A1DDF /* Info.plist */,
+				EDC1881922C3D471004A1DDF /* MockUserRegistrationReplyModel.swift */,
+				EDC1884122C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift */,
+				EDC1884322C42668004A1DDF /* MockUserRegistrationViewModel.swift */,
 			);
 			path = NPExplorer_IRTests;
 			sourceTree = "<group>";
@@ -885,6 +886,7 @@
 				EDC187A722C10EEF004A1DDF /* UserAuthenticationFormModel.swift in Sources */,
 				EDC1869C22BE7AF4004A1DDF /* NP_IRAPIClient.swift in Sources */,
 				EDC1872822BF0379004A1DDF /* CountryDetailsEndpoint_GR.swift in Sources */,
+				EDC1884A22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */,
 				EDC1875A22C0301A004A1DDF /* UserRegistrationViewModel_GR.swift in Sources */,
 				EDC187BF22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift in Sources */,
 				EDC1873522BF0B20004A1DDF /* UserAuthenticationResource_GR.swift in Sources */,
@@ -905,7 +907,7 @@
 				EDC1872F22BF06F8004A1DDF /* LoginDataManager.swift in Sources */,
 				EDC1873822BF0FA0004A1DDF /* LoginRouter_GR.swift in Sources */,
 				EDC187AA22C184F4004A1DDF /* CountryDetailUpdater.swift in Sources */,
-				EDC1876222C0D517004A1DDF /* UserRegistrationSuccessModel.swift in Sources */,
+				EDC1876222C0D517004A1DDF /* UserRegistrationReplyModel.swift in Sources */,
 				EDC187A422C107FB004A1DDF /* UserRegistrationForm_GR.swift in Sources */,
 				EDC1874822C00C89004A1DDF /* RegistrationViewController_GR.swift in Sources */,
 				EDC1869022BE76D9004A1DDF /* NetworkService.swift in Sources */,
@@ -947,6 +949,7 @@
 				EDC187A822C10EEF004A1DDF /* UserAuthenticationFormModel.swift in Sources */,
 				EDC186BE22BE82E9004A1DDF /* UserRegistrationResource_GR.swift in Sources */,
 				EDC1872322BF01D3004A1DDF /* LoginUpdater.swift in Sources */,
+				EDC1884B22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */,
 				EDC1875B22C0301A004A1DDF /* UserRegistrationViewModel_GR.swift in Sources */,
 				EDC187C022C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift in Sources */,
 				EDC1872D22BF038F004A1DDF /* CountryDetailsEndpoint_IR.swift in Sources */,
@@ -967,7 +970,7 @@
 				EDC1872922BF0380004A1DDF /* BaseIRNetworkClient.swift in Sources */,
 				EDC1873922BF0FA0004A1DDF /* LoginRouter_GR.swift in Sources */,
 				EDC187AB22C184F4004A1DDF /* CountryDetailUpdater.swift in Sources */,
-				EDC1876322C0D517004A1DDF /* UserRegistrationSuccessModel.swift in Sources */,
+				EDC1876322C0D517004A1DDF /* UserRegistrationReplyModel.swift in Sources */,
 				EDC187A522C107FB004A1DDF /* UserRegistrationForm_GR.swift in Sources */,
 				EDC1874922C00C89004A1DDF /* RegistrationViewController_GR.swift in Sources */,
 				EDC1870522BEF577004A1DDF /* Constants.swift in Sources */,
@@ -997,6 +1000,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC1881A22C3D471004A1DDF /* MockUserRegistrationReplyModel.swift in Sources */,
+				EDC1884222C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift in Sources */,
+				EDC1884422C42668004A1DDF /* MockUserRegistrationViewModel.swift in Sources */,
 				EDC1880A22C3A215004A1DDF /* NPExplorer_IRTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
