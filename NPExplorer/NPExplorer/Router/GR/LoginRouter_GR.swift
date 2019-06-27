@@ -16,7 +16,7 @@ class LoginRouter_GR: LoginRouterProtocol {
         let storyBoard = UIStoryboard.init(name: storyBoardFileName, bundle: nil)
         let countryDetailUpdater = CountryDetailUpdater_GR()
         let countryDetailDataManager = CountryDetailDataManager(countryDetailUpdater: countryDetailUpdater)
-        let countryDetailVM = CountryDetailViewModel(withDataManager: countryDetailDataManager, withRouter: nil, countryDetailContext: CountryDetailContext(countryCode: CountryCode.germany))
+        let countryDetailVM = CountryDetailViewModel(withDataManager: countryDetailDataManager, withRouter: nil, countryDetailContext: CountryDetailContext(countryCode: CountryCode.germany, isLandscape: false))
         let countryDetailController = storyBoard.instantiateViewController(withIdentifier: countryDetailScreenStoryBoardIdentifier)
         if var countryDetailVC = countryDetailController as? CountryDetailDisplaying {
             countryDetailVC.viewModel = countryDetailVM
