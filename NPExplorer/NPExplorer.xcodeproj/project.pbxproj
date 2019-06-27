@@ -140,6 +140,8 @@
 		EDC1885222C501B3004A1DDF /* NSBundle+LanguageChange.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC1885022C501B3004A1DDF /* NSBundle+LanguageChange.m */; };
 		EDC1885522C50DE6004A1DDF /* LanguageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1885422C50DE6004A1DDF /* LanguageConfig.swift */; };
 		EDC1885622C50DE6004A1DDF /* LanguageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1885422C50DE6004A1DDF /* LanguageConfig.swift */; };
+		EDC1885822C586BE004A1DDF /* MockErrorDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1885722C586BE004A1DDF /* MockErrorDataManager.swift */; };
+		EDC1885A22C58772004A1DDF /* NPExplorerErrorTests_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1885922C58772004A1DDF /* NPExplorerErrorTests_IR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -248,6 +250,8 @@
 		EDC1884F22C501B3004A1DDF /* NPExplorer_GR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPExplorer_GR-Bridging-Header.h"; sourceTree = "<group>"; };
 		EDC1885022C501B3004A1DDF /* NSBundle+LanguageChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+LanguageChange.m"; sourceTree = "<group>"; };
 		EDC1885422C50DE6004A1DDF /* LanguageConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageConfig.swift; sourceTree = "<group>"; };
+		EDC1885722C586BE004A1DDF /* MockErrorDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockErrorDataManager.swift; sourceTree = "<group>"; };
+		EDC1885922C58772004A1DDF /* NPExplorerErrorTests_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPExplorerErrorTests_IR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -627,6 +631,8 @@
 				EDC1881922C3D471004A1DDF /* MockUserRegistrationReplyModel.swift */,
 				EDC1884122C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift */,
 				EDC1884322C42668004A1DDF /* MockUserRegistrationViewModel.swift */,
+				EDC1885722C586BE004A1DDF /* MockErrorDataManager.swift */,
+				EDC1885922C58772004A1DDF /* NPExplorerErrorTests_IR.swift */,
 			);
 			path = NPExplorer_IRTests;
 			sourceTree = "<group>";
@@ -1034,6 +1040,8 @@
 				EDC1884222C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift in Sources */,
 				EDC1884422C42668004A1DDF /* MockUserRegistrationViewModel.swift in Sources */,
 				EDC1880A22C3A215004A1DDF /* NPExplorer_IRTests.swift in Sources */,
+				EDC1885A22C58772004A1DDF /* NPExplorerErrorTests_IR.swift in Sources */,
+				EDC1885822C586BE004A1DDF /* MockErrorDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
