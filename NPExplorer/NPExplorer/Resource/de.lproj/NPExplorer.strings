@@ -1,30 +1,30 @@
 
 /* Class = "UIButton"; normalTitle = "Register"; ObjectID = "4GY-Pu-E0n"; */
-"4GY-Pu-E0n.normalTitle" = "Register";
+"4GY-Pu-E0n.normalTitle" = "Register_Gr";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "Fsz-xH-jR3"; */
-"Fsz-xH-jR3.placeholder" = "Password";
+"Fsz-xH-jR3.placeholder" = "Password_Gr";
 
 /* Class = "UITextField"; placeholder = "UserName"; ObjectID = "Lbv-Qg-cTT"; */
-"Lbv-Qg-cTT.placeholder" = "UserName";
+"Lbv-Qg-cTT.placeholder" = "UserName_Gr";
 
 /* Class = "UIButton"; normalTitle = "Login"; ObjectID = "UdM-rW-hWL"; */
-"UdM-rW-hWL.normalTitle" = "Login";
+"UdM-rW-hWL.normalTitle" = "Login_Gr";
 
 /* Class = "UIButton"; normalTitle = "Register"; ObjectID = "chH-gO-QoX"; */
-"chH-gO-QoX.normalTitle" = "Register";
+"chH-gO-QoX.normalTitle" = "Register_Gr";
 
 /* Class = "UITextField"; placeholder = "Passcode"; ObjectID = "chc-Zj-xcb"; */
-"chc-Zj-xcb.placeholder" = "Passcode";
+"chc-Zj-xcb.placeholder" = "Passcode_Gr";
 
 /* Class = "UITextField"; placeholder = "UserName"; ObjectID = "gje-Ti-RdG"; */
-"gje-Ti-RdG.placeholder" = "UserName";
+"gje-Ti-RdG.placeholder" = "UserName_Gr";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "h76-SV-blm"; */
-"h76-SV-blm.placeholder" = "Password";
+"h76-SV-blm.placeholder" = "Password_Gr";
 
 /* Class = "UILabel"; text = "Novartis Pharmacuticle"; ObjectID = "vh1-sG-d2b"; */
 "vh1-sG-d2b.text" = "Novartis Pharmacuticle";
 
 /* Class = "UIButton"; normalTitle = "Register"; ObjectID = "wIR-Jv-fyK"; */
-"wIR-Jv-fyK.normalTitle" = "Register";
+"wIR-Jv-fyK.normalTitle" = "Register_Gr";

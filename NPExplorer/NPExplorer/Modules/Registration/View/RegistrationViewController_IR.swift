@@ -31,25 +31,16 @@ class RegistrationViewController_IR : UIViewController, UserRegistrationDisplayi
                     //UI Code
                     if regReply.registrationStatus == "OK"
                     {
-                        self.displayAlert(withTitle: "Success!", message: "user Added")
+                        self.displayAlert(withTitle: alertTitleSuccessText.localized, message: userRegistrationSuccessMessage.localized)
                     } else {
-                        self.displayAlert(withTitle: "Success!", message: "user already exist")
+                        self.displayAlert(withTitle: alertTitleErrorText.localized, message: userRegistrationErrorMessage.localized)
                     }
                 }
                 }, OnFailure: {[unowned self] (_, error) in
                     //Display error
                     DispatchQueue.main.async {
-                        self.displayAlert(withTitle: "Error!!", message: error.localizedDescription)
+                        self.displayAlert(withTitle: alertTitleErrorText.localized, message: error.localizedDescription)
                     }})
         }
-    }
-    
-    //Todo move to a central Util class to avoid code repetation
-    private func displayAlert(withTitle: String, message: String) {
-        let alert = UIAlertController(title: withTitle, message: message, preferredStyle: .alert)
-        
-        //ToDo Localization
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert, animated: true)
     }
 }

@@ -28,26 +28,18 @@ class RegistrationViewController_GR : UIViewController, UserRegistrationDisplayi
             viewModel?.registerUser(passcode: passcode, onSuccess: {[unowned self] (regReply,_) in
                 DispatchQueue.main.async {
                     //UI Code
-                    if regReply.registrationStatus == "OK"
+                    if regReply.registrationStatus == alertButtonOKText.localized
                     {
-                        self.displayAlert(withTitle: "Success!", message: "user Added")
+                        self.displayAlert(withTitle: alertTitleSuccessText.localized, message: userRegistrationSuccessMessage.localized)
                     } else {
-                        self.displayAlert(withTitle: "Success!", message: "user already exist")
+                        self.displayAlert(withTitle: alertTitleErrorText.localized, message: userRegistrationErrorMessage.localized)
                     }
                 }
                 }, OnFailure: {[unowned self] (_, error) in
                     //Display error
                     DispatchQueue.main.async {
-                        //self.displayAlert(withTitle: "Error!!", message: error.localizedDescription)
+                        self.displayAlert(withTitle: alertTitleErrorText.localized, message: error.localizedDescription)
                     }})
         }
-    }
-    
-    private func displayAlert(withTitle: String, message: String) {
-        let alert = UIAlertController(title: withTitle, message: message, preferredStyle: .alert)
-        
-        //ToDo Localization
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert, animated: true)
     }
 }

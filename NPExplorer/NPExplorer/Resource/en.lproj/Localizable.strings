@@ -6,4 +6,13 @@
   Copyright © 2019 niloy.chakraborty. All rights reserved.
 */
 
-"WelcomeLogoText" = "Welcome Ir";
+"WelcomeText" = "Welcome :";
+"LoginPageText" = "Novartis Ireland";
+"OK" = "OK";
+"Success" = "Success";
+"Error" = "Error";
+
+"User Added" = "User Added";
+"User Already Exist" = "User Already Exist";
+
+"Login Error" = "Login Error";

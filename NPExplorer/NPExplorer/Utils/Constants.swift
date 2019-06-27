@@ -11,11 +11,23 @@ import Foundation
 //
 let storyBoardFileName = "NPExplorer"
 let welcomeLogoText = "WelcomeLogoText"
-let countryDetailScreenStoryBoardIdentifier = "CountryDetail"
- #if MARKET_IR
-    let userRegistrationScreenStoryBoardIdentifier = "UserRegistration_IR"
- #elseif MARKET_GR
-    let userRegistrationScreenStoryBoardIdentifier = "UserRegistration_GR"
+let loginPageText = "LoginPageText"
+let alertButtonOKText = "OK"
+let alertTitleSuccessText = "Success"
+let alertTitleErrorText = "Error"
 
- #endif
+let countryDetailScreenStoryBoardIdentifier = "CountryDetail"
+#if MARKET_IR
+let userRegistrationScreenStoryBoardIdentifier = "UserRegistration_IR"
+#elseif MARKET_GR
+let userRegistrationScreenStoryBoardIdentifier = "UserRegistration_GR"
+
+#endif
+//Registration
+let userRegistrationSuccessMessage = "User Added"
+let userRegistrationErrorMessage = "User Already Exist"
+
+//Login
+let userAuthenticationFailureMessage = "Login Error"
+
 
