@@ -136,6 +136,10 @@
 		EDC1884422C42668004A1DDF /* MockUserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884322C42668004A1DDF /* MockUserRegistrationViewModel.swift */; };
 		EDC1884A22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */; };
 		EDC1884B22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */; };
+		EDC1885122C501B3004A1DDF /* NSBundle+LanguageChange.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC1885022C501B3004A1DDF /* NSBundle+LanguageChange.m */; };
+		EDC1885222C501B3004A1DDF /* NSBundle+LanguageChange.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC1885022C501B3004A1DDF /* NSBundle+LanguageChange.m */; };
+		EDC1885522C50DE6004A1DDF /* LanguageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1885422C50DE6004A1DDF /* LanguageConfig.swift */; };
+		EDC1885622C50DE6004A1DDF /* LanguageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1885422C50DE6004A1DDF /* LanguageConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -239,6 +243,11 @@
 		EDC1884122C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRegistrationDataManager_IR.swift; sourceTree = "<group>"; };
 		EDC1884322C42668004A1DDF /* MockUserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRegistrationViewModel.swift; sourceTree = "<group>"; };
 		EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DisplayAlert.swift"; sourceTree = "<group>"; };
+		EDC1884D22C5018A004A1DDF /* NSBundle+LanguageChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+LanguageChange.h"; sourceTree = "<group>"; };
+		EDC1884E22C501B2004A1DDF /* NPExplorer_IR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPExplorer_IR-Bridging-Header.h"; sourceTree = "<group>"; };
+		EDC1884F22C501B3004A1DDF /* NPExplorer_GR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NPExplorer_GR-Bridging-Header.h"; sourceTree = "<group>"; };
+		EDC1885022C501B3004A1DDF /* NSBundle+LanguageChange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+LanguageChange.m"; sourceTree = "<group>"; };
+		EDC1885422C50DE6004A1DDF /* LanguageConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				EDC1865722BBEBC2004A1DDF /* AppDelegate.swift */,
+				EDC1885322C50DC0004A1DDF /* Localization */,
 				EDC186C722BE8B34004A1DDF /* Modules */,
 				EDC1872022BF018B004A1DDF /* Updater */,
 				EDC1867C22BE713F004A1DDF /* Utils */,
@@ -396,6 +406,10 @@
 				EDC1870122BEF440004A1DDF /* Constants.swift */,
 				EDC1877822C0F4F1004A1DDF /* String+Localization.swift */,
 				EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */,
+				EDC1884D22C5018A004A1DDF /* NSBundle+LanguageChange.h */,
+				EDC1885022C501B3004A1DDF /* NSBundle+LanguageChange.m */,
+				EDC1884E22C501B2004A1DDF /* NPExplorer_IR-Bridging-Header.h */,
+				EDC1884F22C501B3004A1DDF /* NPExplorer_GR-Bridging-Header.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -617,6 +631,14 @@
 			path = NPExplorer_IRTests;
 			sourceTree = "<group>";
 		};
+		EDC1885322C50DC0004A1DDF /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1885422C50DE6004A1DDF /* LanguageConfig.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -706,6 +728,10 @@
 				TargetAttributes = {
 					EDC1865322BBEBC2004A1DDF = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					EDC1867F22BE72C7004A1DDF = {
+						LastSwiftMigration = 1010;
 					};
 					EDC187F822C39ACB004A1DDF = {
 						CreatedOnToolsVersion = 10.1;
@@ -871,6 +897,7 @@
 				EDC1870A22BEF8AC004A1DDF /* LoginRouter_IR.swift in Sources */,
 				EDC187C222C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */,
 				EDC1871822BEFBDF004A1DDF /* LoginViewModel.swift in Sources */,
+				EDC1885522C50DE6004A1DDF /* LanguageConfig.swift in Sources */,
 				EDC186DA22BE9737004A1DDF /* AppDelegateRouter_GR.swift in Sources */,
 				EDC1873622BF0B23004A1DDF /* CountryDetailsResource_GR.swift in Sources */,
 				EDC187AD22C1881D004A1DDF /* CountryDetailDataManager.swift in Sources */,
@@ -884,6 +911,7 @@
 				EDC187A122C107E2004A1DDF /* UserRegistrationForm_IR.swift in Sources */,
 				EDC186B722BE80FC004A1DDF /* NetworkResource.swift in Sources */,
 				EDC187A722C10EEF004A1DDF /* UserAuthenticationFormModel.swift in Sources */,
+				EDC1885122C501B3004A1DDF /* NSBundle+LanguageChange.m in Sources */,
 				EDC1869C22BE7AF4004A1DDF /* NP_IRAPIClient.swift in Sources */,
 				EDC1872822BF0379004A1DDF /* CountryDetailsEndpoint_GR.swift in Sources */,
 				EDC1884A22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */,
@@ -934,6 +962,7 @@
 				EDC1871922BEFBDF004A1DDF /* LoginViewModel.swift in Sources */,
 				EDC187C322C19E8C004A1DDF /* CountryDetailViewController.swift in Sources */,
 				EDC186D922BE937B004A1DDF /* AppDelegateRouter_GR.swift in Sources */,
+				EDC1885622C50DE6004A1DDF /* LanguageConfig.swift in Sources */,
 				EDC1872C22BF038C004A1DDF /* UserRegistrationEndpoint_IR.swift in Sources */,
 				EDC186AE22BE7BA5004A1DDF /* BaseNetworkClientProtocol.swift in Sources */,
 				EDC187AE22C1881D004A1DDF /* CountryDetailDataManager.swift in Sources */,
@@ -947,6 +976,7 @@
 				EDC187A222C107E2004A1DDF /* UserRegistrationForm_IR.swift in Sources */,
 				EDC1875822C03007004A1DDF /* UserRegistrationViewModel_IR.swift in Sources */,
 				EDC187A822C10EEF004A1DDF /* UserAuthenticationFormModel.swift in Sources */,
+				EDC1885222C501B3004A1DDF /* NSBundle+LanguageChange.m in Sources */,
 				EDC186BE22BE82E9004A1DDF /* UserRegistrationResource_GR.swift in Sources */,
 				EDC1872322BF01D3004A1DDF /* LoginUpdater.swift in Sources */,
 				EDC1884B22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */,
@@ -1176,9 +1206,16 @@
 			baseConfigurationReference = CE8008E56898E6807A37EF4B /* Pods-NPExplorer_IR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3HU6X5S35C;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"MARKET_IR=1",
+				);
 				INFOPLIST_FILE = "NPExplorer/NPExplorer_IR-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1189,6 +1226,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Niloy.NPExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NPExplorer/Utils/NPExplorer_IR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1199,9 +1238,16 @@
 			baseConfigurationReference = 5653BA9DC0F3571F1F682279 /* Pods-NPExplorer_IR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3HU6X5S35C;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"MARKET_IR=1",
+				);
 				INFOPLIST_FILE = "NPExplorer/NPExplorer_IR-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1212,6 +1258,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Niloy.NPExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NPExplorer/Utils/NPExplorer_IR-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1222,9 +1269,16 @@
 			baseConfigurationReference = A3312BF03CEC886C5DB1DBBF /* Pods-NPExplorer_GR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3HU6X5S35C;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"MARKET_GR=1",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/NPExplorer_GR-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1235,6 +1289,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Niloy.NPExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NPExplorer/Utils/NPExplorer_GR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1245,9 +1301,16 @@
 			baseConfigurationReference = E7A876147A390C15903462B4 /* Pods-NPExplorer_GR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 3HU6X5S35C;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"MARKET_GR=1",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/NPExplorer_GR-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1258,6 +1321,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Niloy.NPExplorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NPExplorer/Utils/NPExplorer_GR-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
