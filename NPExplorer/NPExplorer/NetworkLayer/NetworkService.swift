@@ -49,7 +49,7 @@ public class NetworkService {
                 errorHandler?(response, NetworkServiceError.httpResponseError(error: responseError))
             } else if let responseData = data {
                 
-                print(response)
+                print(data?.base64EncodedString())
                 guard let code = response?.statusCode, code >= 200 && code < 300 else {
                     
                     errorHandler?(response, NetworkServiceError.invalidResponse(response: response, data: NSData(data: responseData)))

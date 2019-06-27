@@ -26,7 +26,7 @@ public struct NetworkResource<NetworkSuccessType: Decodable> {
     public var urlRequest: URLRequest {
         var request = URLRequest(url: url)
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")  // the request is JSON
-        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept") 
+        //request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept") 
         request.httpMethod = httpMethod
         headers?.forEach {
             request.setValue($1, forHTTPHeaderField: $0)

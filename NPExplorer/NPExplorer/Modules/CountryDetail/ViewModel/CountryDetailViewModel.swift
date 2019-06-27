@@ -13,6 +13,9 @@ protocol CountryDetailViewModelProtocol {
     func getCountryDetailAttributes() -> [String]
     func getCountryDetail(withAttributes: [String], success: @escaping ((CountryDetailModelContainerProtocol, URLResponse)->Void),
                           failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
+    func fetchCountryDetailAttributes(attributes: [String],
+    success: @escaping ((CountryDetailAttributeModelContainerProtocol, URLResponse)->Void),
+    failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void))
 }
 
 struct CountryDetailContext {
@@ -41,9 +44,14 @@ public class CountryDetailViewModel: CountryDetailViewModelProtocol {
         
     }
     
-    private func fetchCountryDetailAttributes(attributes: [String], success: @escaping ((CountryDetailAttributeModelContainerProtocol, URLResponse)->Void),
+    func fetchCountryDetailAttributes(attributes: [String],
+                                              success: @escaping ((CountryDetailAttributeModelContainerProtocol, URLResponse)->Void),
                                               failure: @escaping ((_ response: URLResponse?, _ error: NetworkServiceError)->Void)) {
-        
+        dataManager.getCountryDetailAttributes(success: {(attrb,_) in
+            print(attrb)
+            }, failure: { _,_ in
+                print("Fail")
+        })
     }
     
 }

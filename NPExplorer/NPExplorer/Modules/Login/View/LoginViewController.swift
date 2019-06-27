@@ -32,22 +32,20 @@ class LoginViewController : UIViewController, LoginDisplaying {
     
     @objc private func loginButtonPressed() {
         if let userName = usernameTextField.text, let password = passwordTextField.text {
-            //ToDo Create a model for registrationForm Data
             viewModel?.authenticateUser(userName: userName, password: password, viewController: self, onSuccess: {[unowned self] (_,_) in
                 DispatchQueue.main.async {
                     //UI Code
-                    self.viewModel?.navigateToCountryDetailPage()
                 }}, OnFailure: {[unowned self] (_, error) in
                     //Display error
                     DispatchQueue.main.async {
-                        //self.displayAlert(withTitle: "Error!!", message: error.localizedDescription)
+                        self.displayAlert(withTitle: alertTitleErrorText.localized, message: userAuthenticationFailureMessage.localized)
                     }})
         }
     }
     
     func updateUI() {
         guard let viewModel = viewModel else { return }
-        pageLogoLabel.text = welcomeLogoText.localized
+        pageLogoLabel.text = loginPageText.localized
         if(!viewModel.shouldDisplayPasswordField()) {
             passwordTextField.isHidden = true
         }

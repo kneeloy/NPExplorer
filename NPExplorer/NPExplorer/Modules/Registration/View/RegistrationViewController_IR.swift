@@ -26,14 +26,20 @@ class RegistrationViewController_IR : UIViewController, UserRegistrationDisplayi
     @objc private func registerButtonSelected() {
         if let userName = usernameTextField.text, let password = passwordTextField.text {
             //ToDo Create a model for registrationForm Data
-            viewModel?.registerUser(userName: userName, password: password, onSuccess: {[unowned self] (_,_) in
+            viewModel?.registerUser(userName: userName, password: password, onSuccess: {[unowned self] (regReply,_) in
                 DispatchQueue.main.async {
                     //UI Code
+                    if regReply.registrationStatus == "OK"
+                    {
+                        self.displayAlert(withTitle: alertTitleSuccessText.localized, message: userRegistrationSuccessMessage.localized)
+                    } else {
+                        self.displayAlert(withTitle: alertTitleErrorText.localized, message: userRegistrationErrorMessage.localized)
+                    }
                 }
                 }, OnFailure: {[unowned self] (_, error) in
                     //Display error
                     DispatchQueue.main.async {
-                        //self.displayAlert(withTitle: "Error!!", message: error.localizedDescription)
+                        self.displayAlert(withTitle: alertTitleErrorText.localized, message: error.localizedDescription)
                     }})
         }
     }

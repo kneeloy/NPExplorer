@@ -5,4 +5,14 @@
   Created by niloy.chakraborty on 24/06/2019.
   Copyright © 2019 niloy.chakraborty. All rights reserved.
 */
-"WelcomeLogoText" = "Welcome Gr";
+"WelcomeText" = "Welcome_GR :";
+"LoginPageText" = "Novartis Germany";
+"OK" = "OK";
+"Success" = "Success_GR";
+"Error" = "Error_GR";
+
+
+"User Added" = "User Added_GR";
+"User Already Exist" = "User Already Exist_GR";
+
+"Login Error" = "Login Error_GR";

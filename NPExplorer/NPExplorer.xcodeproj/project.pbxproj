@@ -134,6 +134,8 @@
 		EDC1881A22C3D471004A1DDF /* MockUserRegistrationReplyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1881922C3D471004A1DDF /* MockUserRegistrationReplyModel.swift */; };
 		EDC1884222C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884122C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift */; };
 		EDC1884422C42668004A1DDF /* MockUserRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884322C42668004A1DDF /* MockUserRegistrationViewModel.swift */; };
+		EDC1884A22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */; };
+		EDC1884B22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +238,7 @@
 		EDC1881922C3D471004A1DDF /* MockUserRegistrationReplyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRegistrationReplyModel.swift; sourceTree = "<group>"; };
 		EDC1884122C422D1004A1DDF /* MockUserRegistrationDataManager_IR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRegistrationDataManager_IR.swift; sourceTree = "<group>"; };
 		EDC1884322C42668004A1DDF /* MockUserRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserRegistrationViewModel.swift; sourceTree = "<group>"; };
+		EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+DisplayAlert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +395,7 @@
 			children = (
 				EDC1870122BEF440004A1DDF /* Constants.swift */,
 				EDC1877822C0F4F1004A1DDF /* String+Localization.swift */,
+				EDC1884922C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -882,6 +886,7 @@
 				EDC187A722C10EEF004A1DDF /* UserAuthenticationFormModel.swift in Sources */,
 				EDC1869C22BE7AF4004A1DDF /* NP_IRAPIClient.swift in Sources */,
 				EDC1872822BF0379004A1DDF /* CountryDetailsEndpoint_GR.swift in Sources */,
+				EDC1884A22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */,
 				EDC1875A22C0301A004A1DDF /* UserRegistrationViewModel_GR.swift in Sources */,
 				EDC187BF22C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift in Sources */,
 				EDC1873522BF0B20004A1DDF /* UserAuthenticationResource_GR.swift in Sources */,
@@ -944,6 +949,7 @@
 				EDC187A822C10EEF004A1DDF /* UserAuthenticationFormModel.swift in Sources */,
 				EDC186BE22BE82E9004A1DDF /* UserRegistrationResource_GR.swift in Sources */,
 				EDC1872322BF01D3004A1DDF /* LoginUpdater.swift in Sources */,
+				EDC1884B22C4F8AE004A1DDF /* UIViewController+DisplayAlert.swift in Sources */,
 				EDC1875B22C0301A004A1DDF /* UserRegistrationViewModel_GR.swift in Sources */,
 				EDC187C022C19843004A1DDF /* CountryDetailAttributesEndpoint_IR.swift in Sources */,
 				EDC1872D22BF038F004A1DDF /* CountryDetailsEndpoint_IR.swift in Sources */,

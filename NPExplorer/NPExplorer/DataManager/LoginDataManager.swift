@@ -28,12 +28,9 @@ public class LoginDataManager: LoginDataManagerProtocol {
     
     func authenticateUser(userAuthForm: UserAuthenticationFormModel, viewController: UIViewController? = nil, success: @escaping ((UserAuthenticationReplyModelProtocol, URLResponse?) -> Void), failure: @escaping ((URLResponse?, NetworkServiceError) -> Void)) {
         
-        loginUpdater?.authenticateUser(userAuthForm: userAuthForm, viewController: viewController, success: { [weak self](token,urlResponse)  in
-            //let env = self?.configUpdater?.client.environment
-            
-            //ToDo find a way to assign the auth token in env
-            //self?.configUpdater?.client.environment = env?.netWorkEnvironmentWithApiKey(apiKey: token)
-            success(token, urlResponse)
+        loginUpdater?.authenticateUser(userAuthForm: userAuthForm, viewController: viewController, success: { [weak self](authReply,urlResponse)  in
+
+            success(authReply, urlResponse)
         }, failure: { (urlResponse, error) in
             failure(urlResponse, error)
         })
